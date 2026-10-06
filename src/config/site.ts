@@ -19,18 +19,17 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "My Seafood Stand Wiki",
-  shortName: "My Seafood Stand",
-  logoText: "SS",
-  tagline: "Complete Guides, Codes, Recipes & Tier Lists",
-  description: "Your ultimate guide to My Seafood Stand on Roblox! Explore active working codes, seafood recipes, best upgrades, profit strategies, and progression guides.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://myseafoodstand.top",
-  supportEmail: `support@${new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://myseafoodstand.top").hostname.replace(/^www\./, "")}`,
-  gameUrl: "https://www.roblox.com/games/my-seafood-stand",
-  heroVideoId: "M8DvcwoFRrk", // Roblox My Seafood Stand codes & gameplay video
+  name: "Course to Venus Wiki",
+  shortName: "Course to Venus",
+  logoText: "C",
+  tagline: "Walkthroughs, Characters, Choices & Updates",
+  description: "Your ultimate guide to Course to Venus! Explore a humorous near-future space adventure with ship exploration, crew relationships, choices, quests, and story progression.",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://coursetovenus.top",
+  supportEmail: `support@${new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://coursetovenus.top").hostname.replace(/^www\./, "")}`,
+  gameUrl: "https://noteverywitch.itch.io/course-to-venus",
+  heroVideoId: "tgD952JKu8Y", // Course to Venus gameplay / showcase video
   social: {
-    discord: "https://discord.gg/roblox",
-    youtube: "https://www.youtube.com/@roblox",
+    discord: "https://discord.gg/yExfFgVVbP",
   },
   locales: ["en", "es", "pt", "de", "fr"],
   defaultLocale: "en",
