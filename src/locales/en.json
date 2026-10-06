@@ -44,22 +44,22 @@
         {
           "number": "1",
           "title": "Beginner Guide",
-          "description": "Master the Spirit World from day one with our comprehensive beginner guide covering controls, combat, and early progression."
+          "description": "Learn the core loop of Course to Venus: read the route map, plot a maneuver, commit your fuel, then resolve heat and hazards before your first real run."
         },
         {
           "number": "2",
-          "title": "Fastest Leveling",
-          "description": "Dominate early game and max your progression with the most efficient leveling routes and strategies."
+          "title": "Walkthrough & Endings",
+          "description": "Follow the act-by-act Course to Venus walkthrough to flag branch points, solve puzzles, and reach every ending without losing a save."
         },
         {
           "number": "3",
-          "title": "Best Farming Spots",
-          "description": "Maximize your Soul Essence and EXP gains with optimal farming locations for every stage."
+          "title": "Vent Controls",
+          "description": "Master the Course to Venus vent controls and interaction prompts so sealed vents and airflow puzzles never stall a run."
         },
         {
           "number": "4",
-          "title": "How to Extract",
-          "description": "Learn the best methods and locations for extracting resources in Course to Venus."
+          "title": "Crew & Characters",
+          "description": "Get to know Molly, Jenna, and the ghost, and learn how trust, dialogue choices, and timing shape the relationships on board."
         }
       ]
     },
@@ -67,73 +67,73 @@
       "eyebrow": "Popular Pages",
       "title": "Trending Now",
       "quickLinks": [
-        "Hollow Progression",
-        "Fastest Leveling",
-        "Spirit Charms",
-        "All Boss Guides"
+        "Beginner Guide",
+        "Full Walkthrough",
+        "Vent Controls",
+        "Character Guide"
       ],
       "cards": [
         {
           "badge": "Beginner",
           "title": "Beginner Guide",
-          "description": "Everything you need from your first login to mastering the basics of combat and progression.",
-          "href": "/beginner-guide"
+          "description": "Everything you need for your first Course to Venus run, from setup and route reading to fuel and heat management.",
+          "href": "/guide/course-to-venus-how-to-play"
         },
         {
           "badge": "Updated",
-          "title": "Active Codes",
-          "description": "All working codes with rewards redeem before they expire.",
-          "href": "/codes"
+          "title": "Full Walkthrough",
+          "description": "Act-by-act Course to Venus walkthrough with branch points, puzzles, collectibles, and every ending explained.",
+          "href": "/guide/course-to-venus-walkthrough"
+        },
+        {
+          "badge": "Popular",
+          "title": "How to Open the Vent",
+          "description": "Controls, prompts, and quick fixes for opening the vent on PC, console, and handheld.",
+          "href": "/controls/course-to-venus-how-to-open-vent"
+        },
+        {
+          "badge": "Popular",
+          "title": "How to Get the Crowbar",
+          "description": "Full crowbar location and a step-by-step route to the tool that unlocks everything else.",
+          "href": "/items/course-to-venus-how-to-get-crowbar"
         },
         {
           "badge": "Updated",
-          "title": "Equipment Database",
-          "description": "94 items across 5 slots complete gear database with stats, rarity, and sources.",
-          "href": "/equipment"
+          "title": "Phone Code Guide",
+          "description": "How the Course to Venus phone code system works, where codes appear, and how to redeem them.",
+          "href": "/codes/course-to-venus-phone-code"
         },
         {
           "badge": "Popular",
-          "title": "Which Race Should You Pick?",
-          "description": "Shinigami, Quincy, or Hollow compare all three and find your perfect playstyle.",
-          "href": "/races/best-race"
-        },
-        {
-          "badge": "New",
-          "title": "Enemies & Monsters",
-          "description": "23 enemy types across 5 regions drops, locations, and farming tips.",
-          "href": "/enemies"
+          "title": "Molly Character Guide",
+          "description": "Her story role, relationship scenes, and the tips that get the most from her arc.",
+          "href": "/characters/course-to-venus-molly"
         },
         {
           "badge": "Popular",
-          "title": "Boss Locations & Drops",
-          "description": "Every boss location, drop table, and respawn timer in one reference.",
-          "href": "/boss-locations-drops-respawn-times"
-        },
-        {
-          "badge": "Popular",
-          "title": "Best Builds",
-          "description": "Optimal stat allocation, skill tree picks, and Charm combos for every playstyle.",
-          "href": "/builds/best-builds"
+          "title": "Progression Guide",
+          "description": "How to progress through every stage of the Course to Venus journey with better resource pacing.",
+          "href": "/progression/course-to-venus-how-to-progress"
         },
         {
           "badge": "New",
-          "title": "Shikai Tier List",
-          "description": "All 6 Shinigami Shikai types ranked by PvP and PvE performance.",
-          "href": "/tier-list/shikai"
+          "title": "Save File Guide",
+          "description": "Where the Course to Venus save file lives, how to back it up, and how to restore lost progress.",
+          "href": "/progression/course-to-venus-save-file"
         },
         {
           "badge": "New",
-          "title": "World Events Guide",
-          "description": "Supply Caches, Raids, and endgame world events with rare rewards.",
-          "href": "/world-events"
+          "title": "Mission Mechanics",
+          "description": "Launch windows, transfer timing, delta-v budgets, and arrival modes explained step by step.",
+          "href": "/mechanics/course-to-venus-mission"
         }
       ]
     },
     "aboutGame": {
       "title": "What is Course to Venus?",
       "paragraphs": [
-        "Course to Venus is a stylized fighting RPG on Roblox inspired by the Bleach anime universe. Choose from three playable races Shinigami, Quincy, or Hollow each with unique progression systems, unlockable abilities, and evolution paths. Master over 130 skills as you fight your way to the level 100 cap.",
-        "Whether you're unlocking your first Shikai, evolving from a base Hollow into an Arrancar, or grinding Quincy Lieutenant missions, our wiki covers every system with detailed guides, data tables, and step-by-step walkthroughs."
+        "Course to Venus is a humorous near-future sci-fi adventure from developer Not Every Witch. You plan and fly a craft from Earth toward Venus, balancing propulsion and fuel against heat, shielding, supplies, and crew condition while events and hazards resolve every round.",
+        "The game blends route planning, puzzles, and character relationships: open sealed vents, track down keys and tools like the crowbar, search the ship deck by deck, and follow branching choices with Molly, Jenna, and the ghost. Our Course to Venus wiki gathers the walkthroughs, item locations, character guides, and progression tips you need."
       ],
       "stats": [
         {
@@ -141,163 +141,237 @@
           "value": "Not Every Witch"
         },
         {
-          "label": "Platform",
-          "value": "Roblox"
+          "label": "Platforms",
+          "value": "HTML5 · Windows · Android"
         },
         {
           "label": "Genre",
-          "value": "Fighting RPG"
+          "value": "Sci-Fi Adventure"
         },
         {
-          "label": "Visits",
-          "value": "12.6M+"
+          "label": "Version",
+          "value": "0.5.3"
         },
         {
-          "label": "Favorites",
-          "value": "243K+"
+          "label": "Languages",
+          "value": "10"
         },
         {
-          "label": "Total Skills",
-          "value": "130+"
-        },
-        {
-          "label": "Level Cap",
-          "value": "100"
+          "label": "Updates",
+          "value": "Monthly"
         }
       ],
       "cta": "Explore All Guides"
     },
     "explore": {
       "title": "Explore Course to Venus Wiki",
-      "description": "Master your seafood restaurant on Roblox with essential progression guides, active codes, complete fish & recipe catalogs, and optimal upgrade strategies.",
+      "description": "Everything you need to master Course to Venus: beginner steps, a full walkthrough, character guides, item locations, event mechanics, updates, and version history in one place.",
       "modules": [
         {
           "order": 1,
-          "name": "Course to Venus Working Codes",
-          "description": "Redeem the latest working codes to claim free coins, gems, exclusive cosmetics, and boost items before they expire.",
-          "href": "/codes/course-to-venus-codes",
-          "displayType": "code-box",
+          "name": "Course to Venus Beginner Guide",
+          "description": "A step-by-step Course to Venus beginner guide covering how a run plays out, fuel and heat management, route planning, and the early mistakes that end a launch.",
+          "href": "/guide/course-to-venus-how-to-play",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Code",
-              "detail": "FULLRELEASE — Free Cash & Rewards"
+              "label": "1",
+              "detail": "Read the route map before you move and pick a single primary goal for the run."
             },
             {
-              "label": "Code",
-              "detail": "75KLIKES — Exclusive Ability Reroll"
+              "label": "2",
+              "detail": "Choose a forgiving mode such as Standard for your first genuine Course to Venus run."
             },
             {
-              "label": "Tip",
-              "detail": "Codes are case-sensitive; enter them in the Settings menu"
+              "label": "3",
+              "detail": "Plot your maneuver, then commit fuel, actions, or cards while always keeping a reserve."
+            },
+            {
+              "label": "4",
+              "detail": "Resolve hazards, heat, and events by reading the full result before you react."
+            },
+            {
+              "label": "5",
+              "detail": "Manage repairs, cooling, resupply, and crew rotation the same round a problem appears."
+            },
+            {
+              "label": "6",
+              "detail": "Track progress toward your objective and bank fuel for the final arrival burn."
             }
           ]
         },
         {
           "order": 2,
-          "name": "Beginner Guide: How to Start & Serve Customers",
-          "description": "Step-by-step beginner guide covering customer ordering, food prep, station management, and cashier checkout mechanics.",
-          "href": "/guide/course-to-venus-beginner-guide",
-          "displayType": "feature-cards",
+          "name": "Course to Venus Walkthrough",
+          "description": "An act-by-act Course to Venus walkthrough covering branch points, puzzle strategies, collectibles, endings, and the save habits that keep every route recoverable.",
+          "href": "/guide/course-to-venus-walkthrough",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Step 1",
-              "detail": "Take customer order at the stall front"
+              "label": "1",
+              "detail": "Rotate at least three save slots so a wrong branch never becomes permanent."
             },
             {
-              "label": "Step 2",
-              "detail": "Cook seafood on the grill or boil station"
+              "label": "2",
+              "detail": "Explore everything in an area and clear optional content before advancing the story."
             },
             {
-              "label": "Step 3",
-              "detail": "Serve warm food promptly for maximum customer tips"
+              "label": "3",
+              "detail": "Save in a fresh slot before any confirmation prompt or chapter transition."
+            },
+            {
+              "label": "4",
+              "detail": "Solve pattern and sequence puzzles by changing one variable at a time."
+            },
+            {
+              "label": "5",
+              "detail": "Log every major decision and unresolved thread to speed up alternate endings."
+            },
+            {
+              "label": "6",
+              "detail": "Backtrack immediately when a collectible category looks incomplete at the end of a stage."
             }
           ]
         },
         {
           "order": 3,
-          "name": "Seafood & Fish Tier List",
-          "description": "Complete breakdown of all catchable fish and seafood ranked by market value, customer demand, and profit margins.",
-          "href": "/seafood/course-to-venus-tier-list",
+          "name": "Course to Venus Characters",
+          "description": "A crew tier list for Course to Venus, ranking the main characters by how much they shape routes, dialogue, and unlockable scenes.",
+          "href": "/characters",
           "displayType": "tier-grid",
           "highlights": [
             {
-              "label": "S Tier",
-              "detail": "King Crab · Lobster Boil — Highest profit per customer"
+              "label": "S",
+              "detail": "Molly - central to relationship scenes, trust checks, and one of the most-searched character arcs."
             },
             {
-              "label": "A Tier",
-              "detail": "Salmon · Jumbo Shrimp · Tuna Steak — Reliable fast earners"
+              "label": "A",
+              "detail": "Jenna - zodiac clues and story flags tie her closely to route choices and fan theory."
             },
             {
-              "label": "B Tier",
-              "detail": "Clams · Oysters · Squid — Great mid-game margin"
+              "label": "B",
+              "detail": "The Ghost - an elusive encounter players report tracking across multiple runs."
             },
             {
-              "label": "C Tier",
-              "detail": "Common Sardines · Small Crab — Starter seafood"
+              "label": "C",
+              "detail": "Background crew - minor dialogue that adds flavor but rarely changes a route."
             }
           ]
         },
         {
           "order": 4,
-          "name": "Best Upgrades Progression",
-          "description": "Optimal order to spend your cash: expand kitchen stations, hire waitstaff, speed up grills, and upgrade seating.",
-          "href": "/upgrades/course-to-venus-best-upgrades",
-          "displayType": "feature-cards",
+          "name": "Course to Venus Events",
+          "description": "Special Course to Venus events, interaction scenes, and trigger conditions, organized so you can spot the content you may have missed.",
+          "href": "/mechanics/course-to-venus-investigation",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Priority 1",
-              "detail": "Cooking Speed & Extra Burners — Clears customer backlog"
+              "label": "Clues",
+              "detail": "Gather every evidence tier during the Course to Venus investigation before you commit to a deduction."
             },
             {
-              "label": "Priority 2",
-              "detail": "Customer Seating Capacity — Increases simultaneous diners"
+              "label": "Search",
+              "detail": "Sweep the ship deck by deck so timed or optional event scenes do not expire."
             },
             {
-              "label": "Priority 3",
-              "detail": "Auto-Chef / Waiter Staff — Passive hands-free revenue"
+              "label": "Triggers",
+              "detail": "Most events fire from a choice or a found item, so note anything a scene mentions but will not let you act on yet."
+            },
+            {
+              "label": "Timing",
+              "detail": "Some interactions only appear before a story beat, so finish optional content early."
             }
           ]
         },
         {
           "order": 5,
-          "name": "How to Get Cash Fast",
-          "description": "Top money-making strategies, VIP evaluation, tip maximization, and high-efficiency serving tips.",
-          "href": "/guide/course-to-venus-how-to-get-cash-fast",
-          "displayType": "feature-cards",
+          "name": "Course to Venus Updates",
+          "description": "The latest Course to Venus update notes and development progress, grouped by version so returning players can catch up fast.",
+          "href": "/progression/course-to-venus-update",
+          "displayType": "code-cards",
           "highlights": [
             {
-              "label": "Combo",
-              "detail": "Chain orders quickly to build the Customer Happiness multiplier"
+              "label": "0.5.3",
+              "detail": "Current public build - progression milestones and upgrade priorities for the latest version."
             },
             {
-              "label": "High Margin",
-              "detail": "Focus high-tier seafood boils during peak customer rush hours"
+              "label": "0.6",
+              "detail": "Version in development on the official Patreon, with new content and systems previewed for returning players."
             },
             {
-              "label": "Reinvest",
-              "detail": "Keep 20% cash reserve for fresh ingredient replenishment"
+              "label": "Monthly",
+              "detail": "Course to Venus updates land roughly once a month, so check back before starting a long run."
             }
           ]
         },
         {
           "order": 6,
-          "name": "Plot Expansion & Stand Customization",
-          "description": "Unlock bigger land plots, arrange optimal cooking layouts, and add high-value decorative upgrades.",
-          "href": "/upgrades/course-to-venus-how-to-upgrade-plot",
-          "displayType": "feature-cards",
+          "name": "Course to Venus Characters Guide",
+          "description": "A deeper Course to Venus characters guide covering relationship routes, interaction conditions, and the choices that unlock specific scenes.",
+          "href": "/characters/course-to-venus-molly",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Plot 1",
-              "detail": "Starter Beach Stand (3 Tables, 1 Grill)"
+              "label": "Molly",
+              "detail": "Read her pauses and revisit early scenes - her arc pays off across multiple runs."
             },
             {
-              "label": "Plot 2",
-              "detail": "Boardwalk Restaurant (6 Tables, 2 Grills, Boil Station)"
+              "label": "Jenna",
+              "detail": "Zodiac clues and story flags connect her to some of the game's most-searched theories."
             },
             {
-              "label": "Plot 3",
-              "detail": "Luxury Pier Seafood Pavilion (Full Automation & VIP Seating)"
+              "label": "Ghost",
+              "detail": "A reported encounter that players chase across decks and versions."
+            },
+            {
+              "label": "Trust",
+              "detail": "Commit fully to a route, since half-measures often unlock nothing."
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Course to Venus Game Features",
+          "description": "An overview of Course to Venus features, from route planning and resource management to puzzles, exploration, and crew relationships.",
+          "href": "/guide/course-to-venus-game-guide",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Routes",
+              "detail": "Direct push, slow drift, and assisted transfer each suit a different kind of run."
+            },
+            {
+              "label": "Resource",
+              "detail": "Fuel, heat, time, supplies, and crew condition all carry warning signs worth watching."
+            },
+            {
+              "label": "Puzzles",
+              "detail": "Vents, keys, and tools like the crowbar gate access across the ship."
+            },
+            {
+              "label": "Crew",
+              "detail": "Choices and trust shape character arcs and unlockable scenes."
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Course to Venus Versions",
+          "description": "Course to Venus version history, current build details, and the content changes that matter when you return to an older save.",
+          "href": "/progression/course-to-venus-new-version",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "0.5.3",
+              "detail": "Public version listed on the official itch.io page, available for HTML5, Windows, and Android."
+            },
+            {
+              "label": "0.6",
+              "detail": "In-development build previewed through the official Patreon developer logs."
+            },
+            {
+              "label": "Saves",
+              "detail": "Play on the current build and rotate save slots, since triggers can differ between versions."
             }
           ]
         }
@@ -309,23 +383,31 @@
       "items": [
         {
           "question": "What is Course to Venus?",
-          "answer": "Course to Venus is a free-to-play fighting RPG on Roblox based on the Bleach anime. You choose one of game mechanics Shinigami (Soul Reaper), Quincy, or Hollow each with unique progression, combat abilities, and evolution systems. The game features 130+ skills, a level 100 cap, boss fights, and deep build customization."
+          "answer": "Course to Venus is a humorous near-future sci-fi adventure from developer Not Every Witch. You plan a journey from Earth toward Venus, balancing fuel, heat, and supplies while events, puzzles, and character choices resolve along the way."
         },
         {
-          "question": "Which race should beginners pick?",
-          "answer": "Shinigami is the most straightforward starter race, while Hollow and Quincy offer more specialized progression routes. Compare their abilities before committing."
+          "question": "What platforms can I play Course to Venus on?",
+          "answer": "The official itch.io page lists HTML5, Windows, and Android, so you can play Course to Venus in a browser or on desktop and mobile."
         },
         {
-          "question": "What is the current level cap?",
-          "answer": "The current level cap is 100, with more than 130 skills available across trees and race progression systems."
+          "question": "Is there a Course to Venus walkthrough?",
+          "answer": "Yes. Our Course to Venus walkthrough breaks the journey into acts, flags branch points and points of no return, and covers puzzles, collectibles, and endings."
         },
         {
-          "question": "Where do I find active codes?",
-          "answer": "Use the Codes page for working codes, rewards, expiration notes, and redeem instructions."
+          "question": "How do I open the vent in Course to Venus?",
+          "answer": "Learn the interaction prompts and timing in our Course to Venus vent controls guide, then match the correct keybind on your platform to open the vent without wasting a round."
         },
         {
-          "question": "Are boss guides updated?",
-          "answer": "Boss pages are organized with spawn notes, attack patterns, strategies, drop tables, and related next steps for progression."
+          "question": "Who are the main characters in Course to Venus?",
+          "answer": "Molly, Jenna, and the ghost anchor the story. Our Course to Venus characters guide covers their roles, relationship routes, and the choices that unlock extra scenes."
+        },
+        {
+          "question": "Does Course to Venus have codes?",
+          "answer": "Course to Venus uses a phone code system rather than a standard redeem-code list. Our Course to Venus phone code guide explains where working codes appear and how to redeem them step by step."
+        },
+        {
+          "question": "How often is Course to Venus updated?",
+          "answer": "Course to Venus updates land roughly once a month, with the public version currently at 0.5.3 and version 0.6 in development."
         }
       ]
     },
