@@ -1,0 +1,109 @@
+export const metadata = {
+  title: "Guía del archivo de guardado de Course to Venus: copia de seguridad, restauración y progresión",
+  description: "Descubre dónde se guarda el archivo de guardado de Course to Venus, cómo hacer una copia de seguridad segura, cómo restaurar el progreso perdido y los riesgos de descargar partidas de la comunidad.",
+  category: "progression",
+  date: "2026-10-06",
+}
+
+Nada mata el impulso en un juego de progresión como perder todo lo que has desbloqueado. El **archivo de guardado de Course to Venus** es el único dato que decide si conservas tus etapas, desbloqueos y registros de finalización, o si empiezas de cero desde el principio. Saber dónde vive ese **archivo de guardado de Course to Venus** convierte un posible desastre en una solución de cinco minutos.
+
+La mayoría de los juegos basados en progresión escriben en el disco en los puntos de control, en las transiciones de nivel o al salir a un menú. Eso significa que un cierre inesperado a mitad de etapa, un apagado forzado o un conflicto de sincronización en la nube pueden dejarte con un archivo más antiguo de lo que esperas, o con uno que el juego se niega a leer por completo. Hacer una copia de seguridad lleva segundos. Reconstruir el progreso puede llevar muchas horas.
+
+Esta guía repasa qué contiene realmente un archivo de guardado, dónde lo almacena normalmente cada plataforma, cómo hacer una copia de seguridad y restaurarlo, y a qué te estás apuntando realmente cuando descargas la partida de otra persona.
+
+## ¿Qué contiene realmente un archivo de guardado de Course to Venus?
+
+Un archivo de guardado rara vez es un simple número. Normalmente es un pequeño paquete de indicadores, contadores y ajustes que el juego lee al iniciarse. Entender las partes te ayuda a determinar qué puedes mover de forma segura entre máquinas y qué se va a romper.
+
+| Componente del guardado | Qué suele registrar | Por qué importa |
+|---|---|---|
+| Progreso de historia / etapas | Etapas superadas, capítulos desbloqueados, puntos de control alcanzados | Determina qué contenido puedes jugar realmente |
+| Desbloqueables | Personajes, modos, cosméticos, contenido extra | Limita el valor de rejugabilidad y el contenido secundario |
+| Seguimiento de finalización | Coleccionables encontrados, desafíos superados, objetivos opcionales | El núcleo de cualquier partida completista |
+| Estadísticas del jugador | Tiempo jugado, intentos, mejores tiempos, número de muertes | Alimenta récords personales y clasificaciones |
+| Ajustes | Audio, vídeo, asignación de controles | A menudo se guardan en un archivo de configuración aparte |
+| Indicadores de plataforma | Marcadores de progreso de logros o trofeos | Pueden transferirse o no entre cuentas |
+
+La conclusión clave: los datos de progreso y los datos de ajustes suelen ser archivos separados que están en la misma carpeta. Si copias solo uno, puede que recuperes tus etapas pero pierdas tu configuración de controles, o al revés.
+
+## Dónde encontrar tu archivo de guardado de Course to Venus según la plataforma
+
+Aquí no hay una respuesta universal, porque la ubicación depende de la tienda, del motor y de si el juego usa un lanzador. La siguiente tabla cubre las carpetas que merece la pena revisar primero. Trátalas como puntos de partida, no como garantías.
+
+| Plataforma | Dónde buscar primero | Notas |
+|---|---|---|
+| Windows (Steam) | La carpeta `userdata` del juego dentro de tu instalación de Steam, o `%APPDATA%` / `Documents` | Steam Cloud puede replicar los mismos archivos |
+| Windows (independiente) | El directorio de instalación del juego, o `%APPDATA%` | Las instalaciones portátiles suelen guardar las partidas junto al ejecutable |
+| macOS | `~/Library/Application Support/` | Oculta por defecto: usa Ir > Ir a la carpeta en Finder |
+| Linux / Steam Deck | `~/.local/share/`, o un prefijo de Proton en `steamapps/compatdata` | Las capas de compatibilidad crean sus propias rutas de estilo Windows |
+| Consolas | Almacenamiento del sistema, no accesible al usuario | Usa solo las herramientas de nube o copia de seguridad de la propia consola |
+| Móvil | El entorno aislado privado de la aplicación | Requiere una copia de seguridad completa del dispositivo o acceso root |
+
+Un truco práctico y rápido: busca en tu disco los archivos modificados recientemente justo después de guardar en el juego. Ordenar por fecha de modificación normalmente te señalará directamente la carpeta, incluso si el juego la oculta bajo un nombre críptico.
+
+### Comprobar si la sincronización en la nube ya te está protegiendo
+
+Antes de crear una rutina manual de copias de seguridad, confirma si tu plataforma ya está sincronizando. El centro de ayuda oficial de Steam Support explica cómo se comportan las partidas en la nube, incluido cómo saber cuándo ha fallado una sincronización. Si la sincronización en la nube está activa, tu riesgo principal pasa de "perder el archivo" a "sincronizar la versión equivocada sobre la correcta", que es un problema distinto con una solución distinta.
+
+## Cómo hacer copias de seguridad y restaurar tu progreso de forma segura
+
+Una copia de seguridad solo es útil si realmente se puede restaurar. Sigue el orden que aparece a continuación para no sobrescribir nunca un archivo bueno con uno malo.
+
+| Paso | Acción | Por qué importa |
+|---|---|---|
+| 1 | Cierra el juego por completo | Evita escrituras parciales mientras copias |
+| 2 | Localiza la carpeta de guardado | Confirma que la marca de tiempo se actualiza al guardar |
+| 3 | Copia toda la carpeta, no un solo archivo | Los ajustes y el progreso suelen estar separados |
+| 4 | Comprímela en un zip y etiquétala con la fecha | Hace que las versiones sean fáciles de distinguir después |
+| 5 | Guarda dos copias en dos ubicaciones | Disco local más externo o nube |
+| 6 | Prueba una restauración una vez, a propósito | Una copia de seguridad que nunca has probado es una suposición |
+
+Ese último paso es el que la mayoría de los jugadores se salta. Si nunca restauras una copia de seguridad, no sabes si copiaste el directorio correcto hasta el momento en que lo necesitas desesperadamente.
+
+Los informes de la comunidad sobre juegos con mucha progresión apuntan siempre al mismo patrón de fallo: los jugadores hacen copia de una carpeta que resulta contener solo ajustes, y luego descubren que los datos de progreso reales están en otro sitio completamente distinto. Verifícalo sin borrar nada: en su lugar, renombra la carpeta temporalmente y lanza el juego para ver si empieza desde cero.
+
+## Descargar un archivo de guardado de Course to Venus: riesgos y realidades
+
+Buscar una partida ya hecha es un movimiento habitual cuando una etapa parece imposible. A veces funciona, pero las contrapartidas son reales y merece la pena entenderlas antes de meter un archivo en la carpeta de tu juego.
+
+| Riesgo | Qué puede pasar realmente | Cómo reducirlo |
+|---|---|---|
+| Malware | Un ejecutable disfrazado de datos de guardado | Las partidas reales son archivos de datos: nunca ejecutes un `.exe` desconocido |
+| Incompatibilidad de versión | El juego se niega a cargarla o se bloquea al iniciarse | Haz que la partida coincida con tu versión exacta del juego |
+| Indicadores de logros rotos | Los trofeos o logros no se desbloquean, o lo hacen de forma extraña | Acepta que algunos marcadores de progreso no se activarán |
+| Datos corruptos o editados a mano | Bloqueos, partidas atascadas, contenido inaccesible | Mantén tu archivo original intacto y aparte |
+| Problemas con los términos de servicio | Restricciones en juegos con modos en línea o clasificatorios | Evita partidas importadas en contextos competitivos |
+
+Si importas una partida, hazlo en este orden: primero haz copia de tu propio archivo, coloca el archivo descargado en una carpeta de preparación, lanza el juego sin conexión y solo entonces confirma que el juego lo lee correctamente. La experiencia de los jugadores sugiere que la mayoría de las quejas de "el archivo de guardado no funciona" se reducen a colocar el archivo una carpeta demasiado arriba o demasiado abajo.
+
+### Una opción mejor como primer paso: reconstruir con un plan
+
+Si tu objetivo es simplemente volver a donde estabas, una repetición específica suele ser más rápida que solucionar los problemas de un archivo descargado. Prioriza primero los puntos de control de la historia, después los desbloqueos que limitan el acceso al contenido y, por último, los coleccionables, la mayoría de los cuales se pueden recoger en una única pasada de limpieza dedicada una vez que todo lo demás esté hecho.
+
+## Arreglar un archivo de guardado de Course to Venus corrupto o revertido
+
+La corrupción rara vez ocurre por razones misteriosas. Las escrituras interrumpidas, un disco lleno, la interferencia del antivirus y los conflictos en la nube cubren la gran mayoría de los casos.
+
+| Síntoma | Causa probable | Primera solución que probar |
+|---|---|---|
+| "Los datos de guardado están corruptos" al iniciar | Escritura interrumpida o error de disco | Restaura tu copia de seguridad más reciente |
+| Progreso revertido varias horas | La sincronización en la nube trajo un archivo más antiguo | Compara las marcas de tiempo locales y de la nube |
+| La partida no se detecta en absoluto | Perfil de usuario o carpeta incorrectos | Confirma el ID de perfil en la ruta del archivo |
+| El juego no guarda | Carpeta de solo lectura, permisos o disco lleno | Comprueba los permisos y el espacio libre |
+| Los logros dejaron de aparecer | Los indicadores importados se saltaron los activadores | Vuelve a conseguir los hitos específicos |
+
+Si tu plataforma ofrece una opción de "verificar la integridad de los archivos del juego", ejecútala antes que nada. Repara los datos del juego que faltan sin tocar tu progreso, lo que descarta toda una categoría de falsas alarmas.
+
+## Preguntas frecuentes
+
+**¿Puedo mover un archivo de guardado de Course to Venus entre dos ordenadores?**
+Normalmente sí, si ambas máquinas ejecutan la misma versión del juego a través de la misma tienda. Copia toda la carpeta de guardado en lugar de un solo archivo, y asegúrate de pausar primero la sincronización en la nube en la segunda máquina; de lo contrario, podría sobrescribir lo que acabas de copiar.
+
+**¿Es seguro descargar el archivo de guardado de otra persona?**
+Los datos en sí suelen ser inofensivos, pero el método de distribución es donde vive el peligro. Cíñete a comunidades de confianza, nunca ejecutes un archivo que afirme ser una partida guardada y conserva siempre tu propia copia de seguridad para poder revertir los cambios.
+
+**¿Se seguirán desbloqueando los logros con una partida importada?**
+A menudo solo parcialmente. Los hitos que comprueban un indicador en el momento de completarse puede que nunca se activen porque el indicador se estableció antes de que el juego estuviera vigilando. Cuenta con volver a conseguir algunos si el porcentaje de finalización te importa.
+
+**¿Con qué frecuencia debería hacer copias de seguridad?**
+Después de cualquier sesión larga, antes de instalar actualizaciones y antes de probar cualquier partida importada. Tres segundos de copia superan a repetir una partida entera, y las copias versionadas te permiten retroceder a cualquier punto en lugar de solo al más reciente.

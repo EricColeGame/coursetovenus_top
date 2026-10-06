@@ -9,7 +9,14 @@
   "nav": {
     "home": "Home",
     "menu": "Menu",
-    "toggleTheme": "Toggle theme"
+    "toggleTheme": "Toggle theme",
+    "guide": "Guide",
+    "mechanics": "Mechanics",
+    "items": "Items",
+    "progression": "Progression",
+    "characters": "Characters",
+    "controls": "Controls",
+    "codes": "Codes"
   },
   "home": {
     "meta": {
@@ -418,7 +425,34 @@
       "secondary": "Play on itch.io"
     }
   },
-  "bosses": {},
+  "guide": {
+    "overviewTitle": "Course to Venus Guide: Walkthroughs & Beginner Tips",
+    "overviewDescription": "Step-by-step Course to Venus walkthroughs covering launch windows, ship systems, quests, and the choices that shape your run."
+  },
+  "mechanics": {
+    "overviewTitle": "Course to Venus Mechanics: Mission & Investigation Systems",
+    "overviewDescription": "How Course to Venus mission, investigation, and search-the-ship mechanics work, with practical tips for every system."
+  },
+  "items": {
+    "overviewTitle": "Course to Venus Items: Keys, Crowbar & Cryo Pod",
+    "overviewDescription": "Where to find every key item in Course to Venus, from the vent key and crowbar to the cryo pod and event key."
+  },
+  "progression": {
+    "overviewTitle": "Course to Venus Progression: Updates, Saves & Openings",
+    "overviewDescription": "Track Course to Venus progression, version updates, save files, and how to open locked paths as the story advances."
+  },
+  "characters": {
+    "overviewTitle": "Course to Venus Characters: Molly, Jenna & Zodiac",
+    "overviewDescription": "Meet the Course to Venus crew, including Molly, Jenna's zodiac sign, the ghost, and how relationships change your story."
+  },
+  "controls": {
+    "overviewTitle": "Course to Venus Controls: Vents & Interaction Basics",
+    "overviewDescription": "Course to Venus controls and interaction basics, including how to open vents and ventilation routes on the ship."
+  },
+  "codes": {
+    "overviewTitle": "Course to Venus Codes: Phone Code & Rewards",
+    "overviewDescription": "All working Course to Venus codes, including the phone code, plus how to redeem rewards and where new codes appear."
+  },
   "shared": {
     "wikiNavigation": "Wiki Navigation",
     "activeCodes": "Active Codes",

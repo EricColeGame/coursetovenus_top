@@ -1,0 +1,141 @@
+export const metadata = {
+  title: "Course to Venus Guide: Launch Windows, Trajectories, and Arrival Basics",
+  description: "A practical course to Venus guide covering launch windows, Hohmann transfers, delta-v budgets, and arrival options for reaching the second planet.",
+  category: "guide",
+  date: "2026-10-06",
+}
+
+## Why a Course to Venus Guide Is Worth Your Time
+
+Venus is the easiest planet to reach and one of the hardest to survive. That contradiction is exactly why a solid course to Venus guide matters: the cruise is short by interplanetary standards, but the arrival environment is unforgiving. Roughly every 19 months, Earth and Venus line up well enough to make the trip practical, and the outbound leg takes only about five months. Miss that alignment and you are waiting another year and a half for the next one.
+
+This course to Venus guide walks through launch windows, transfer geometry, delta-v budgeting, and arrival options so that your mission actually closes. Venus is also a busy destination. Several spacecraft have swung past it for gravity assists, and a new wave of dedicated missions is planned for the 2030s. Whether you are planning a real trajectory or flying one in a spaceflight simulator, the same handful of numbers drives every decision.
+
+## The Orbital Geometry Behind Any Course to Venus
+
+Venus orbits the Sun at roughly 0.72 astronomical units, or about 108 million kilometers. That puts it between Earth and the Sun, which means a transfer from Earth is an inward spiral rather than an outward climb. You are falling toward the Sun, not fighting your way away from it, and that changes the whole character of the mission.
+
+The cheapest route is a Hohmann transfer: an elliptical path that touches Earth's orbit at one end and Venus's orbit at the other. Half of that ellipse takes about 146 days, or just under five months. Because Earth and Venus only return to the correct relative positions once per synodic period — about 584 days — launch opportunities come around roughly every 19 months.
+
+Two details make Venus friendlier than most targets:
+
+- **Low inclination.** Venus's orbit is tilted only about 3.4 degrees relative to Earth's, so plane-change costs stay small.
+- **Short cruise.** Five months means less exposure to radiation, fewer trajectory correction maneuvers, and a smaller propellant margin.
+
+The catch is timing. At departure, Venus needs to sit roughly 54 degrees *behind* Earth's position, because it travels faster and will catch up during the transfer. Get that phase angle wrong and your spacecraft arrives at empty space.
+
+## Quick-Reference Numbers for a Venus Transfer
+
+These are the figures worth memorizing before you sketch a trajectory. Values are approximate and vary with the specific launch opportunity and chosen transfer type.
+
+| Metric | Typical value |
+|---|---|
+| Mean distance from the Sun | ~0.72 AU (about 108 million km) |
+| Closest approach to Earth | ~38–41 million km |
+| Synodic period (launch window spacing) | ~584 days (~19 months) |
+| Hohmann transfer time | ~146 days (~5 months) |
+| Departure hyperbolic excess velocity | ~2.5–3.5 km/s |
+| Arrival hyperbolic excess velocity | ~2.7–3 km/s |
+| One-way light time | ~2 to 15 minutes |
+| Surface pressure | ~92 times Earth sea level |
+| Mean surface temperature | ~465 °C (~870 °F) |
+| Atmospheric composition | ~96% carbon dioxide |
+
+Notice the arrival velocity. It is low enough that orbit insertion is affordable, which is why Venus has hosted so many orbiters. It is also high enough that you cannot ignore it.
+
+## Choosing a Transfer Type
+
+Not every mission wants the cheapest trajectory. A science orbiter cares about propellant; a crewed concept or a time-critical rendezvous cares about days. Here is how the main options compare.
+
+| Transfer type | Cruise time | Propellant cost | Best suited for |
+|---|---|---|---|
+| Hohmann, Type I | ~5 months | Lowest | Fuel-limited orbiters |
+| Hohmann, Type II | ~5–6 months | Lowest | Alternative arrival geometry |
+| Fast elliptical | ~3–4 months | Higher | Time-critical or crewed concepts |
+| Low-thrust spiral | 12+ months | High total, efficient use | Solar-electric demonstrations |
+| Gravity assist | Varies widely | Lowest | Flyby-focused science |
+
+Type I transfers sweep less than 180 degrees around the Sun; Type II sweeps more. Both reach Venus, but they arrive from different directions, which affects how much sunlight hits your solar arrays and how your communication geometry lines up.
+
+## Step-by-Step: Building Your Course to Venus
+
+Once you know the window, the build is procedural. This sequence works for a real mission concept and for a simulator run.
+
+| Phase | What happens | Planning note |
+|---|---|---|
+| 1. Window selection | Identify the launch period | Confirm the phase angle before anything else |
+| 2. Launch and parking orbit | Reach a stable low Earth orbit | Choose an orbit that matches your departure asymptote |
+| 3. Departure burn | Inject onto the transfer ellipse | This is the single largest burn of the mission |
+| 4. Cruise and corrections | Coast for ~5 months | Budget small burns for trajectory correction |
+| 5. Approach | Arrive at Venus's sphere of influence | Final targeting decides your arrival geometry |
+| 6. Arrival | Insert into orbit, aerobrake, or descend | Pick this before you launch, not after |
+
+A useful habit is to work backward. Decide what you want at Venus — a polar mapping orbit, a cloud-level probe, a surface lander — and let that define the arrival stage. The arrival stage then defines how much mass you can afford to carry, and that finally constrains your launch vehicle and departure burn.
+
+Community reports from spaceflight simulation circles often mention that the phase-angle step is where most first attempts fail. Players who nail the transfer geometry but skip arrival planning usually end up with a spacecraft that arrives with nothing left in the tanks.
+
+## Arrival Options and Their Real Costs
+
+Arrival is where a course to Venus gets interesting. The atmosphere that makes orbit insertion cheap for aerobraking missions is the same atmosphere that destroys anything descending too fast.
+
+| Arrival option | Approximate cost or risk | Notes |
+|---|---|---|
+| Highly elliptical orbit insertion | ~0.5–1 km/s | Low risk, excellent for global mapping |
+| Low circular orbit insertion | Several km/s | Expensive but ideal for close sensing |
+| Aerobraking | Saves significant propellant | Flown successfully by past Venus orbiters |
+| Aerocapture | Large savings, higher risk | Still largely unproven at Venus |
+| Direct entry, descent, landing | No insertion burn | Extremely demanding: ~92 bar and ~465 °C |
+
+Aerobraking works by dipping the spacecraft's lowest point into the upper atmosphere on successive orbits, bleeding off energy over weeks or months. It is slow but remarkably fuel-efficient, and it has been used at Venus before. Aerocapture compresses that process into a single pass, which saves even more propellant but demands precise atmospheric modeling.
+
+For surface missions, the engineering problem shifts entirely. A lander must survive crushing pressure, sulfuric acid clouds, and temperatures hot enough to melt some electronics. That is why so few spacecraft have touched the surface and none have lasted long.
+
+## Missions That Have Flown the Course to Venus
+
+The historical record is a good sanity check on any plan you draw up.
+
+| Mission | Type | Contribution |
+|---|---|---|
+| Magellan | Orbiter | Radar mapping of the surface through cloud |
+| Venus Express | Orbiter | Long-duration atmospheric and climate study |
+| Akatsuki | Orbiter | Studied atmospheric dynamics after a delayed arrival |
+| Parker Solar Probe | Flyby | Used Venus gravity assists to shape its solar orbit |
+| BepiColombo | Flyby | Used Venus for trajectory shaping en route to Mercury |
+| VERITAS, DAVINCI, EnVision | Planned | Next-generation orbital, atmospheric, and radar science |
+
+You can read more about the planet's physical characteristics on [NASA's Venus overview page](https://science.nasa.gov/venus/). If you want to see how real mission planners handle these trade-offs, that is a good starting point for background reading.
+
+## Common Planning Mistakes and How to Fix Them
+
+Most failed mission plans share the same few flaws. Here is a quick diagnostic table.
+
+| Mistake | Why it hurts | Fix |
+|---|---|---|
+| Ignoring the phase angle | Spacecraft arrives at empty space | Compute the ~54-degree lead before launch |
+| Treating arrival as an afterthought | No propellant left for insertion | Budget arrival first, then work backward |
+| Assuming one window per year | Wasted planning cycles | Remember the ~19-month synodic rhythm |
+| Underestimating the atmosphere | Aerobraking becomes destructive | Model density variability, not just averages |
+| Skipping correction maneuvers | Small errors compound over five months | Reserve propellant for at least two corrections |
+
+A few practical habits round this out:
+
+- **Build in margin.** Reserve propellant for corrections and contingencies; interplanetary cruises rarely go exactly as planned.
+- **Check communication geometry.** Light time to Venus ranges from roughly two to fifteen minutes, so real-time control is impossible.
+- **Decide the arrival mode early.** Orbit insertion, aerobraking, and landing demand completely different spacecraft designs.
+- **Study past missions.** Flight-proven approaches at Venus are well documented and cheaper than inventing new ones.
+
+## FAQ
+
+**How often can you launch on a course to Venus?**
+Roughly every 19 months, matching the 584-day synodic period. Within each window there is a range of acceptable departure dates, but the geometry narrows quickly as you move away from the optimal phase angle.
+
+**How long does the trip take?**
+A standard Hohmann transfer takes about 146 days, or just under five months. Faster, higher-energy trajectories can cut that to three or four months at the cost of significantly more propellant.
+
+**Is Venus easier to reach than Mars?**
+In terms of cruise time and launch energy, yes. Venus is closer and nearly coplanar with Earth, so transfers are shorter and cheaper. Arrival is a different story — the atmosphere and surface conditions make Venus far harsher once you get there.
+
+**Do I need a gravity assist to reach Venus?**
+No. A direct Hohmann transfer is well within the capability of a modest launch vehicle and a small upper stage. Gravity assists are useful for reshaping a trajectory or reaching Venus as part of a longer journey, but they are not required for the trip itself.
+
+Get the phase angle right, budget for arrival before you budget for launch, and the rest of the mission falls into place.

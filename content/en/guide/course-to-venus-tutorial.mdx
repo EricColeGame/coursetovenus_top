@@ -1,0 +1,142 @@
+export const metadata = {
+  title: "Course to Venus Tutorial: Plan, Launch, and Arrive at Venus Step by Step",
+  description: "A practical Course to Venus tutorial covering launch windows, transfer orbits, mid-course corrections, and arrival burns — plus the mistakes to avoid.",
+  category: "guide",
+  date: "2026-10-06",
+}
+
+Plotting a course to Venus is one of the most rewarding challenges in interplanetary navigation — and one of the most unforgiving. A solid Course to Venus tutorial has to answer three questions at once: when do you leave, how do you shape the transfer, and what happens when you arrive?
+
+Miss any one of those and you sail past the planet with no fuel left to correct. This Course to Venus tutorial walks through the orbital mechanics, the step-by-step sequence, and the mistakes that ruin most first attempts — whether you are designing a real mission or practicing in a spaceflight simulator.
+
+## What a Course to Venus Tutorial Actually Teaches
+
+A "course" in interplanetary flight is not a straight line. It is an orbit around the Sun that happens to touch Earth's orbit at one end and Venus's orbit at the other. Everything else in a Course to Venus tutorial is bookkeeping: figuring out when that orbit exists, how much energy it costs, and how to bend it when reality disagrees with your math.
+
+Venus is a good teaching target because the geometry is clean and the penalties for sloppiness are obvious. Earth sits about 1.00 AU from the Sun; Venus sits at about 0.72 AU. That gap defines the shape of your transfer ellipse and, indirectly, everything else.
+
+Four ideas do most of the work:
+
+- **Heliocentric transfer orbit.** After leaving Earth, your spacecraft coasts on an ellipse around the Sun. Earth sits near aphelion, Venus near perihelion.
+- **Phase angle.** Venus needs to be positioned so that it arrives at the meeting point at the same moment you do — which usually means it starts out "behind" Earth in its orbit.
+- **Synodic period.** Earth and Venus realign roughly every 584 days, which is how often a good departure window comes around.
+- **Sphere of influence.** Inside Venus's gravity well, the Sun becomes a background detail and the planet takes over the math entirely.
+
+Get those four right and the rest of the flight is refinement. Get them wrong and no amount of fuel will save the mission.
+
+## The Orbital Numbers Behind Every Course to Venus
+
+Before you plot anything in this Course to Venus tutorial, know your target. Venus is often called Earth's twin, but the similarities end at the diameter.
+
+| Parameter | Earth | Venus |
+|---|---|---|
+| Mean distance from the Sun | 1.00 AU | 0.72 AU |
+| Orbital period | 365.25 days | 224.7 days |
+| Earth–Venus synodic period | — | ~584 days |
+| Mean radius | 6,371 km | 6,052 km |
+| Surface gravity | 9.81 m/s² | 8.87 m/s² |
+| Escape velocity | 11.2 km/s | 10.4 km/s |
+| Atmosphere | ~78% N₂, 21% O₂ | ~96% CO₂, ~92 bar at the surface |
+| Mean surface temperature | ~15 °C | ~465 °C |
+
+Two rows in that table change mission design more than the rest. The 0.72 AU orbit means the transfer ellipse is short and fast — a one-way trip takes months, not years. The crushing atmosphere means arriving is easy and *staying* is hard, because anything you send down has to survive both the pressure and the heat.
+
+The other number that matters is hyperbolic excess velocity, often written as v-infinity. It describes how fast you are moving relative to Venus when you cross into its sphere of influence. Every arrival maneuver you plan is really a fight against that number.
+
+Here is a rough propulsion budget for an uncrewed orbiter, measured from low Earth orbit:
+
+| Maneuver | Approximate Δv | Notes |
+|---|---|---|
+| Trans-Venus injection | ~3.5 km/s | Leaves Earth's sphere of influence |
+| Mid-course correction | 10–50 m/s | One or two small burns |
+| Venus orbit insertion | ~2.5–3 km/s | If you capture propulsively |
+| Aerobraking to circularize | Near zero propellant | Takes weeks to months |
+| Surface to low orbit | ~27 km/s | Effectively impractical |
+
+Numbers like these explain why most real missions to Venus have been flybys, orbiters, or short-lived landers rather than sample returns. The delta-v to get there is manageable; the delta-v to leave is not.
+
+## Step-by-Step Course to Venus Tutorial: From Launch to Encounter
+
+Work through these steps in order. Skipping ahead — especially to the departure burn — is the single most common way a first attempt fails.
+
+| Step | Action | What to verify |
+|---|---|---|
+| 1 | Define your target orbit at Venus | Altitude, inclination, and whether you need an orbit at all |
+| 2 | Select the launch window | Phase angle between Earth and Venus |
+| 3 | Solve the transfer ellipse | Perihelion at Venus's orbit, aphelion near Earth's |
+| 4 | Execute the departure burn | Hyperbolic excess velocity vector, not just speed |
+| 5 | Coast and monitor | Predicted closest approach at Venus's sphere of influence |
+| 6 | Fly a mid-course correction | Aim point, not current position |
+| 7 | Arrive and capture | Propulsive insertion, aerocapture, or aerobraking |
+| 8 | Trim to final orbit | Small burns plus controlled atmospheric drag |
+
+### Steps 1–3: Design before you burn
+
+The transfer ellipse is fixed by two points: where you leave and where you arrive. Because Venus orbits closer to the Sun, your spacecraft is effectively climbing "downhill" in the Sun's gravity well for most of the cruise, losing speed relative to Earth the whole way.
+
+That is why departure energy is high and arrival velocity is even higher. The trajectory you choose at step 3 determines almost everything that follows — the size of your departure burn, the length of the cruise, and how much propellant you must reserve for arrival.
+
+### Steps 4–6: Flying the course
+
+Departure is a single burn where direction matters as much as magnitude. A tiny pointing error grows into a huge miss distance over millions of kilometers, which is exactly what mid-course corrections exist to fix.
+
+Budget two corrections: one early, once tracking data firms up, and one after your final trajectory determination. Both should be small. If either one is large, something upstream in the design was wrong.
+
+### Steps 7–8: Arrival
+
+Arrival is where a Course to Venus tutorial earns its keep. You can capture propulsively, aerobrake, aerocapture, or simply fly past. Each option trades propellant for risk, and each one changes how much mass you must launch in the first place.
+
+## Launch Windows and Mid-Course Corrections
+
+Venus windows come in two flavors, and choosing the wrong one costs you either time or fuel.
+
+| | Type I transfer | Type II transfer |
+|---|---|---|
+| Transfer angle | Less than 180° | Greater than 180° |
+| Typical flight time | ~4–5 months | ~6–8 months |
+| Departure energy | Higher | Lower |
+| Arrival velocity at Venus | Higher | Lower |
+| Best suited to | Faster missions | Fuel-limited missions |
+
+The window repeats roughly every 584 days, so a missed launch is not fatal — it is just expensive in patience. Community reports from simulator players suggest that most first attempts fail for the same reason: the departure burn is timed to Venus's *current* position rather than its position at arrival. Lead the target by the full flight time.
+
+Mid-course corrections are cheap insurance. A burn of a few tens of meters per second, executed a month or two out, can erase a miss distance measured in hundreds of thousands of kilometers. Wait until the last week and the same fix costs far more propellant, because you are changing your velocity vector at a point where the geometry gives you almost no leverage.
+
+Inclination deserves special attention here. If your transfer plane does not match Venus's orbital plane, the miss distance grows steadily no matter how good your timing is. The cheapest place to fix a plane error is early, while you still have Earth's orbital velocity working in your favor.
+
+## Arrival, Capture, and Common Mistakes
+
+| Capture method | Propellant cost | Risk | Best for |
+|---|---|---|---|
+| Propulsive orbit insertion | High | Low | Missions that must reach a precise orbit |
+| Aerocapture | Very low | High | Mass-constrained missions with heat shields |
+| Aerobraking | Very low | Moderate | Orbiters that can start in a high ellipse |
+| Flyby only | Zero | Low | Reconnaissance and gravity assists |
+
+Aerobraking is the compromise most mission planners reach for. Arrive in a high, safe ellipse, then skim the upper atmosphere repeatedly to bleed off energy over weeks. It is slow, but it is nearly free — and it turns an impossible propellant budget into a workable one.
+
+Finally, a short troubleshooting table drawn from community reports and common practice:
+
+| Mistake | Symptom | Fix |
+|---|---|---|
+| Launching outside the window | Arrival Δv balloons | Wait for the next synodic period |
+| Ignoring orbital inclination | Miss distance grows steadily | Fix the plane early, near Earth |
+| Aiming at Venus's current position | You arrive where Venus *was* | Lead the target by the flight time |
+| No arrival propellant budget | Forced flyby | Reserve capture Δv before launch |
+| Unmodeled aerobraking | Thermal or structural failure | Model the entry corridor conservatively |
+
+For authoritative background on the planet itself — atmosphere, temperature, and the results of past missions — see [NASA's Venus overview](https://science.nasa.gov/venus/). For the general theory behind transfer orbits, spheres of influence, and mid-course corrections, [NASA's Basics of Space Flight](https://science.nasa.gov/learn/basics-of-space-flight/) remains the standard reference.
+
+## FAQ
+
+**How long does a course to Venus take?**
+A Type I transfer typically runs about four to five months from Earth departure to Venus arrival, while a slower Type II transfer can stretch to six or eight months. Add extra time for aerobraking if you plan to circularize without propellant.
+
+**When is the next good launch window for a Course to Venus tutorial run?**
+Windows recur roughly every 584 days as Earth and Venus realign. If you miss one, running the same transfer geometry on the next window is a perfectly good exercise — and a good way to compare your timing against a known result.
+
+**Do I need to match Venus's orbit exactly?**
+No. Matching planes and altitudes costs propellant you rarely need. For most practice runs, a high elliptical capture orbit is enough to demonstrate the full sequence from departure through arrival.
+
+**Can I practice a Course to Venus tutorial in a simulator?**
+Yes, and it is the cheapest way to learn. Simulators let you fly the same transfer repeatedly, vary the departure burn, and watch how a tiny pointing error becomes a large miss — all without spending a real mission's budget or waiting 584 days for another window.

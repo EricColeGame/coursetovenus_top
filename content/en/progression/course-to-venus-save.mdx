@@ -1,0 +1,132 @@
+export const metadata = {
+  title: "Course to Venus Save Guide: Protect Your Progress and Never Lose a Run",
+  description: "Learn how a Course to Venus save works, what carries between runs, and a simple backup routine that protects hours of progression.",
+  category: "progression",
+  date: "2026-10-06",
+}
+
+## Why Your Course to Venus Save Deserves More Attention
+
+Few things sting more in a long-form space game than losing hours of progress because a Course to Venus save went sideways. Whether you are charting your first orbital transfer or grinding toward late-game content, your save file is the single most valuable asset on your drive — and also the most fragile. This guide explains how a Course to Venus save works, what actually carries between runs, and the backup habits that keep your progression intact when an update, a crash, or a cloud conflict tries to take it from you.
+
+The reason this matters is simple math. A save file takes seconds to copy and hours to recreate. Most players only think about their Course to Venus save after something breaks, at which point the only remaining options are damage control. Building a routine *before* you need it is the difference between a five-minute fix and restarting an entire route.
+
+## How Saving Works in Course to Venus
+
+Modern progression games rarely rely on a single save mechanic. Course to Venus is no exception: depending on your platform and the current build, you are likely juggling several overlapping systems at once. Understanding which one is responsible for your progress — and which one can silently overwrite it — is the foundation of good save hygiene.
+
+The important thing to internalize is that autosaves and manual saves are not equals. An autosave is a convenience that protects you from forgetting. A manual save is a decision you make. When the two collide, the game usually resolves the conflict in favor of whichever wrote last, which is not always whichever wrote best.
+
+| Save Type | Typical Trigger | Scope | Best Used For | Risk If It Fails |
+|---|---|---|---|---|
+| Autosave | Reaching a milestone or checkpoint | Overwrites a rotating slot | Long sessions, casual play | Silent overwrite of a good state |
+| Manual save | Player-initiated from the menu | A slot you control | Before risky encounters | Simply forgetting to use it |
+| Quick save | Hotkey or shortcut | Usually one rotating slot | Iterating on a hard section | Overwritten within minutes |
+| Checkpoint save | Passing an in-level marker | Session-scoped | Short play windows | Lost when the session ends |
+| Cloud sync | On exit or platform sync | Mirrors your local file | Playing across devices | Conflicts between two machines |
+| Rolling backup | System-generated (build dependent) | Shallow history | Recovery after corruption | Limited depth and retention |
+
+**Player experience** consistently points to one conclusion: the players who lose progress are rarely the ones who never saved. They are the ones who trusted a single system to do all the work.
+
+If you play through Steam, it is worth reading [Steam's official help documentation on Cloud saves](https://help.steampowered.com/en/) so you understand exactly when your local file is uploaded and what happens when two versions disagree.
+
+## What Actually Carries Over Between Runs
+
+Not all progression is stored in the same place. A Course to Venus save is often only one file among several, and the others — profile data, configuration files, and unlock records — can survive a save deletion or vanish along with it. Knowing the difference tells you what to back up and what to leave alone.
+
+| Progression Layer | Usually Persists? | Why It Matters |
+|---|---|---|
+| Story and route progress | Yes | Bound to your primary save slot |
+| Unlocked routes or endings | Usually yes | Often tracked in a separate profile file |
+| Currency and resources | Varies | Frequently resets on a new cycle |
+| Gear, upgrades, and unlocks | Usually yes | Check whether they are slot-bound |
+| Difficulty and settings | Yes | Stored in a config file, not the save |
+| Achievements and trophies | Yes | Handled at the platform level |
+
+### The New Cycle Question
+
+The most common source of frustration is assuming that starting a fresh cycle wipes everything. In most builds it does not. Permanent unlocks, cosmetic records, and completion flags typically live outside the run itself, which is why experienced players can start over without losing their entire history.
+
+### The Profile File Trap
+
+Community reports frequently describe a scenario where the main save loads fine but unlocks have reverted. The cause is usually a mismatched or missing profile file rather than a corrupted save. If you back up only one file, you have not really backed up your Course to Venus save — you have backed up part of it.
+
+## Building a Reliable Course to Venus Save Backup Routine
+
+A backup routine does not need to be complicated. It needs to be boring, repeatable, and slightly paranoid. The following five-step process takes under two minutes once you have done it once, and it covers the overwhelming majority of failure scenarios players actually encounter.
+
+| Step | Action | Frequency | Why It Matters |
+|---|---|---|---|
+| 1 | Locate your save directory | Once | You cannot protect a file you cannot find |
+| 2 | Copy the entire folder, not a single file | Before each session | Saves often depend on companion files |
+| 3 | Name backups with date and progress | Every backup | Makes rollback decisions fast |
+| 4 | Keep one copy off the device | Weekly | Survives drive failure or a bad update |
+| 5 | Pause cloud sync before restoring | When restoring | Stops the cloud overwriting your fix |
+
+### Step 1: Find the Real Save Location
+
+Save directories move. They can sit under your user profile, inside a platform-specific folder, or in a documents directory named after the game. Check the in-game menu first — many builds display the active save path — then confirm by sorting the folder by modification date while you play.
+
+### Step 2: Copy the Folder, Not the File
+
+This is the step most players skip, and it is the one that saves them. A Course to Venus save is frequently accompanied by settings, profile, and cache files. Copying a single file out of context can produce a save that loads into a default state.
+
+### Step 3: Use a Naming Convention
+
+"backup_final_final2" tells you nothing six weeks later. Use a format like `venus_2026-10-06_route3_42h`. Date, route, and playtime take four extra seconds and eliminate guesswork during a stressful restore.
+
+> **Tip:** Keep at least three generations of backup. Two is a coin flip; three gives you a fallback if your most recent copy was made after the problem started.
+
+## Troubleshooting a Missing or Corrupted Course to Venus Save
+
+When something goes wrong, the instinct is to reinstall or start over. Resist it. Most save problems are recoverable, and the order in which you try fixes matters more than the fixes themselves. Work from least destructive to most destructive.
+
+| Symptom | Likely Cause | What to Try First |
+|---|---|---|
+| Save not detected after an update | Save path or format changed | Check the new default directory, then restore a backup |
+| Hours of progress reverted | Cloud sync conflict | Disable sync, restore the local copy, re-enable |
+| Crash when loading a slot | Corrupted save data | Try the previous generation of backup |
+| Unlocks missing, story intact | Profile file mismatch | Restore the profile file alongside the save |
+| Save only works on one machine | Sync disabled or failing | Copy manually or re-authenticate the platform client |
+
+A few practical guardrails:
+
+- **Never overwrite your only backup.** Restore into a new folder first and confirm the game reads it.
+- **Verify game files** before assuming your save is the problem. A broken install mimics save corruption convincingly.
+- **Read patch notes** after major updates. Save-format changes are usually mentioned, and knowing early saves you a panic.
+- **Screenshot your progress screen** periodically. It is not a backup, but it settles arguments about what you had.
+
+If a restore fails completely, community reports suggest that support channels can sometimes help when you can describe your route, playtime, and platform precisely — which is exactly what a good backup naming convention gives you.
+
+## Habits That Keep Long-Term Progression Safe
+
+Progression in a game like this is measured in dozens of hours, not minutes. That scale changes what "safe" means. A player twenty hours in has very different risk tolerance than someone on their first run, and the habits worth building are the ones that scale with investment.
+
+| Player Stage | Recommended Backup Frequency | Priority |
+|---|---|---|
+| First few hours | Before quitting each session | Learning the save system |
+| Mid-progression | Before and after major milestones | Protecting earned unlocks |
+| Late game | Before every risky encounter | Avoiding catastrophic loss |
+| Post-completion | Once per session | Preserving records and achievements |
+
+### Separate "Experiment" Saves From "Real" Saves
+
+If the game allows multiple slots, use one for experimentation and one you never touch with risky choices. This single habit eliminates most self-inflicted Course to Venus save losses, because you always have a clean state to fall back on.
+
+### Treat Updates Like Weather
+
+You do not need to fear patches, but you should prepare for them. Back up before a major update lands, then confirm your save loads correctly afterward. If it does not, you now have a clean pre-update copy and a clear timeline for support.
+
+## FAQ
+
+**Does Course to Venus save automatically?**
+In most builds, yes — autosaves trigger at milestones and checkpoints. However, autosaves typically rotate through a small number of slots, so a manual save before anything risky is still the safer habit. Treat autosave as a safety net, not a strategy.
+
+**Can I move a Course to Venus save between devices?**
+Usually, yes, provided cloud sync is enabled and both devices are signed into the same account. If you prefer manual control, copy the entire save folder rather than individual files. Always confirm the transferred save loads before deleting the original.
+
+**What happens to my Course to Venus save after a major update?**
+It usually continues to work, but save-format changes do occur. Back up before installing any significant patch, then load your most advanced slot immediately afterward to confirm everything carried over. If something looks wrong, stop playing and restore from backup before autosave overwrites it.
+
+**How many backups of a Course to Venus save should I keep?**
+Three generations is a good baseline: your current state, the previous milestone, and one older copy kept off-device. Storage is cheap and progression is not. Rotate the oldest copy out only after you have confirmed the newest one loads correctly.

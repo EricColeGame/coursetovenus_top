@@ -1,0 +1,130 @@
+export const metadata = {
+  title: "Course to Venus Open Vent Guide: Controls, Prompts, and Quick Fixes",
+  description: "Master the Course to Venus open vent controls on PC, console, and handheld, plus fixes for missing prompts and sealed vents.",
+  category: "controls",
+  date: "2026-10-06",
+}
+
+If you have ever stood in front of a sealed grate while your co-op partner sprinted off without you, you already know how much one missed input can cost. The **Course to Venus open vent** interaction is the first real test of whether you have internalized the control scheme, and it gates shortcuts, optional loot rooms, and at least one route most players treat as mandatory. Nail it early and the run flows; fumble it and you will spend ten minutes backtracking through corridors you already cleared.
+
+The good news is that the **Course to Venus open vent** mechanic is not complicated once you understand three things: which vents respond to a simple interact press, which ones need a tool or a pressure change first, and why the prompt sometimes refuses to appear at all. This guide covers the controls on every platform, the step-by-step sequence, and the fixes that players actually report working.
+
+## What the Course to Venus Open Vent Interaction Actually Does
+
+Vents in Course to Venus are not decoration. They are the game's primary traversal shortcut system, and they double as a soft puzzle gate that teaches you to read the environment before you act. A vent you cannot open is usually telling you something — that the room is still pressurized, that a lever elsewhere is untouched, or that you are standing a half-step too far away for the interaction volume to register.
+
+Understanding the categories matters more than memorizing a single button, because the Course to Venus open vent prompt changes depending on what the game expects from you.
+
+| Vent type | What it does | Typical interaction | Why players get stuck |
+|---|---|---|---|
+| Standard grate vent | Opens a one-way shortcut between rooms | Single interact press | Standing outside the interaction radius |
+| Pressure-sealed vent | Equalizes a compartment before opening | Release pressure, then interact | Prompt stays hidden until pressure drops |
+| Bolted maintenance vent | Requires a tool or lever to loosen | Equip tool, then hold interact | Tool not equipped when the prompt appears |
+| Timed exhaust vent | Only opens during an active cycle | Interact inside the timing window | Missing the window and waiting a full cycle |
+| Concealed vent | Hidden until scanned or lit | Scan or illuminate, then interact | Never scanning the wall in the first place |
+
+If you only remember one row, remember the second. Pressure-sealed vents are the single most common reason a player believes their controls are broken when they are not.
+
+## Default Controls for Opening a Vent on Every Platform
+
+The default bindings are deliberately consistent across platforms, which is why most players never need to touch the settings menu. That said, Course to Venus has been patched repeatedly, so treat the table below as the expected layout and confirm it against your own in-game control list before you blame your hardware.
+
+| Action | Keyboard & mouse | Controller | Touch / handheld |
+|---|---|---|---|
+| Aim at the vent | Mouse look | Right stick | Drag on screen |
+| Interact / open vent | E | A / X / Cross | On-screen interact button |
+| Hold to open (sealed vents) | Hold E | Hold face button | Press and hold |
+| Equip or cycle tool | Number keys or mouse wheel | D-pad | Inventory tap |
+| Scan or illuminate | F or designated scan key | Shoulder button | Toggle icon |
+| Cancel or back out | Esc or right-click | B / Circle | Back button |
+
+A few practical notes that save time:
+
+- **Interaction range beats accuracy.** You do not need to pixel-hunt the grate. You need to be inside the vent's activation volume, which is usually about one body length.
+- **Hold versus tap is contextual.** Sealed and bolted vents use a hold; standard grates use a tap. If a tap does nothing, try holding before you try anything else.
+- **Tools must be equipped, not just owned.** Carrying a tool in your inventory does not change the prompt. Equip it first.
+- **Rebinding is allowed.** If your interact key conflicts with another action, move it. Conflicts are a real and underdiagnosed cause of "dead" inputs.
+
+For a quick sanity check on which platforms and builds are currently live, the [Steam store search listing for Course to Venus](https://store.steampowered.com/search/?term=Course+to+Venus) is the fastest place to confirm availability before you start troubleshooting a version you do not actually own.
+
+## Step-by-Step: How to Open a Vent in Course to Venus
+
+Follow this sequence in order. Skipping ahead is the reason most failed attempts happen.
+
+1. **Stop moving before you press anything.** Momentum can carry you out of the interaction volume mid-press.
+2. **Look directly at the vent face.** Off-angle looks can leave the prompt suppressed on some builds.
+3. **Read the prompt verb, not just its presence.** "Open," "Release," and "Pry" are three different actions with three different requirements.
+4. **Equip the right tool if the verb implies force.** Pry prompts want a tool; open prompts do not.
+5. **Tap for standard vents, hold for sealed or bolted ones.** Give the hold a full second before releasing.
+6. **Watch for a pressure or cycle indicator.** If a gauge is climbing, wait for it to settle rather than mashing the button.
+7. **Confirm the vent actually latched.** A vent that opens and immediately reseals means you were outside the timing window.
+
+| Step | What you should see | The mistake that breaks it |
+|---|---|---|
+| 1 | Player stands still | Pressing interact while sprinting past |
+| 2 | Prompt appears centered | Looking at the floor or a nearby pipe |
+| 3 | Correct verb displayed | Assuming every prompt means "open" |
+| 4 | Tool icon active in the HUD | Tool owned but holstered |
+| 5 | Progress ring fills | Tapping instead of holding |
+| 6 | Gauge settles or stops flashing | Ignoring the pressure readout |
+| 7 | Grate stays open | Walking away before the latch animation ends |
+
+If you do all seven and the vent still will not budge, you are almost certainly dealing with a puzzle gate rather than a control problem. Something upstream — a valve, a breaker, or a companion action — has not been triggered yet.
+
+## Troubleshooting When the Course to Venus Open Vent Prompt Won't Appear
+
+This is the most common complaint in any controls thread, and in nearly every case the cause is environmental rather than technical. Work down this table before you touch your settings.
+
+| Symptom | Likely cause | Fix |
+|---|---|---|
+| No prompt at all | Outside the interaction volume | Step closer and stop moving |
+| Prompt flickers on and off | You are drifting in and out of range | Stand still and re-aim |
+| Prompt shows but nothing happens | Input conflict from a rebound key | Reset to defaults or rebind interact |
+| Vent opens then reseals | You missed a timed exhaust window | Wait for the next cycle and watch the gauge |
+| Wrong verb displayed | Tool not equipped | Equip the tool, then re-aim |
+| Only one player can open it | Host-authoritative interaction | Let the host trigger it in co-op |
+| Prompt vanishes mid-hold | You moved during the hold | Keep still until the ring completes |
+
+Two additional checks are worth doing if nothing above helps:
+
+- **Restart the session, not just the level.** Interaction state occasionally desyncs in co-op, and a fresh session resolves it more reliably than a checkpoint reload.
+- **Verify your input device.** A controller with stick drift can quietly push you out of range while you are certain you are standing still.
+
+Community reports consistently describe the same pattern: the vent was never broken, the player was simply a step too far away or a second too early.
+
+## Advanced Tips and Player Experience Notes
+
+Once the basics are automatic, vents stop being obstacles and start being tools. The table below reflects the habits that experienced players describe when they talk about routing.
+
+| Situation | Recommended approach | Why it works |
+|---|---|---|
+| Speed-running a known route | Chain standard grates without stopping | Tap interactions have no wind-up |
+| Co-op with a slower partner | Have one player hold the vent open | Keeps the shortcut available for both |
+| Optional loot rooms | Scan walls before moving on | Concealed vents hide high-value routes |
+| Low-visibility sections | Illuminate, then interact | Prompt visibility is tied to lighting on some builds |
+| Backtracking after a death | Re-check sealed vents | Pressure states can reset on respawn |
+
+A few habits worth building, drawn from player experience rather than any official documentation:
+
+- **Bind interact to a key your hand rests on anyway.** Reducing travel time to the button noticeably reduces missed prompts.
+- **Treat every dead end as a potential vent wall.** The concealed vents are placed where players naturally stop and look around.
+- **Do not mash.** Course to Venus rewards deliberate input. Repeated presses during a hold animation cancel the hold on most builds.
+- **Log your own failures.** If you miss the same vent twice, it is almost always a puzzle gate, not your reflexes.
+
+Because the game has been tuned across multiple updates, treat any specific binding or timing as a starting point rather than gospel. The underlying logic — read the verb, respect the hold, check the gauge — has stayed consistent even as the surrounding systems changed.
+
+## FAQ
+
+**What button opens a vent in Course to Venus?**
+The default interact input is E on keyboard and mouse, and the bottom face button (A, X, or Cross) on a controller. Sealed and bolted vents require you to hold that input rather than tap it. If your prompt shows a different verb such as "Pry," equip a tool first.
+
+**Why isn't the Course to Venus open vent prompt showing up?**
+In the overwhelming majority of cases you are standing outside the interaction volume. Stop moving, step closer, and aim directly at the vent face. If the prompt still does not appear, check whether the compartment is still pressurized or whether a valve elsewhere has not been triggered.
+
+**Do I need a special tool to open vents?**
+Only for bolted maintenance vents, which display a force-related verb. Standard grates and pressure-sealed vents never require a tool. The tool must be actively equipped, not simply carried in your inventory.
+
+**Can I change the interact key?**
+Yes. Rebinding is supported on PC and is often the fix when a vent prompt appears but pressing the button does nothing. Input conflicts between interact and another action are a common, easily missed cause of a "broken" vent.
+
+Get the controls into muscle memory, learn to read the prompt verb instead of reacting to its presence, and the Course to Venus open vent mechanic stops being a roadblock and becomes the fastest route through the map.

@@ -1,0 +1,101 @@
+export const metadata = {
+  title: "Course to Venus Finding: Transfer Windows, Delta-V, and Capture Tips",
+  description: "Master course to Venus finding in space sims: phase angles, transfer windows, delta-v budgets, and capture burns that get you to Venus on the first try.",
+  category: "mechanics",
+  date: "2026-10-06",
+}
+
+## Why the Course to Venus Finding Phase Decides Your Whole Mission
+
+Venus makes the closest approach to Earth of any planet — roughly 38 million kilometers at its nearest — and that is exactly why the course to Venus finding process fools so many first-time pilots. The trip itself is short. The timing is not. A minimum-energy transfer from Earth to Venus takes about five months, and the alignment that makes it possible repeats only once every 584 days.
+
+Miss the window and no amount of fuel rescues you; you will burn thousands of meters per second of delta-v chasing a planet that has already moved on. Hit it, and the course to Venus finding stage of your mission collapses into a repeatable checklist: pick the window, shape the transfer ellipse, budget the burn, and correct early.
+
+This guide breaks down the mechanics behind course to Venus finding — phase angle, transfer geometry, delta-v budgets, and arrival capture — in terms that work whether you are flying a spaceflight sim or studying how real missions are planned. If you want a baseline on the destination itself, [NASA's Venus overview](https://science.nasa.gov/venus/) is the best place to start.
+
+## The Orbital Mechanics Behind Course to Venus Finding
+
+Two numbers drive everything: how fast the target planet moves, and where it will be when you arrive. Venus completes an orbit every 224.7 days at about 35 km/s. Earth takes 365.25 days at roughly 29.8 km/s. That speed gap is the entire reason a transfer window exists.
+
+| Property | Earth | Venus |
+|---|---|---|
+| Mean distance from Sun | 1.000 AU (149.6 million km) | 0.723 AU (108.2 million km) |
+| Orbital period | 365.25 days | 224.7 days |
+| Mean orbital speed | ~29.8 km/s | ~35.0 km/s |
+| Orbit inclination to ecliptic | 0° (reference) | ~3.4° |
+| Synodic period with Earth | — | ~584 days |
+
+A minimum-energy Hohmann transfer is an ellipse that begins at Earth's orbit (the ellipse's aphelion) and ends at Venus's orbit (its perihelion). Your spacecraft sweeps exactly 180° around the Sun to get there.
+
+| Transfer parameter | Approximate value |
+|---|---|
+| Transfer ellipse semi-major axis | 0.861 AU |
+| Time of flight | ~146 days (~4.8 months) |
+| True anomaly swept | 180° |
+| Required departure phase angle | ~54° (Venus trailing Earth) |
+| Window recurrence | ~584 days (~19 months) |
+| Arrival hyperbolic excess velocity | ~2.7 km/s |
+
+During those 146 days, Venus covers roughly 234° of its own orbit while you cover 180°. That is where the 54° figure comes from: Venus has to start out behind Earth so it can catch up to the encounter point at the same moment you arrive.
+
+Because Venus's orbit is tilted only about 3.4° from the ecliptic, plane changes are cheap compared with a trip to a steeply inclined target. That is one reason course to Venus finding is often the first interplanetary transfer a new pilot should master — the geometry is forgiving in every dimension except time.
+
+## A Step-by-Step Course to Venus Finding Workflow
+
+The sequence below works in most spaceflight simulators and mirrors how real mission designers phase a trajectory.
+
+| Step | Action | Why it matters |
+|---|---|---|
+| 1 | Park in a low, circular, near-equatorial orbit | A low parking orbit maximizes the Oberth effect, so your ejection burn buys more energy per unit of propellant |
+| 2 | Wait until the phase angle reaches roughly 54° | Launching early or late wastes delta-v that no correction burn can recover |
+| 3 | Eject from the sunward side of your orbit | To fall inward you must shed heliocentric speed, so the departure hyperbola points opposite the planet's motion around the Sun |
+| 4 | Tune the maneuver node until the transfer ellipse's perihelion touches Venus's orbit | Small node adjustments now are far cheaper than fixes later |
+| 5 | Check inclination before you commit | A plane mismatch caught at departure costs meters per second; caught at arrival, it costs hundreds |
+| 6 | Fly a mid-course correction about a third of the way out | Corrections are cheapest when the required vector change is tiny and you are still far from the target |
+| 7 | Brake at closest approach, or aerobrake if your sim models atmospheres | Arrival is where most of your remaining delta-v goes |
+
+The most common symptom of a bad workflow is arriving at the right place at the wrong time — your trajectory reaches Venus's orbit, but the planet is a few million kilometers ahead or behind. That is almost always a phase-angle error at departure, not an arrival problem, so resist the urge to fix it with a huge capture burn.
+
+## Delta-V Budget: What Course to Venus Finding Actually Costs
+
+Numbers below are approximations and shift with parking-orbit altitude, launch vehicle, and how aggressively you target the arrival. Treat them as planning baselines, not exact figures.
+
+| Maneuver | Typical cost | Notes |
+|---|---|---|
+| Departure from low Earth orbit (trans-Venus injection) | ~3.5 km/s | Lower parking orbits reduce this thanks to the Oberth effect |
+| Mid-course correction | 10–100 m/s | Two or three small corrections beat one large one |
+| Venus orbit insertion into a low circular orbit | ~3.4 km/s | Aerobraking can replace most of it where atmospheres are modeled |
+| Plane change and targeting tweaks | 50–200 m/s | Cheap because Venus's orbit is only ~3.4° off the ecliptic |
+| Total, low Earth orbit to low Venus orbit | ~7 km/s | Rough figure; arrival targeting choices move it noticeably |
+
+The arrival leg deserves special attention. Your spacecraft reaches Venus with a hyperbolic excess velocity of roughly 2.7 km/s, and all of that has to be removed before you can settle into orbit. Venus's thick atmosphere makes aerobraking attractive, and real missions have used atmospheric drag to circularize after capture. Aerocapture — diving straight in and using the atmosphere to do the whole job — is faster but leaves almost no margin for error, so most players treat it as an advanced maneuver.
+
+## Corrections, Capture, and Mistakes That Sink a Course to Venus Finding Run
+
+Community reports from players of *Kerbal Space Program*, *Spaceflight Simulator*, and similar titles keep circling back to the same handful of errors.
+
+| Mistake | Symptom | Fix |
+|---|---|---|
+| Launching outside the window | Enormous correction burn, or a flyby that misses entirely | Wait for the ~584-day alignment; a wrong window cannot be rescued with fuel |
+| Circularizing at the wrong altitude | Capture burn balloons far beyond the plan | Aim for the lowest periapsis that still clears the atmosphere |
+| Ignoring inclination until arrival | Plane-change burn costs 5–10x more than it needed to | Fix the plane early, while the vector change is small |
+| Delaying corrections | Every extra day of coast makes the fix more expensive | Correct at roughly the first third of the outbound leg |
+| Over-braking on arrival | You burn too long and drop into the atmosphere | Cut the burn at the planned periapsis and re-circularize at apoapsis |
+
+One more habit separates clean runs from messy ones: save before the ejection burn. Phase-angle math is unforgiving, and a quicksave at the parking orbit lets you retry the window with a slightly different node instead of flying the whole transfer again.
+
+It is also worth knowing that Venus doubles as a gravity-assist waypoint for missions heading deeper into the inner solar system. Real spacecraft have used Venus flybys to shed orbital energy and reshape their trajectories toward Mercury and the Sun, and the same trick works in most sims once you can hit a Venus encounter reliably.
+
+## FAQ
+
+**What is the ideal phase angle for course to Venus finding?**
+For a minimum-energy Hohmann transfer, Venus should be roughly 54° behind Earth at departure. That geometry lets the planet arrive at the encounter point at the same moment your spacecraft does, about 146 days later.
+
+**How much delta-v does a trip to Venus require?**
+Plan on roughly 7 km/s total from low Earth orbit to low Venus orbit: about 3.5 km/s to leave, plus a similar amount to brake at arrival. Aerobraking can cut the arrival cost substantially where your sim models atmospheric drag.
+
+**Why does my course to Venus finding attempt keep missing the planet?**
+Nine times out of ten it is a timing error, not a trajectory error. If your transfer ellipse reaches Venus's orbit but the planet is not there, the phase angle at departure was wrong. Recalculate the window rather than burning extra fuel mid-flight.
+
+**Is Venus harder to reach than Mars?**
+The transfer is shorter and the plane change is smaller, but the window is less forgiving because Venus moves faster and the arrival velocity is higher. Many players find Venus easier to reach and harder to stop at — a useful distinction when you plan your propellant budget.

@@ -1,0 +1,146 @@
+export const metadata = {
+  title: "Course to Venus Mechanic Explained: Transfer Windows, Delta-V, and Aerobraking",
+  description: "Learn how the Course to Venus mechanic works, from transfer windows and delta-v budgets to aerocapture, with tables, tips, and common mistakes.",
+  category: "mechanics",
+  date: "2026-10-06",
+}
+
+Few interplanetary routes punish sloppy timing like the run to our inner neighbor, and the **Course to Venus mechanic** is where that lesson hits hardest. Get your departure window right and the trip costs almost nothing; get it wrong and you burn propellant you cannot replace. Understanding the **Course to Venus mechanic** is the difference between a clean orbital insertion and a silent, sunward drift into nothing.
+
+## What Is the Course to Venus Mechanic?
+
+The **Course to Venus mechanic** is the set of systems a game uses to let you plan, fly, and correct an interplanetary transfer from Earth to Venus. It is rarely a single button. In most spaceflight simulations it is a loop: a trajectory planner shows where the planets will be at any future date, a maneuver scheduler lets you spend propellant, and a physics model then carries your ship wherever the math says it goes.
+
+That last part is what makes it interesting. A well-built Course to Venus mechanic does not forgive sloppy planning. There are no invisible rails, no rubber-banding, and no second chances once you are coasting sunward with an empty tank.
+
+### What the mechanic usually contains
+
+| Component | What it does | Why it matters |
+|---|---|---|
+| Transfer planner | Projects planetary positions over time | Reveals viable departure windows |
+| Maneuver nodes | Let you schedule burns at exact times | Converts planning into action |
+| Delta-v readout | Shows the cost of each burn | Turns guesswork into budgeting |
+| Time warp / coast | Advances the simulation | Keeps a 146-day cruise playable |
+| Capture tools | Aerobrake, aerocapture, or retro-burn | Determines whether you stay or fly past |
+
+Not every title implements all five. Arcade-leaning games often compress the middle steps and hand you a single "set course" prompt. Simulation-leaning titles expect you to build the entire plan yourself. Either way, the underlying logic is the same, and that logic is what trips up new players.
+
+### Why designers build it this way
+
+Interplanetary travel is a timing puzzle, not a distance puzzle. Venus is not far away the way a mountain is far away; it is far away the way a train is far away when you reach the platform two minutes after it leaves. The Course to Venus mechanic exists to make that abstraction playable — to let you read the timetable, buy a ticket, and then live with the consequences of your timing.
+
+## The Core Loop: How a Course to Venus Run Plays Out
+
+Every successful run through the Course to Venus mechanic follows the same five-stage loop, whether you are playing a hard simulation or a streamlined arcade version.
+
+| Stage | Player action | What it tests | Common failure |
+|---|---|---|---|
+| 1. Window scan | Read the transfer planner | Understanding of orbital timing | Departing on a random date |
+| 2. Departure burn | Execute the trans-Venus injection | Precision and fuel discipline | Over-burning and wasting delta-v |
+| 3. Coast | Time-warp and monitor | Patience and mid-course correction | Ignoring small errors until too late |
+| 4. Arrival | Aerocapture, aerobrake, or burn | Risk assessment | Flying past Venus entirely |
+| 5. Insertion | Circularize into your target orbit | Planning for the endgame | Arriving with no fuel left |
+
+### Stage 1: Reading the window
+
+The planner is where the trip is won or lost. Look for the date when Earth and Venus line up correctly, not the date when they are closest in a straight line. Those two dates are different, and confusing them is the single most common beginner error.
+
+### Stage 2: The departure burn
+
+Departure burns are usually best performed at the lowest safe point of your parking orbit. This is the Oberth effect: a burn made while moving fast converts propellant into orbital energy more efficiently than the same burn made while moving slowly. Burn early in the orbit and you will pay more for less.
+
+### Stage 3: Mid-course corrections
+
+Small errors compound over 146 days of coasting. A correction of a few dozen meters per second early in the cruise can save you hundreds later. Player experience suggests correcting at least once around the halfway point, even when the trajectory looks perfect on the screen.
+
+### Stage 4: Arrival
+
+Arriving at Venus is the hard part. You are moving fast, and Venus is not going to slow down for you. This is where the mechanic stops being about arithmetic and starts being about nerve.
+
+### Stage 5: Insertion
+
+The final burn determines your orbit. Get it right and you have a science platform, a refueling stop, or a staging point for the outer system. Get it wrong and you have an expensive comet.
+
+## Timing, Windows, and the Delta-V Budget
+
+Two numbers dominate the Course to Venus mechanic: when you leave, and how much it costs. The table below lists the approximate real-world values that most simulations are built on.
+
+| Value | Approximate figure | Why it matters |
+|---|---|---|
+| Earth–Venus synodic period | About 584 days | How often a good window returns |
+| Hohmann transfer time | About 146 days | Length of the cruise phase |
+| Required phase angle at departure | Roughly 54° (Venus trailing) | Accuracy needed at launch |
+| Venus orbital period | About 225 days | Governs target motion |
+| Earth orbital period | About 365 days | Governs departure motion |
+
+Because the synodic period is longer than the transfer itself, you cannot simply leave whenever you like and expect a cheap route. Miss a window and you are waiting roughly a year and a half for a comparable one, or paying a heavy propellant penalty for an off-window trajectory.
+
+### The delta-v budget
+
+Delta-v is the currency of the Course to Venus mechanic. Every burn spends it, and there is no bank to borrow from mid-flight.
+
+| Maneuver | Typical cost (real-world reference) | Notes |
+|---|---|---|
+| Departure from low Earth orbit | ~3.5 km/s | Cheapest with a Hohmann-style transfer |
+| Mid-course correction | Tens to hundreds of m/s | Cheaper the earlier you make it |
+| Capture into low Venus orbit (pure burn) | ~3 km/s or more | Expensive without atmosphere |
+| Aerocapture into an elliptical orbit | Heat-shield limited | Saves most of the capture burn |
+| Circularization after aerocapture | A few hundred m/s to ~1 km/s | Depends on your target orbit |
+
+Simulations often rescale these numbers, so treat the table as a reference model rather than gospel. What transfers across every version of the mechanic is the shape of the problem: departure is cheap, arrival is expensive, and the atmosphere is the discount.
+
+## Arrival Options and Route Strategy Comparison
+
+Not all routes to Venus are equal. The table below compares the approaches most players end up choosing.
+
+| Strategy | Difficulty | Delta-v cost | Risk | Best for |
+|---|---|---|---|---|
+| Direct Hohmann transfer | Low | Lowest | Low | First attempts and simple missions |
+| Off-window fast transfer | Medium | High | Medium | Time-critical objectives |
+| Lunar or Earth gravity assist | Medium-High | Lower departure cost | Timing-sensitive | Advanced players with planner skill |
+| Aerocapture | Medium-High | Much lower than a pure burn | Heat shield and precision | Efficient arrivals |
+| Powered capture | Low | Highest | Low | When you have fuel to spare |
+
+### Why aerocapture is the classic answer
+
+Venus has one of the thickest atmospheres of any rocky body in the solar system — roughly 96.5% carbon dioxide, with a surface pressure about 92 times Earth's and a surface temperature near 464°C. That atmosphere is a brake, and a very effective one. It is also unforgiving: come in too shallow and you skip back out into space, come in too steep and you become a meteor. Community reports consistently identify entry angle as the single hardest skill to learn in the Course to Venus mechanic.
+
+### Why gravity assists are optional
+
+A lunar flyby can shave departure cost, and some players use Earth itself for a later boost. These routes are elegant, but they demand a level of planner skill most first-time players do not have. Save them for your second or third run.
+
+## Common Mistakes and Pro Tips
+
+| Symptom | Likely cause | Fix |
+|---|---|---|
+| You miss Venus entirely | Wrong phase angle at departure | Recompute the window, not the burn |
+| You fly past too fast to capture | Arrival velocity too high | Lower your periapsis and aerobrake |
+| You run out of fuel before insertion | Overspent on departure or a plane change | Combine burns at orbit nodes |
+| Your orbit decays into the atmosphere | Periapsis too low after aerobraking | Raise periapsis once captured |
+| Corrections cost more than expected | Corrections made too late | Correct early and correct small |
+
+A few habits separate players who finish the Course to Venus mechanic from players who watch Venus slide past:
+
+- **Plan the whole trip before the first burn.** Know your arrival orbit, not just your departure date.
+- **Keep a reserve.** Aim to arrive with a margin of delta-v for emergencies.
+- **Correct early, correct small.** A tiny burn on day 20 beats a large one on day 130.
+- **Mind your plane.** Venus orbits a few degrees off the ecliptic, and plane changes made at the wrong point cost far more than they should.
+- **Use the atmosphere, but respect it.** Aerobraking is free delta-v with a very steep price for mistakes.
+
+## FAQ
+
+### How often does the Course to Venus mechanic give you a good launch window?
+
+Roughly every 584 days in real-world orbital mechanics, which is the Earth–Venus synodic period. Most simulations follow that figure closely, though arcade-style versions sometimes shorten it so players do not have to wait so long between attempts.
+
+### Do you always need to aerobrake at Venus?
+
+No. A pure retro-burn capture works fine and is much easier to control, but it costs roughly 3 km/s or more, which is often more than a small ship can spare. Aerocapture is the efficient option; a powered capture is the safe one.
+
+### What is the biggest beginner mistake with the Course to Venus mechanic?
+
+Departing when Earth and Venus are closest. That date is not the same as the correct phase angle, and using it produces a trajectory that either arrives late or misses the planet entirely. Always trust the transfer planner over intuition.
+
+### Can you use the Course to Venus mechanic to reach other planets?
+
+Yes, and that is part of its value. The same planning loop — window, departure burn, coast, correction, capture — applies to Mars, Mercury, and the outer system. Venus is simply a forgiving classroom, since the atmosphere lets you recover from an arrival that would be fatal almost anywhere else. For authoritative reference figures on the planet itself, see [NASA's Venus fact sheet](https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html).

@@ -1,0 +1,141 @@
+export const metadata = {
+  title: "Guía de la ruta hacia Venus: ventanas de lanzamiento, trayectorias y fundamentos de llegada",
+  description: "Una guía práctica de la ruta hacia Venus que abarca ventanas de lanzamiento, transferencias de Hohmann, presupuestos de delta-v y opciones de llegada para alcanzar el segundo planeta.",
+  category: "guide",
+  date: "2026-10-06",
+}
+
+## Por qué vale la pena una guía de la ruta hacia Venus
+
+Venus es el planeta más fácil de alcanzar y uno de los más duros de sobrevivir. Esa contradicción es precisamente la razón por la que importa una buena guía de la ruta hacia Venus: el crucero es corto según los estándares interplanetarios, pero el entorno de llegada no perdona. Aproximadamente cada 19 meses, la Tierra y Venus se alinean lo suficiente como para que el viaje sea práctico, y el tramo de ida dura solo unos cinco meses. Si pierdes esa alineación, tendrás que esperar otro año y medio para la siguiente.
+
+Esta guía de la ruta hacia Venus repasa las ventanas de lanzamiento, la geometría de transferencia, la presupuestación del delta-v y las opciones de llegada para que tu misión realmente sea viable. Venus también es un destino muy concurrido. Varias naves espaciales han pasado a su lado para aprovechar asistencias gravitatorias, y está prevista una nueva oleada de misiones dedicadas para la década de 2030. Ya sea que estés planificando una trayectoria real o volando una en un simulador de vuelo espacial, el mismo puñado de cifras determina cada decisión.
+
+## La geometría orbital detrás de cualquier ruta hacia Venus
+
+Venus orbita el Sol a unas 0,72 unidades astronómicas, o unos 108 millones de kilómetros. Eso lo sitúa entre la Tierra y el Sol, lo que significa que una transferencia desde la Tierra es una espiral hacia dentro en lugar de un ascenso hacia fuera. Estás cayendo hacia el Sol, no abriéndote camino alejándote de él, y eso cambia todo el carácter de la misión.
+
+La ruta más barata es una transferencia de Hohmann: una trayectoria elíptica que toca la órbita de la Tierra en un extremo y la de Venus en el otro. La mitad de esa elipse tarda unos 146 días, o algo menos de cinco meses. Debido a que la Tierra y Venus solo vuelven a las posiciones relativas correctas una vez por período sinódico —unos 584 días—, las oportunidades de lanzamiento se presentan aproximadamente cada 19 meses.
+
+Dos detalles hacen que Venus sea más amigable que la mayoría de los objetivos:
+
+- **Baja inclinación.** La órbita de Venus está inclinada solo unos 3,4 grados respecto a la de la Tierra, por lo que los costos de cambio de plano se mantienen bajos.
+- **Crucero corto.** Cinco meses significan menos exposición a la radiación, menos maniobras de corrección de trayectoria y un margen de propelente menor.
+
+El inconveniente está en el momento. En el momento de la partida, Venus debe situarse aproximadamente 54 grados *por detrás* de la posición de la Tierra, porque viaja más rápido y la alcanzará durante la transferencia. Si te equivocas con ese ángulo de fase, tu nave espacial llegará a un espacio vacío.
+
+## Cifras de referencia rápida para una transferencia a Venus
+
+Estas son las cifras que vale la pena memorizar antes de trazar una trayectoria. Los valores son aproximados y varían según la oportunidad de lanzamiento específica y el tipo de transferencia elegido.
+
+| Métrica | Valor típico |
+|---|---|
+| Distancia media desde el Sol | ~0,72 UA (unos 108 millones de km) |
+| Máximo acercamiento a la Tierra | ~38–41 millones de km |
+| Período sinódico (intervalo entre ventanas de lanzamiento) | ~584 días (~19 meses) |
+| Tiempo de transferencia de Hohmann | ~146 días (~5 meses) |
+| Velocidad de exceso hiperbólico de partida | ~2,5–3,5 km/s |
+| Velocidad de exceso hiperbólico de llegada | ~2,7–3 km/s |
+| Tiempo de luz en un sentido | ~2 a 15 minutos |
+| Presión en la superficie | ~92 veces el nivel del mar terrestre |
+| Temperatura media en la superficie | ~465 °C (~870 °F) |
+| Composición atmosférica | ~96 % de dióxido de carbono |
+
+Fíjate en la velocidad de llegada. Es lo bastante baja como para que la inserción en órbita sea asequible, y por eso Venus ha acogido tantos orbitadores. También es lo bastante alta como para que no puedas ignorarla.
+
+## Elegir un tipo de transferencia
+
+No todas las misiones quieren la trayectoria más barata. A un orbitador científico le importa el propelente; a un concepto tripulado o a un encuentro con plazos críticos le importan los días. Así se comparan las principales opciones.
+
+| Tipo de transferencia | Tiempo de crucero | Costo de propelente | Más adecuada para |
+|---|---|---|---|
+| Hohmann, tipo I | ~5 meses | El más bajo | Orbitadores con limitaciones de combustible |
+| Hohmann, tipo II | ~5–6 meses | El más bajo | Geometría de llegada alternativa |
+| Elíptica rápida | ~3–4 meses | Más alto | Conceptos tripulados o con plazos críticos |
+| Espiral de bajo empuje | 12+ meses | Total alto, uso eficiente | Demostraciones solar-eléctricas |
+| Asistencia gravitatoria | Varía mucho | El más bajo | Ciencia centrada en sobrevuelos |
+
+Las transferencias de tipo I recorren menos de 180 grados alrededor del Sol; las de tipo II recorren más. Ambas llegan a Venus, pero lo hacen desde direcciones diferentes, lo que afecta cuánta luz solar incide en tus paneles solares y cómo se alinea tu geometría de comunicaciones.
+
+## Paso a paso: cómo construir tu ruta hacia Venus
+
+Una vez que conoces la ventana, la construcción es procedimental. Esta secuencia sirve tanto para un concepto de misión real como para una ejecución en simulador.
+
+| Fase | Qué ocurre | Nota de planificación |
+|---|---|---|
+| 1. Selección de ventana | Identifica el período de lanzamiento | Confirma el ángulo de fase antes que nada |
+| 2. Lanzamiento y órbita de estacionamiento | Alcanza una órbita terrestre baja estable | Elige una órbita que coincida con tu asíntota de partida |
+| 3. Encendido de partida | Inyecta en la elipse de transferencia | Es el mayor encendido de toda la misión |
+| 4. Crucero y correcciones | Navega a la deriva durante ~5 meses | Presupuesta pequeños encendidos para la corrección de trayectoria |
+| 5. Aproximación | Llega a la esfera de influencia de Venus | La puntería final decide tu geometría de llegada |
+| 6. Llegada | Inserción orbital, aerofrenado o descenso | Elige esto antes de lanzar, no después |
+
+Un hábito útil es trabajar hacia atrás. Decide qué quieres en Venus —una órbita de mapeo polar, una sonda a nivel de las nubes, un módulo de aterrizaje en la superficie— y deja que eso defina la etapa de llegada. La etapa de llegada define entonces cuánta masa puedes permitirte transportar, y eso finalmente condiciona tu vehículo de lanzamiento y el encendido de partida.
+
+Los informes de la comunidad de los círculos de simulación de vuelo espacial suelen mencionar que el paso del ángulo de fase es donde fallan la mayoría de los primeros intentos. Los jugadores que dominan la geometría de transferencia pero se saltan la planificación de la llegada suelen acabar con una nave espacial que llega sin nada en los tanques.
+
+## Opciones de llegada y sus costos reales
+
+La llegada es donde una ruta hacia Venus se vuelve interesante. La atmósfera que hace que la inserción orbital sea barata para las misiones de aerofrenado es la misma atmósfera que destruye todo lo que desciende demasiado rápido.
+
+| Opción de llegada | Costo o riesgo aproximado | Notas |
+|---|---|---|
+| Inserción en órbita muy elíptica | ~0,5–1 km/s | Riesgo bajo, excelente para mapeo global |
+| Inserción en órbita circular baja | Varios km/s | Costosa pero ideal para sensado cercano |
+| Aerofrenado | Ahorra propelente significativo | Utilizado con éxito por orbitadores anteriores de Venus |
+| Aerocaptura | Grandes ahorros, mayor riesgo | Aún en gran medida no demostrada en Venus |
+| Entrada, descenso y aterrizaje directos | Sin encendido de inserción | Extremadamente exigente: ~92 bar y ~465 °C |
+
+El aerofrenado funciona sumergiendo el punto más bajo de la nave espacial en la atmósfera superior en órbitas sucesivas, disipando energía a lo largo de semanas o meses. Es lento pero notablemente eficiente en combustible, y ya se ha utilizado en Venus anteriormente. La aerocaptura comprime ese proceso en un solo paso, lo que ahorra aún más propelente pero exige un modelado atmosférico preciso.
+
+En el caso de las misiones de superficie, el problema de ingeniería cambia por completo. Un módulo de aterrizaje debe sobrevivir a una presión aplastante, nubes de ácido sulfúrico y temperaturas lo bastante altas como para fundir algunos componentes electrónicos. Por eso tan pocas naves espaciales han tocado la superficie y ninguna ha durado mucho.
+
+## Misiones que han recorrido la ruta hacia Venus
+
+El registro histórico es una buena comprobación de cordura para cualquier plan que elabores.
+
+| Misión | Tipo | Contribución |
+|---|---|---|
+| Magellan | Orbitador | Mapeo por radar de la superficie a través de las nubes |
+| Venus Express | Orbitador | Estudio atmosférico y climático de larga duración |
+| Akatsuki | Orbitador | Estudió la dinámica atmosférica tras una llegada retrasada |
+| Parker Solar Probe | Sobrevuelo | Usó asistencias gravitatorias de Venus para modelar su órbita solar |
+| BepiColombo | Sobrevuelo | Usó Venus para modelar su trayectoria camino a Mercurio |
+| VERITAS, DAVINCI, EnVision | Planificadas | Ciencia orbital, atmosférica y de radar de próxima generación |
+
+Puedes leer más sobre las características físicas del planeta en [la página de resumen de Venus de la NASA](https://science.nasa.gov/venus/). Si quieres ver cómo los planificadores de misiones reales abordan estas disyuntivas, ese es un buen punto de partida para una lectura de contexto.
+
+## Errores de planificación comunes y cómo corregirlos
+
+La mayoría de los planes de misión fallidos comparten los mismos pocos defectos. Aquí tienes una tabla de diagnóstico rápida.
+
+| Error | Por qué perjudica | Solución |
+|---|---|---|
+| Ignorar el ángulo de fase | La nave llega a un espacio vacío | Calcula el adelanto de ~54 grados antes del lanzamiento |
+| Tratar la llegada como algo secundario | No queda propelente para la inserción | Presupuesta primero la llegada y luego trabaja hacia atrás |
+| Suponer que hay una ventana por año | Ciclos de planificación desperdiciados | Recuerda el ritmo sinódico de ~19 meses |
+| Subestimar la atmósfera | El aerofrenado se vuelve destructivo | Modela la variabilidad de la densidad, no solo los promedios |
+| Omitir las maniobras de corrección | Los pequeños errores se acumulan a lo largo de cinco meses | Reserva propelente para al menos dos correcciones |
+
+Algunos hábitos prácticos completan esto:
+
+- **Incluye margen.** Reserva propelente para correcciones y contingencias; los cruceros interplanetarios rara vez salen exactamente como se planearon.
+- **Comprueba la geometría de comunicaciones.** El tiempo de luz hacia Venus oscila entre unos dos y quince minutos, por lo que el control en tiempo real es imposible.
+- **Decide el modo de llegada desde el principio.** La inserción orbital, el aerofrenado y el aterrizaje exigen diseños de nave espacial completamente diferentes.
+- **Estudia misiones pasadas.** Los enfoques probados en vuelo en Venus están bien documentados y son más baratos que inventar otros nuevos.
+
+## FAQ
+
+**¿Con qué frecuencia se puede lanzar en una ruta hacia Venus?**
+Aproximadamente cada 19 meses, coincidiendo con el período sinódico de 584 días. Dentro de cada ventana hay un rango de fechas de partida aceptables, pero la geometría se estrecha rápidamente a medida que te alejas del ángulo de fase óptimo.
+
+**¿Cuánto dura el viaje?**
+Una transferencia de Hohmann estándar tarda unos 146 días, o algo menos de cinco meses. Las trayectorias más rápidas y de mayor energía pueden reducirlo a tres o cuatro meses a costa de bastante más propelente.
+
+**¿Es Venus más fácil de alcanzar que Marte?**
+En términos de tiempo de crucero y energía de lanzamiento, sí. Venus está más cerca y es casi coplanar con la Tierra, por lo que las transferencias son más cortas y más baratas. La llegada es otra historia: la atmósfera y las condiciones de la superficie hacen que Venus sea mucho más hostil una vez que llegas.
+
+**¿Necesito una asistencia gravitatoria para llegar a Venus?**
+No. Una transferencia de Hohmann directa está perfectamente al alcance de un vehículo de lanzamiento modesto y una pequeña etapa superior. Las asistencias gravitatorias son útiles para remodelar una trayectoria o llegar a Venus como parte de un viaje más largo, pero no son necesarias para el viaje en sí.
+
+Acierta con el ángulo de fase, presupuesta la llegada antes de presupuestar el lanzamiento, y el resto de la misión encajará.

@@ -1,0 +1,109 @@
+export const metadata = {
+  title: "Course to Venus Save File Guide: Backup, Restore, and Progression",
+  description: "Learn where the Course to Venus save file lives, how to back it up safely, how to restore lost progress, and the risks of downloading community saves.",
+  category: "progression",
+  date: "2026-10-06",
+}
+
+Nothing kills momentum in a progression game like losing everything you have unlocked. The **Course to Venus save file** is the single piece of data that decides whether you keep your stages, unlocks, and completion records — or start over from the very beginning. Knowing where that **Course to Venus save file** lives turns a potential disaster into a five-minute fix.
+
+Most progression-driven games write to disk at checkpoints, level transitions, or when you exit to a menu. That means a crash mid-stage, a forced shutdown, or a cloud sync conflict can leave you holding a file that is older than you expect — or one the game refuses to read at all. Backing up takes seconds. Rebuilding progress can take many hours.
+
+This guide walks through what is actually inside a save file, where each platform typically stores it, how to back it up and restore it, and what you are really signing up for when you download someone else's save.
+
+## What Is Actually Inside a Course to Venus Save File?
+
+A save file is rarely one simple number. It is usually a small package of flags, counters, and settings that the game reads on launch. Understanding the parts helps you figure out what you can safely move between machines and what will break.
+
+| Save component | What it typically tracks | Why it matters |
+|---|---|---|
+| Story / stage progress | Stages cleared, chapters unlocked, checkpoints reached | Determines what content you can actually play |
+| Unlockables | Characters, modes, cosmetics, bonus content | Gates replay value and side content |
+| Completion tracking | Collectibles found, challenges cleared, optional objectives | The core of any completionist run |
+| Player statistics | Time played, attempts, best times, death counts | Feeds personal records and leaderboards |
+| Settings | Audio, video, control bindings | Often stored in a separate config file |
+| Platform flags | Achievement or trophy progress markers | May or may not transfer between accounts |
+
+The key takeaway: progress data and settings data are frequently separate files sitting in the same folder. If you copy only one, you may restore your stages but lose your control scheme — or the reverse.
+
+## Where to Find Your Course to Venus Save File by Platform
+
+There is no universal answer here, because the location depends on the storefront, the engine, and whether the game uses a launcher. The table below covers the folders worth checking first. Treat these as starting points, not guarantees.
+
+| Platform | Where to look first | Notes |
+|---|---|---|
+| Windows (Steam) | The game's `userdata` folder inside your Steam install, or `%APPDATA%` / `Documents` | Steam Cloud may mirror the same files |
+| Windows (standalone) | The game's install directory, or `%APPDATA%` | Portable installs often keep saves next to the executable |
+| macOS | `~/Library/Application Support/` | Hidden by default — use Finder's Go > Go to Folder |
+| Linux / Steam Deck | `~/.local/share/`, or a Proton prefix under `steamapps/compatdata` | Compatibility layers create their own Windows-style paths |
+| Consoles | System storage, not user-accessible | Use the console's own cloud or backup tools only |
+| Mobile | The app's private sandbox | Requires a full device backup or root access |
+
+A quick practical trick: search your drive for recently modified files immediately after saving in-game. Sorting by modification time will usually point you straight at the folder, even if the game hides it under a cryptic name.
+
+### Checking Whether Cloud Sync Is Already Protecting You
+
+Before you build a manual backup routine, confirm whether your platform is already syncing. Steam Support's official help hub explains how cloud saves behave, including how to tell when a sync has failed. If cloud sync is active, your main risk shifts from "losing the file" to "syncing the wrong version over the right one" — which is a different problem with a different fix.
+
+## How to Back Up and Restore Your Progress Safely
+
+A backup is only useful if it actually restores. Follow the order below so you never overwrite a good file with a bad one.
+
+| Step | Action | Why it matters |
+|---|---|---|
+| 1 | Close the game completely | Prevents partial writes while you copy |
+| 2 | Locate the save folder | Confirm the timestamp updates when you save |
+| 3 | Copy the entire folder, not one file | Settings and progress are often split |
+| 4 | Zip it and label with the date | Makes versions easy to tell apart later |
+| 5 | Store two copies in two locations | Local drive plus external or cloud |
+| 6 | Test a restore once, on purpose | A backup you have never tested is a guess |
+
+That last step is the one most players skip. If you never restore a backup, you do not know whether you copied the right directory until the moment you desperately need it.
+
+Community reports from progression-heavy games consistently point to the same failure pattern: players back up a folder that turns out to hold only settings, then discover the real progress data lives somewhere else entirely. Verify by deleting nothing — instead, rename the folder temporarily and launch the game to see whether it starts fresh.
+
+## Downloading a Course to Venus Save File: Risks and Realities
+
+Searching for a ready-made save is a common move when a stage feels unbeatable. It works sometimes, but the trade-offs are real and worth understanding before you drop a file into your game folder.
+
+| Risk | What can actually happen | How to reduce it |
+|---|---|---|
+| Malware | An executable disguised as save data | Real saves are data files — never run an unknown `.exe` |
+| Version mismatch | The game refuses to load it or crashes on launch | Match the save to your exact game version |
+| Broken achievement flags | Trophies or achievements fail to unlock, or unlock oddly | Accept that some progress markers will not fire |
+| Corrupted or hand-edited data | Crashes, softlocks, unreachable content | Keep your original file untouched and separate |
+| Terms of service issues | Restrictions in games with online or ranked modes | Avoid imported saves in competitive contexts |
+
+If you do import a save, do it in this order: back up your own file first, place the downloaded file in a staging folder, launch the game offline, and only then confirm the game reads it correctly. Player experience suggests that most "save file not working" complaints come down to putting the file one folder too high or too low.
+
+### A Better First Option: Rebuild With a Plan
+
+If your goal is simply to get back to where you were, a targeted replay is often faster than troubleshooting a downloaded file. Prioritize story checkpoints first, then unlocks that gate content, then collectibles last — most of which can be swept up in a single dedicated cleanup pass once everything else is done.
+
+## Fixing a Corrupted or Rolled-Back Course to Venus Save File
+
+Corruption rarely happens for mysterious reasons. Interrupted writes, a full disk, antivirus interference, and cloud conflicts cover the overwhelming majority of cases.
+
+| Symptom | Likely cause | First fix to try |
+|---|---|---|
+| "Save data is corrupted" on launch | Interrupted write or disk error | Restore your most recent backup |
+| Progress rolled back several hours | Cloud sync pulled an older file | Compare local and cloud timestamps |
+| Save not detected at all | Wrong user profile or folder | Confirm the profile ID in the file path |
+| Game will not save | Read-only folder, permissions, or full drive | Check permissions and free space |
+| Achievements stopped appearing | Imported flags skipped triggers | Re-earn the specific milestones |
+
+If your platform offers a "verify integrity of game files" option, run it before anything else. It repairs missing game data without touching your progress, which rules out one whole category of false alarms.
+
+## Frequently Asked Questions
+
+**Can I move a Course to Venus save file between two computers?**
+Usually yes, if both machines run the same version of the game through the same storefront. Copy the entire save folder rather than a single file, and make sure cloud sync is paused on the second machine first — otherwise it may overwrite what you just copied.
+
+**Is downloading someone else's save file safe?**
+The data itself is usually harmless, but the distribution method is where the danger lives. Stick to reputable communities, never execute a file that claims to be a save, and always keep your own backup so you can roll back.
+
+**Will achievements still unlock with an imported save?**
+Often partially. Milestones that check a flag at the moment of completion may never fire because the flag was set before the game was watching. Plan on re-earning a few if completion percentage matters to you.
+
+**How often should I back up?**
+After any long session, before installing updates, and before you try any imported save. Three seconds of copying beats replaying an entire run, and versioned backups let you step back to any point rather than only the most recent one.

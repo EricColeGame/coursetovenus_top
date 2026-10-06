@@ -1,0 +1,115 @@
+export const metadata = {
+  title: "Mecánica de una misión a Venus: ventanas de lanzamiento, transferencias y llegada",
+  description: "Planifica una misión a Venus paso a paso: ventanas de lanzamiento, sincronización de la transferencia de Hohmann, presupuestos de delta-v y modos de llegada explicados.",
+  category: "mechanics",
+  date: "2026-10-06",
+}
+
+Toda misión a Venus triunfa o fracasa según la geometría. Venus y la Tierra entran en una alineación repetitiva, y si una nave espacial parte en el momento equivocado, ninguna cantidad de propelente rescatará la trayectoria. Por eso esto importa: el momento de una misión a Venus decide cuánto dura el crucero, cuánto combustible transporta la nave y si puede establecerse en órbita o debe conformarse con un breve sobrevuelo. A continuación, un desglose práctico de la mecánica —ángulos de fase, órbitas de transferencia, ventanas de lanzamiento, presupuestos de delta-v y opciones de llegada— con tablas que puedes usar como lista de verificación de planificación.
+
+## La geometría detrás de toda misión a Venus
+
+Una trayectoria a Venus comienza con una sola elipse. La nave parte en el afelio de la elipse, que se sitúa a la distancia de la Tierra respecto al Sol, y llega a su perihelio, que toca la órbita de Venus a aproximadamente 0,72 unidades astronómicas. Como la sonda cae hacia el interior, hacia el Sol, su velocidad heliocéntrica asciende de unos 27 km/s en la partida a aproximadamente 38 km/s en la llegada.
+
+Esa velocidad de llegada es el quid del problema. Venus orbita a unos 35 km/s, así que la nave se mueve más rápido que su destino cuando llega. La diferencia —una velocidad hiperbólica excedente de aproximadamente 2,5 a 2,8 km/s— debe disiparse mediante un encendido de captura, mediante aerofrenado o simplemente pasando de largo.
+
+El lado de la partida es más amable, pero aún exigente. Escapar de la Tierra y alcanzar la elipse de transferencia correcta cuesta unos 3,5 km/s desde la órbita terrestre baja, además de los 9,3 a 9,5 km/s que el vehículo de lanzamiento ya gastó para sacar la carga útil del suelo.
+
+| Tipo de trayectoria | Tiempo de crucero típico | Energía de partida | Velocidad de llegada | Más adecuada para |
+|---|---|---|---|---|
+| Transferencia de Hohmann de energía mínima | Unos 146 días (aproximadamente 4,8 meses) | La más baja | ~2,7 km/s relativa | Orbitadores y aterrizadores con presupuestos de masa ajustados |
+| Directa de energía moderada | Aproximadamente 110–130 días | Mayor | Mayor | Cargas útiles críticas en tiempo y conceptos tripulados |
+| De baja energía o asistida por sobrevuelo | Meses a años | Muy baja | Variable | Naves pequeñas y cargas útiles secundarias |
+| Cadena de asistencia gravitatoria con múltiples sobrevuelos | De uno a tres años | Muy baja | Variable | Misiones que cambian tiempo por masa |
+
+## Por qué el ángulo de fase lo decide todo
+
+El error más común al planificar es tratar la transferencia como una línea recta entre dos puntos. No lo es. El objetivo tiene que estar exactamente donde estará la nave cuando esta llegue, y Venus sigue moviéndose todo el tiempo.
+
+Durante un crucero de energía mínima de 146 días, Venus recorre unos 234 grados alrededor del Sol mientras la nave cubre 180 grados. La aritmética da una geometría de partida en la que Venus se sitúa unos 54 grados detrás de la Tierra en su órbita. Si se lanza demasiado pronto o demasiado tarde, la nave llega a espacio vacío, lo que obliga a un costoso encendido de corrección o a perder la misión por completo.
+
+| Cantidad de planificación | Valor típico | Por qué importa |
+|---|---|---|
+| Período sinódico Tierra–Venus | Unos 584 días (~19 meses) | Las ventanas se repiten con esta cadencia |
+| Tiempo de crucero de energía mínima | Unos 146 días | Determina el ángulo de fase requerido |
+| Ángulo de fase de partida | Venus aproximadamente 54° detrás de la Tierra | Los errores aquí se convierten en penalizaciones de combustible |
+| Ancho de ventana utilizable | De días a unas pocas semanas | Estrecha para Hohmann, más amplia para transferencias de alta energía |
+| Costo de perder la ventana | Un ciclo sinódico completo | La espera se mide en meses, no en días |
+
+## Ventanas de lanzamiento: el ritmo de 19 meses
+
+Una ventana de lanzamiento no es un instante único, sino un rango de oportunidades de partida. En el extremo de mínima energía del espectro, la ventana tiene solo unos pocos días de ancho. Acepta una energía de partida ligeramente mayor y la ventana se amplía, por lo que los planificadores de misiones a menudo cambian margen de propelente por flexibilidad de calendario.
+
+La cadencia en sí viene dictada por el período sinódico —el tiempo que tardan los dos planetas en volver a la misma alineación relativa—. Para la Tierra y Venus, eso es aproximadamente 584 días, o un poco más de 19 meses. Los calendarios reales de misiones se han agrupado históricamente en torno a ese ritmo, y retrasos de lanzamiento de incluso unos pocos días pueden empujar a una nave al siguiente ciclo por completo.
+
+Una regla útil para la planificación temprana: supón que perderás la ventana y luego pregunta cómo se ve la misión 19 meses después. Si la respuesta es inaceptable, incorpora más energía de partida desde el principio.
+
+## Presupuesto de delta-v: lo que realmente cuesta una misión a Venus
+
+El propelente es masa, y la masa es dinero. Cada maniobra de una misión a Venus compite con instrumentos, sistemas de energía y protección térmica. La tabla siguiente muestra adónde suele ir el presupuesto en una misión de clase orbitador; las cifras son aproximadas y varían según la trayectoria elegida.
+
+| Maniobra | Costo típico | Notas |
+|---|---|---|
+| Lanzamiento a órbita terrestre baja | ~9,3–9,5 km/s | Dominado por el vehículo de lanzamiento, no por la nave |
+| Inyección hacia Venus | ~3,5 km/s desde la órbita terrestre baja | Escape más 2,5–2,8 km/s de velocidad excedente |
+| Correcciones a mitad de trayectoria | Decenas de m/s en total | Repartidas en varios encendidos pequeños para mayor precisión |
+| Inserción en órbita de Venus | ~1–2 km/s | Depende en gran medida de la periapsis objetivo y la forma de la órbita |
+| Circularización o aerofrenado | Combustible frente a tiempo | El aerofrenado puede reducir drásticamente el propelente |
+| Descenso y aterrizaje | Considerable | La entrada atmosférica domina el diseño |
+
+Dos factores son los más importantes. El primero es la periapsis de llegada: capturar en una elipse alta y amplia es mucho más barato que caer directamente en una órbita circular baja. El segundo es el aerofrenado, que usa pasadas repetidas por la atmósfera superior para disipar velocidad durante meses en lugar de quemar propelente en minutos.
+
+## Mecánica de llegada: cinco formas de terminar el viaje
+
+Cómo termina una misión determina cómo se diseñó desde el principio. Una nave de sobrevuelo puede ser pequeña y sencilla; un orbitador necesita propulsión y control térmico; un aterrizador debe sobrevivir a uno de los entornos más hostiles del sistema solar.
+
+| Modo de llegada | Encendido de captura | Ventajas | Inconvenientes |
+|---|---|---|---|
+| Sobrevuelo | Ninguno | El más barato y sencillo | Recolección breve de datos, sin monitoreo a largo plazo |
+| Captura en órbita elíptica | ~1 km/s | Cobertura global durante muchas órbitas | Requiere un encendido considerable |
+| Órbita circular baja | Mayor | La mejor cartografía por radar y ciencia de gravedad | Alto costo de propelente o larga fase de aerofrenado |
+| Aerofrenado o aerocaptura | Reducido | Ahorro significativo de masa | Riesgo térmico y estructural |
+| Entrada, descenso y aterrizaje | No aplicable | Ciencia directa en la superficie | Aproximadamente 92 bares de presión y ~465 °C en la superficie |
+
+Venus añade una complicación que ningún otro destino iguala: su atmósfera es lo bastante densa como para destruir una nave que entra con el ángulo equivocado, pero lo bastante útil como para servir de freno gratuito si la trayectoria se vuela con precisión. Esa dualidad es la razón por la que los estudios de aerofrenado siguen siendo centrales en los conceptos modernos de misión.
+
+## Lecciones de misiones reales
+
+Las misiones históricas y actuales han puesto a prueba esta mecánica en vuelo. Los informes de la comunidad y la documentación de las misiones coinciden sistemáticamente en las mismas conclusiones.
+
+| Misión | Enfoque de trayectoria | Conclusión |
+|---|---|---|
+| Mariner 2 | Sobrevuelo directo | Los sobrevuelos demuestran una ruta antes de comprometerse a orbitar |
+| Aterrizadores Venera | Entrada y descenso directos | Las condiciones de la superficie condicionan el diseño tanto como la trayectoria |
+| Pioneer Venus | Orbitador más sondas atmosféricas | Combinar órbita y entrada maximiza el retorno científico |
+| Magallanes | Orbitador de cartografía por radar | La elección de órbita determina la calidad del mapeo |
+| Venus Express | Órbita polar elíptica | Reutilizar una plataforma espacial probada reduce costo y riesgo |
+| Akatsuki | Inserción fallida, recuperación posterior | Planifica siempre una ventana de contingencia |
+| BepiColombo | Sobrevuelos de Venus de camino a Mercurio | Los sobrevuelos sirven también como ajustes gratuitos de trayectoria |
+| Parker Solar Probe y Solar Orbiter | Sobrevuelos repetidos de Venus | Las asistencias gravitatorias remodelan órbitas casi sin costo de propelente |
+
+Para obtener una visión más detallada de las misiones actuales y planificadas, consulta [la descripción general oficial de la exploración de Venus de la NASA](https://science.nasa.gov/venus/), que hace seguimiento de orbitadores, sondas y conceptos futuros.
+
+## Lista de verificación práctica de planificación
+
+- **Fija primero el ángulo de fase.** Todo lo demás —fecha de lanzamiento, tiempo de crucero, velocidad de llegada— se deriva de él.
+- **Decide el modo de llegada antes de dimensionar la nave.** Sobrevuelo, orbitador y aterrizador conducen a diseños radicalmente distintos.
+- **Presupuesta margen para correcciones a mitad de trayectoria.** Los errores pequeños al principio se convierten en grandes fallos después.
+- **Trata el aerofrenado como un riesgo de calendario, no solo como un ahorro de combustible.** Funciona, pero lleva meses.
+- **Modela el caso de ventana perdida.** Saber cuánto cuesta un retraso de 19 meses es la forma más rápida de justificar propelente adicional.
+
+## Preguntas frecuentes
+
+**¿Cuánto tarda una misión a Venus en llegar al planeta?**
+Una transferencia de energía mínima tarda aproximadamente 146 días, o unos cinco meses. Son posibles trayectorias más rápidas, pero requieren más energía de partida y, a menudo, un vehículo de lanzamiento más grande.
+
+**¿Por qué las ventanas de lanzamiento a Venus se repiten aproximadamente cada 19 meses?**
+El período sinódico Tierra–Venus es de aproximadamente 584 días. Solo cuando los dos planetas vuelven a la alineación relativa correcta puede una nave partir en una transferencia eficiente en combustible.
+
+**¿Es más difícil orbitar Venus o aterrizar en él?**
+Ambas cosas son exigentes por razones distintas. La inserción orbital cuesta propelente y favorece el aerofrenado, mientras que aterrizar implica sobrevivir a una presión y temperatura extremas durante la entrada.
+
+**¿Puede una nave llegar a Venus sin un encendido de captura?**
+Sí. Un sobrevuelo no requiere ninguna maniobra de inserción, por lo que la exploración temprana usó sobrevuelos y las misiones con asistencia gravitatoria usan Venus como una herramienta de trayectoria gratuita.
+
+La mecánica de una misión a Venus recompensa la paciencia y la precisión. Acierta con el ángulo de fase, elige el modo de llegada desde el principio y protege tu margen de propelente: el resto es ingeniería.

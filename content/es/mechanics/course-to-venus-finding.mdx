@@ -1,0 +1,101 @@
+export const metadata = {
+  title: "Trazado de rumbo a Venus: ventanas de transferencia, delta-v y consejos de captura",
+  description: "Domina el trazado de rumbo a Venus en simuladores espaciales: ángulos de fase, ventanas de transferencia, presupuestos de delta-v y quemas de captura que te llevan a Venus al primer intento.",
+  category: "mechanics",
+  date: "2026-10-06",
+}
+
+## Por qué la fase de trazado de rumbo a Venus decide toda tu misión
+
+Venus realiza el acercamiento más próximo a la Tierra de todos los planetas —unos 38 millones de kilómetros en su punto más cercano— y precisamente por eso el proceso de trazado de rumbo a Venus engaña a tantos pilotos novatos. El viaje en sí es corto. La sincronización no lo es. Una transferencia de energía mínima de la Tierra a Venus tarda unos cinco meses, y la alineación que la hace posible se repite solo cada 584 días.
+
+Si pierdes la ventana, ninguna cantidad de combustible te salva; quemarás miles de metros por segundo de delta-v persiguiendo un planeta que ya se ha movido. Si la aciertas, la etapa de trazado de rumbo a Venus de tu misión se reduce a una lista de verificación repetible: elegir la ventana, dar forma a la elipse de transferencia, presupuestar la quema y corregir temprano.
+
+Esta guía desglosa la mecánica detrás del trazado de rumbo a Venus —ángulo de fase, geometría de transferencia, presupuestos de delta-v y captura a la llegada— en términos que funcionan tanto si pilotas un simulador de vuelo espacial como si estudias cómo se planifican misiones reales. Si quieres una base sobre el destino en sí, [la descripción general de Venus de la NASA](https://science.nasa.gov/venus/) es el mejor punto de partida.
+
+## La mecánica orbital detrás del trazado de rumbo a Venus
+
+Dos números lo impulsan todo: a qué velocidad se mueve el planeta objetivo y dónde estará cuando llegues. Venus completa una órbita cada 224,7 días a unos 35 km/s. La Tierra tarda 365,25 días a unos 29,8 km/s. Esa diferencia de velocidad es la razón completa de que exista una ventana de transferencia.
+
+| Propiedad | Tierra | Venus |
+|---|---|---|
+| Distancia media al Sol | 1,000 UA (149,6 millones de km) | 0,723 UA (108,2 millones de km) |
+| Período orbital | 365,25 días | 224,7 días |
+| Velocidad orbital media | ~29,8 km/s | ~35,0 km/s |
+| Inclinación orbital respecto a la eclíptica | 0° (referencia) | ~3,4° |
+| Período sinódico con la Tierra | — | ~584 días |
+
+Una transferencia de Hohmann de energía mínima es una elipse que comienza en la órbita de la Tierra (el afelio de la elipse) y termina en la órbita de Venus (su perihelio). Tu nave espacial recorre exactamente 180° alrededor del Sol para llegar.
+
+| Parámetro de transferencia | Valor aproximado |
+|---|---|
+| Semieje mayor de la elipse de transferencia | 0,861 UA |
+| Tiempo de vuelo | ~146 días (~4,8 meses) |
+| Anomalía verdadera recorrida | 180° |
+| Ángulo de fase de salida requerido | ~54° (Venus por detrás de la Tierra) |
+| Recurrencia de la ventana | ~584 días (~19 meses) |
+| Velocidad excedente hiperbólica de llegada | ~2,7 km/s |
+
+Durante esos 146 días, Venus recorre aproximadamente 234° de su propia órbita mientras tú recorres 180°. De ahí sale la cifra de 54°: Venus tiene que empezar por detrás de la Tierra para poder alcanzar el punto de encuentro en el mismo momento en que llegas.
+
+Como la órbita de Venus solo está inclinada unos 3,4° respecto a la eclíptica, los cambios de plano son baratos en comparación con un viaje a un objetivo muy inclinado. Esa es una razón por la que el trazado de rumbo a Venus suele ser la primera transferencia interplanetaria que un nuevo piloto debería dominar: la geometría es indulgente en todas las dimensiones excepto en el tiempo.
+
+## Un flujo de trabajo paso a paso para el trazado de rumbo a Venus
+
+La secuencia siguiente funciona en la mayoría de los simuladores de vuelo espacial y refleja cómo los diseñadores de misiones reales planifican las fases de una trayectoria.
+
+| Paso | Acción | Por qué importa |
+|---|---|---|
+| 1 | Estacionarte en una órbita baja, circular y casi ecuatorial | Una órbita de estacionamiento baja maximiza el efecto Oberth, así que tu quema de eyección compra más energía por unidad de propelente |
+| 2 | Esperar hasta que el ángulo de fase alcance aproximadamente 54° | Lanzar antes o después desperdicia delta-v que ninguna quema de corrección puede recuperar |
+| 3 | Eyección desde el lado de tu órbita orientado hacia el Sol | Para caer hacia dentro debes desprenderte de velocidad heliocéntrica, así que la hipérbola de salida apunta en dirección opuesta al movimiento del planeta alrededor del Sol |
+| 4 | Ajustar el nodo de maniobra hasta que el perihelio de la elipse de transferencia toque la órbita de Venus | Los pequeños ajustes del nodo ahora son mucho más baratos que las correcciones posteriores |
+| 5 | Comprobar la inclinación antes de comprometerte | Una discrepancia de plano detectada en la salida cuesta metros por segundo; detectada en la llegada, cuesta cientos |
+| 6 | Realizar una corrección a mitad de curso aproximadamente a un tercio del trayecto | Las correcciones son más baratas cuando el cambio de vector necesario es mínimo y aún estás lejos del objetivo |
+| 7 | Frenar en el punto de máximo acercamiento, o aerofrenar si tu simulador modela atmósferas | La llegada es donde se va la mayor parte de tu delta-v restante |
+
+El síntoma más común de un mal flujo de trabajo es llegar al lugar correcto en el momento equivocado: tu trayectoria alcanza la órbita de Venus, pero el planeta está unos millones de kilómetros por delante o por detrás. Casi siempre es un error de ángulo de fase en la salida, no un problema de llegada, así que resiste la tentación de corregirlo con una enorme quema de captura.
+
+## Presupuesto de delta-v: lo que realmente cuesta el trazado de rumbo a Venus
+
+Los números siguientes son aproximaciones y cambian con la altitud de la órbita de estacionamiento, el vehículo de lanzamiento y lo agresivamente que apuntes a la llegada. Trátalos como bases de planificación, no como cifras exactas.
+
+| Maniobra | Coste típico | Notas |
+|---|---|---|
+| Salida desde órbita baja terrestre (inyección hacia Venus) | ~3,5 km/s | Las órbitas de estacionamiento más bajas reducen esto gracias al efecto Oberth |
+| Corrección a mitad de curso | 10–100 m/s | Dos o tres correcciones pequeñas superan a una grande |
+| Inserción en órbita de Venus en una órbita circular baja | ~3,4 km/s | El aerofrenado puede reemplazar la mayor parte donde se modelan atmósferas |
+| Cambio de plano y ajustes de apuntamiento | 50–200 m/s | Barato porque la órbita de Venus solo está a ~3,4° de la eclíptica |
+| Total, de órbita baja terrestre a órbita baja de Venus | ~7 km/s | Cifra aproximada; las decisiones de apuntamiento a la llegada la mueven de forma notable |
+
+El tramo de llegada merece atención especial. Tu nave llega a Venus con una velocidad excedente hiperbólica de aproximadamente 2,7 km/s, y toda esa velocidad tiene que eliminarse antes de que puedas asentarte en órbita. La densa atmósfera de Venus hace atractivo el aerofrenado, y las misiones reales han usado el rozamiento atmosférico para circularizar después de la captura. La aerocaptura —sumergirse directamente y usar la atmósfera para hacer todo el trabajo— es más rápida, pero deja casi ningún margen de error, así que la mayoría de los jugadores la trata como una maniobra avanzada.
+
+## Correcciones, captura y errores que hunden una partida de trazado de rumbo a Venus
+
+Los informes de la comunidad de jugadores de *Kerbal Space Program*, *Spaceflight Simulator* y títulos similares vuelven una y otra vez al mismo puñado de errores.
+
+| Error | Síntoma | Solución |
+|---|---|---|
+| Lanzar fuera de la ventana | Quema de corrección enorme, o un sobrevuelo que falla por completo | Esperar la alineación de ~584 días; una ventana equivocada no se puede rescatar con combustible |
+| Circularizar a la altitud incorrecta | La quema de captura se dispara mucho más allá de lo previsto | Apuntar al periapsis más bajo que aún evite la atmósfera |
+| Ignorar la inclinación hasta la llegada | La quema de cambio de plano cuesta 5–10 veces más de lo necesario | Corregir el plano temprano, mientras el cambio de vector es pequeño |
+| Retrasar las correcciones | Cada día extra de navegación inercial encarece la corrección | Corregir aproximadamente en el primer tercio del tramo de ida |
+| Frenar en exceso al llegar | Quemas demasiado tiempo y caes en la atmósfera | Cortar la quema en el periapsis previsto y volver a circularizar en el apoapsis |
+
+Un hábito más separa las partidas limpias de las desastrosas: guardar antes de la quema de eyección. Las matemáticas del ángulo de fase no perdonan, y un guardado rápido en la órbita de estacionamiento te permite reintentar la ventana con un nodo ligeramente distinto en lugar de volar toda la transferencia otra vez.
+
+También vale la pena saber que Venus sirve además como punto de asistencia gravitatoria para misiones que se adentran más en el sistema solar interior. Naves espaciales reales han usado sobrevuelos de Venus para desprender energía orbital y remodelar sus trayectorias hacia Mercurio y el Sol, y el mismo truco funciona en la mayoría de los simuladores una vez que puedes alcanzar un encuentro con Venus de forma fiable.
+
+## Preguntas frecuentes
+
+**¿Cuál es el ángulo de fase ideal para el trazado de rumbo a Venus?**
+Para una transferencia de Hohmann de energía mínima, Venus debería estar aproximadamente 54° por detrás de la Tierra en la salida. Esa geometría permite que el planeta llegue al punto de encuentro en el mismo momento en que lo hace tu nave, unos 146 días después.
+
+**¿Cuánto delta-v requiere un viaje a Venus?**
+Calcula unos 7 km/s en total desde órbita baja terrestre hasta órbita baja de Venus: unos 3,5 km/s para salir, más una cantidad similar para frenar a la llegada. El aerofrenado puede reducir sustancialmente el coste de llegada donde tu simulador modela el rozamiento atmosférico.
+
+**¿Por qué mi intento de trazado de rumbo a Venus sigue fallando el planeta?**
+Nueve de cada diez veces es un error de sincronización, no de trayectoria. Si tu elipse de transferencia alcanza la órbita de Venus pero el planeta no está allí, el ángulo de fase en la salida era incorrecto. Recalcula la ventana en lugar de quemar combustible extra a mitad de vuelo.
+
+**¿Es Venus más difícil de alcanzar que Marte?**
+La transferencia es más corta y el cambio de plano es menor, pero la ventana es menos indulgente porque Venus se mueve más rápido y la velocidad de llegada es mayor. Muchos jugadores encuentran que Venus es más fácil de alcanzar y más difícil de detener —una distinción útil cuando planificas tu presupuesto de propelente.

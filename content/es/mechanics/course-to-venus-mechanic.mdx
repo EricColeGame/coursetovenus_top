@@ -1,0 +1,146 @@
+export const metadata = {
+  title: "Mecánica de Curso a Venus Explicada: Ventanas de Transferencia, Delta-V y Aerofrenado",
+  description: "Aprende cómo funciona la mecánica de Curso a Venus, desde las ventanas de transferencia y los presupuestos de delta-v hasta la aerocaptura, con tablas, consejos y errores comunes.",
+  category: "mechanics",
+  date: "2026-10-06",
+}
+
+Pocas rutas interplanetarias castigan tanto una planificación descuidada como el viaje hacia nuestro vecino interior, y la **mecánica de Curso a Venus** es donde esa lección golpea con más fuerza. Acierta con tu ventana de salida y el viaje no cuesta casi nada; equivócate y quemarás propergol que no puedes reemplazar. Comprender la **mecánica de Curso a Venus** es la diferencia entre una inserción orbital limpia y una deriva silenciosa hacia el Sol, hacia la nada.
+
+## ¿Qué es la mecánica de Curso a Venus?
+
+La **mecánica de Curso a Venus** es el conjunto de sistemas que un juego utiliza para permitirte planificar, volar y corregir una transferencia interplanetaria de la Tierra a Venus. Rara vez es un único botón. En la mayoría de las simulaciones de vuelo espacial es un bucle: un planificador de trayectoria muestra dónde estarán los planetas en cualquier fecha futura, un programador de maniobras te permite gastar propergol, y un modelo físico lleva entonces tu nave allí donde las matemáticas dicen que va.
+
+Esa última parte es lo que la hace interesante. Una mecánica de Curso a Venus bien construida no perdona una planificación descuidada. No hay raíles invisibles, no hay correcciones automáticas ni segundas oportunidades una vez que te deslizas hacia el Sol con el depósito vacío.
+
+### Qué suele contener la mecánica
+
+| Componente | Qué hace | Por qué importa |
+|---|---|---|
+| Planificador de transferencia | Proyecta las posiciones planetarias a lo largo del tiempo | Revela ventanas de salida viables |
+| Nodos de maniobra | Te permiten programar encendidos en momentos exactos | Convierte la planificación en acción |
+| Lectura de delta-v | Muestra el coste de cada encendido | Transforma las conjeturas en presupuestos |
+| Aceleración temporal / deriva | Avanza la simulación | Mantiene jugable un crucero de 146 días |
+| Herramientas de captura | Aerofrenado, aerocaptura o retroencendido | Determina si te quedas o pasas de largo |
+
+No todos los títulos implementan las cinco. Los juegos con inclinación arcade suelen comprimir los pasos intermedios y te entregan un único aviso de "fijar rumbo". Los títulos con inclinación a la simulación esperan que construyas todo el plan tú mismo. De cualquier manera, la lógica subyacente es la misma, y esa lógica es la que confunde a los jugadores nuevos.
+
+### Por qué los diseñadores lo construyen así
+
+El viaje interplanetario es un rompecabezas de sincronización, no un rompecabezas de distancia. Venus no está lejos como una montaña está lejos; está lejos como un tren está lejos cuando llegas al andén dos minutos después de que se ha ido. La mecánica de Curso a Venus existe para hacer jugable esa abstracción: permitirte leer el horario, comprar un billete y luego vivir con las consecuencias de tu sincronización.
+
+## El bucle central: cómo se desarrolla una travesía de Curso a Venus
+
+Toda travesía exitosa a través de la mecánica de Curso a Venus sigue el mismo bucle de cinco etapas, ya sea que estés jugando una simulación exigente o una versión arcade simplificada.
+
+| Etapa | Acción del jugador | Qué pone a prueba | Fallo común |
+|---|---|---|---|
+| 1. Escaneo de ventana | Leer el planificador de transferencia | Comprensión de la sincronización orbital | Partir en una fecha aleatoria |
+| 2. Encendido de salida | Ejecutar la inyección transvenusiana | Precisión y disciplina de combustible | Encender en exceso y desperdiciar delta-v |
+| 3. Deriva | Acelerar el tiempo y monitorizar | Paciencia y corrección a mitad de trayecto | Ignorar errores pequeños hasta que es demasiado tarde |
+| 4. Llegada | Aerocaptura, aerofrenado o encendido | Evaluación de riesgos | Pasar de largo junto a Venus por completo |
+| 5. Inserción | Circularizar en tu órbita objetivo | Planificar el final de la partida | Llegar sin combustible |
+
+### Etapa 1: Leer la ventana
+
+El planificador es donde se gana o se pierde el viaje. Busca la fecha en que la Tierra y Venus se alinean correctamente, no la fecha en que están más cerca en línea recta. Esas dos fechas son diferentes, y confundirlas es el error de principiante más común.
+
+### Etapa 2: El encendido de salida
+
+Los encendidos de salida suelen realizarse mejor en el punto más bajo y seguro de tu órbita de estacionamiento. Este es el efecto Oberth: un encendido realizado mientras te mueves rápido convierte el propergol en energía orbital de forma más eficiente que el mismo encendido realizado mientras te mueves despacio. Enciende al principio de la órbita y pagarás más por menos.
+
+### Etapa 3: Correcciones a mitad de trayecto
+
+Los errores pequeños se acumulan a lo largo de 146 días de deriva. Una corrección de unas pocas docenas de metros por segundo al principio del crucero puede ahorrarte cientos después. La experiencia de los jugadores sugiere corregir al menos una vez alrededor del punto medio, incluso cuando la trayectoria parece perfecta en pantalla.
+
+### Etapa 4: Llegada
+
+Llegar a Venus es la parte difícil. Te mueves rápido, y Venus no va a frenar por ti. Aquí es donde la mecánica deja de ser cuestión de aritmética y empieza a ser cuestión de nervios.
+
+### Etapa 5: Inserción
+
+El encendido final determina tu órbita. Aciértalo y tendrás una plataforma científica, una parada de reabastecimiento o un punto de escala para el sistema exterior. Fállalo y tendrás un cometa caro.
+
+## Sincronización, ventanas y el presupuesto de delta-v
+
+Dos números dominan la mecánica de Curso a Venus: cuándo te vas y cuánto cuesta. La siguiente tabla enumera los valores aproximados del mundo real sobre los que están construidas la mayoría de las simulaciones.
+
+| Valor | Cifra aproximada | Por qué importa |
+|---|---|---|
+| Período sinódico Tierra–Venus | Unos 584 días | Con qué frecuencia vuelve una buena ventana |
+| Tiempo de transferencia de Hohmann | Unos 146 días | Duración de la fase de crucero |
+| Ángulo de fase requerido en la salida | Aproximadamente 54° (Venus por detrás) | Precisión necesaria en el lanzamiento |
+| Período orbital de Venus | Unos 225 días | Rige el movimiento del objetivo |
+| Período orbital de la Tierra | Unos 365 días | Rige el movimiento de salida |
+
+Como el período sinódico es más largo que la propia transferencia, no puedes simplemente partir cuando quieras y esperar una ruta barata. Si pierdes una ventana, esperarás aproximadamente un año y medio para una comparable, o pagarás una fuerte penalización de propergol por una trayectoria fuera de ventana.
+
+### El presupuesto de delta-v
+
+El delta-v es la moneda de la mecánica de Curso a Venus. Cada encendido lo gasta, y no hay ningún banco del que pedir prestado a mitad de vuelo.
+
+| Maniobra | Coste típico (referencia del mundo real) | Notas |
+|---|---|---|
+| Salida desde la órbita baja terrestre | ~3,5 km/s | Lo más barato con una transferencia tipo Hohmann |
+| Corrección a mitad de trayecto | De decenas a cientos de m/s | Más barata cuanto antes la hagas |
+| Captura en órbita baja de Venus (encendido puro) | ~3 km/s o más | Cara sin atmósfera |
+| Aerocaptura en una órbita elíptica | Limitada por el escudo térmico | Ahorra la mayor parte del encendido de captura |
+| Circularización tras la aerocaptura | De unos pocos cientos de m/s a ~1 km/s | Depende de tu órbita objetivo |
+
+Las simulaciones a menudo reescalan estas cifras, así que trata la tabla como un modelo de referencia y no como un evangelio. Lo que se mantiene en todas las versiones de la mecánica es la forma del problema: la salida es barata, la llegada es cara, y la atmósfera es el descuento.
+
+## Opciones de llegada y comparación de estrategias de ruta
+
+No todas las rutas a Venus son iguales. La siguiente tabla compara los enfoques que la mayoría de los jugadores acaba eligiendo.
+
+| Estrategia | Dificultad | Coste de delta-v | Riesgo | Ideal para |
+|---|---|---|---|---|
+| Transferencia directa de Hohmann | Baja | El más bajo | Bajo | Primeros intentos y misiones sencillas |
+| Transferencia rápida fuera de ventana | Media | Alto | Medio | Objetivos con límite de tiempo |
+| Asistencia gravitatoria lunar o terrestre | Media-alta | Menor coste de salida | Sensible a la sincronización | Jugadores avanzados con habilidad de planificación |
+| Aerocaptura | Media-alta | Mucho menor que un encendido puro | Escudo térmico y precisión | Llegadas eficientes |
+| Captura propulsada | Baja | El más alto | Bajo | Cuando tienes combustible de sobra |
+
+### Por qué la aerocaptura es la respuesta clásica
+
+Venus tiene una de las atmósferas más densas de cualquier cuerpo rocoso del sistema solar: aproximadamente un 96,5 % de dióxido de carbono, con una presión superficial unas 92 veces la de la Tierra y una temperatura superficial cercana a los 464 °C. Esa atmósfera es un freno, y uno muy eficaz. También es implacable: entra demasiado superficialmente y rebotarás de vuelta al espacio, entra demasiado pronunciadamente y te convertirás en un meteoro. Los informes de la comunidad identifican sistemáticamente el ángulo de entrada como la habilidad más difícil de aprender en la mecánica de Curso a Venus.
+
+### Por qué las asistencias gravitatorias son opcionales
+
+Un sobrevuelo lunar puede recortar el coste de salida, y algunos jugadores usan la propia Tierra para un impulso posterior. Estas rutas son elegantes, pero exigen un nivel de habilidad de planificación que la mayoría de los jugadores primerizos no tiene. Guárdalas para tu segunda o tercera travesía.
+
+## Errores comunes y consejos profesionales
+
+| Síntoma | Causa probable | Solución |
+|---|---|---|
+| Pasas de largo junto a Venus por completo | Ángulo de fase incorrecto en la salida | Recalcula la ventana, no el encendido |
+| Pasas demasiado rápido para capturar | Velocidad de llegada demasiado alta | Baja tu periapsis y aerofrena |
+| Te quedas sin combustible antes de la inserción | Gastaste de más en la salida o en un cambio de plano | Combina encendidos en los nodos orbitales |
+| Tu órbita decae hacia la atmósfera | Periapsis demasiado baja tras el aerofrenado | Eleva la periapsis una vez capturado |
+| Las correcciones cuestan más de lo esperado | Correcciones hechas demasiado tarde | Corrige pronto y corrige poco |
+
+Unos cuantos hábitos separan a los jugadores que completan la mecánica de Curso a Venus de los que ven cómo Venus se desliza de largo:
+
+- **Planifica todo el viaje antes del primer encendido.** Conoce tu órbita de llegada, no solo tu fecha de salida.
+- **Mantén una reserva.** Procura llegar con un margen de delta-v para emergencias.
+- **Corrige pronto, corrige poco.** Un encendido minúsculo el día 20 supera a uno grande el día 130.
+- **Vigila tu plano.** Venus orbita unos pocos grados fuera de la eclíptica, y los cambios de plano hechos en el punto equivocado cuestan mucho más de lo que deberían.
+- **Usa la atmósfera, pero respétala.** El aerofrenado es delta-v gratis con un precio muy alto por los errores.
+
+## Preguntas frecuentes
+
+### ¿Con qué frecuencia te da la mecánica de Curso a Venus una buena ventana de lanzamiento?
+
+Aproximadamente cada 584 días en la mecánica orbital del mundo real, que es el período sinódico Tierra–Venus. La mayoría de las simulaciones siguen esa cifra de cerca, aunque las versiones de estilo arcade a veces la acortan para que los jugadores no tengan que esperar tanto entre intentos.
+
+### ¿Siempre hay que aerofrenar en Venus?
+
+No. Una captura con retroencendido puro funciona bien y es mucho más fácil de controlar, pero cuesta aproximadamente 3 km/s o más, lo que a menudo es más de lo que una nave pequeña puede permitirse. La aerocaptura es la opción eficiente; una captura propulsada es la segura.
+
+### ¿Cuál es el mayor error de principiante con la mecánica de Curso a Venus?
+
+Partir cuando la Tierra y Venus están más cerca. Esa fecha no es lo mismo que el ángulo de fase correcto, y usarla produce una trayectoria que o bien llega tarde o bien falla el planeta por completo. Confía siempre en el planificador de transferencia antes que en la intuición.
+
+### ¿Puedes usar la mecánica de Curso a Venus para alcanzar otros planetas?
+
+Sí, y eso forma parte de su valor. El mismo bucle de planificación —ventana, encendido de salida, deriva, corrección, captura— se aplica a Marte, Mercurio y el sistema exterior. Venus es simplemente un aula indulgente, ya que la atmósfera te permite recuperarte de una llegada que sería fatal en casi cualquier otro lugar. Para cifras de referencia autorizadas sobre el planeta en sí, consulta la [hoja informativa sobre Venus de la NASA](https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html).

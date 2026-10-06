@@ -1,0 +1,142 @@
+export const metadata = {
+  title: "Tutorial de rumbo a Venus: planifica, lanza y llega a Venus paso a paso",
+  description: "Un tutorial práctico de rumbo a Venus que cubre ventanas de lanzamiento, órbitas de transferencia, correcciones de rumbo y quemas de llegada, además de los errores que hay que evitar.",
+  category: "guide",
+  date: "2026-10-06",
+}
+
+Trazar un rumbo a Venus es uno de los desafíos más gratificantes de la navegación interplanetaria, y también uno de los menos indulgentes. Un buen tutorial de rumbo a Venus tiene que responder tres preguntas a la vez: cuándo te vas, cómo modelas la transferencia y qué ocurre cuando llegas.
+
+Si fallas en cualquiera de ellas, pasarás de largo junto al planeta sin combustible para corregir. Este tutorial de rumbo a Venus recorre la mecánica orbital, la secuencia paso a paso y los errores que arruinan la mayoría de los primeros intentos, ya sea que estés diseñando una misión real o practicando en un simulador de vuelo espacial.
+
+## Qué enseña realmente un tutorial de rumbo a Venus
+
+Un «rumbo» en vuelo interplanetario no es una línea recta. Es una órbita alrededor del Sol que resulta tocar la órbita de la Tierra en un extremo y la de Venus en el otro. Todo lo demás en un tutorial de rumbo a Venus es contabilidad: determinar cuándo existe esa órbita, cuánta energía cuesta y cómo curvarla cuando la realidad no coincide con tus cálculos.
+
+Venus es un buen objetivo didáctico porque la geometría es limpia y las penalizaciones por descuido son obvias. La Tierra está a unas 1,00 UA del Sol; Venus está a unas 0,72 UA. Esa diferencia define la forma de tu elipse de transferencia y, de forma indirecta, todo lo demás.
+
+Cuatro ideas hacen la mayor parte del trabajo:
+
+- **Órbita de transferencia heliocéntrica.** Tras abandonar la Tierra, tu nave espacial se desplaza por inercia en una elipse alrededor del Sol. La Tierra queda cerca del afelio y Venus, cerca del perihelio.
+- **Ángulo de fase.** Venus debe estar posicionado de modo que llegue al punto de encuentro en el mismo momento en que llegas tú, lo que normalmente significa que empieza «detrás» de la Tierra en su órbita.
+- **Período sinódico.** La Tierra y Venus se vuelven a alinear aproximadamente cada 584 días, que es la frecuencia con la que se presenta una buena ventana de salida.
+- **Esfera de influencia.** Dentro del pozo gravitatorio de Venus, el Sol pasa a ser un detalle de fondo y el planeta se hace cargo por completo de los cálculos.
+
+Si aciertas esos cuatro puntos, el resto del vuelo es refinamiento. Si los fallas, ninguna cantidad de combustible salvará la misión.
+
+## Los números orbitales detrás de todo rumbo a Venus
+
+Antes de trazar nada en este tutorial de rumbo a Venus, conoce tu objetivo. A Venus se lo suele llamar el gemelo de la Tierra, pero las similitudes terminan en el diámetro.
+
+| Parámetro | Tierra | Venus |
+|---|---|---|
+| Distancia media al Sol | 1,00 UA | 0,72 UA |
+| Período orbital | 365,25 días | 224,7 días |
+| Período sinódico Tierra–Venus | — | ~584 días |
+| Radio medio | 6.371 km | 6.052 km |
+| Gravedad superficial | 9,81 m/s² | 8,87 m/s² |
+| Velocidad de escape | 11,2 km/s | 10,4 km/s |
+| Atmósfera | ~78% N₂, 21% O₂ | ~96% CO₂, ~92 bar en la superficie |
+| Temperatura media en la superficie | ~15 °C | ~465 °C |
+
+Dos filas de esa tabla cambian el diseño de la misión más que el resto. La órbita a 0,72 UA significa que la elipse de transferencia es corta y rápida: un viaje de ida dura meses, no años. La atmósfera aplastante significa que llegar es fácil y *quedarse* es difícil, porque todo lo que envíes hacia abajo tiene que sobrevivir tanto a la presión como al calor.
+
+El otro número que importa es la velocidad excedente hiperbólica, que a menudo se escribe como v-infinito. Describe a qué velocidad te mueves en relación con Venus cuando entras en su esfera de influencia. Toda maniobra de llegada que planifiques es, en realidad, una lucha contra ese número.
+
+Aquí hay un presupuesto de propulsión aproximado para un orbitador no tripulado, medido desde la órbita baja terrestre:
+
+| Maniobra | Δv aproximado | Notas |
+|---|---|---|
+| Inyección transvenusiana | ~3,5 km/s | Abandona la esfera de influencia de la Tierra |
+| Corrección de rumbo | 10–50 m/s | Una o dos quemas pequeñas |
+| Inserción en órbita de Venus | ~2,5–3 km/s | Si capturas de forma propulsiva |
+| Aerofrenado para circularizar | Casi cero propelente | Tarda de semanas a meses |
+| Superficie a órbita baja | ~27 km/s | Efectivamente poco práctico |
+
+Números como estos explican por qué la mayoría de las misiones reales a Venus han sido sobrevuelos, orbitadores o módulos de aterrizaje de vida corta, en lugar de retornos de muestras. El delta-v para llegar es manejable; el delta-v para salir no lo es.
+
+## Tutorial de rumbo a Venus paso a paso: del lanzamiento al encuentro
+
+Sigue estos pasos en orden. Saltarse alguno, especialmente la quema de salida, es la forma más común de que falle un primer intento.
+
+| Paso | Acción | Qué verificar |
+|---|---|---|
+| 1 | Define tu órbita objetivo en Venus | Altitud, inclinación y si necesitas una órbita siquiera |
+| 2 | Selecciona la ventana de lanzamiento | Ángulo de fase entre la Tierra y Venus |
+| 3 | Resuelve la elipse de transferencia | Perihelio en la órbita de Venus, afelio cerca de la de la Tierra |
+| 4 | Ejecuta la quema de salida | Vector de velocidad excedente hiperbólica, no solo la rapidez |
+| 5 | Navega por inercia y monitorea | Máximo acercamiento previsto en la esfera de influencia de Venus |
+| 6 | Realiza una corrección de rumbo | Punto de mira, no la posición actual |
+| 7 | Llega y captura | Inserción propulsiva, aerocaptura o aerofrenado |
+| 8 | Ajusta a la órbita final | Quemas pequeñas más resistencia atmosférica controlada |
+
+### Pasos 1–3: Diseña antes de quemar
+
+La elipse de transferencia queda fijada por dos puntos: de dónde sales y a dónde llegas. Como Venus orbita más cerca del Sol, tu nave espacial desciende efectivamente «cuesta abajo» en el pozo gravitatorio del Sol durante la mayor parte del crucero, perdiendo velocidad respecto a la Tierra todo el tiempo.
+
+Por eso la energía de salida es alta y la velocidad de llegada es aún mayor. La trayectoria que elijas en el paso 3 determina casi todo lo que sigue: el tamaño de tu quema de salida, la duración del crucero y cuánto propelente debes reservar para la llegada.
+
+### Pasos 4–6: Pilotar el rumbo
+
+La salida es una sola quema en la que la dirección importa tanto como la magnitud. Un pequeño error de apuntamiento se convierte en una enorme distancia de fallo a lo largo de millones de kilómetros, que es exactamente lo que las correcciones de rumbo existen para corregir.
+
+Presupuesta dos correcciones: una temprana, cuando los datos de seguimiento se afiancen, y otra después de tu determinación final de trayectoria. Ambas deberían ser pequeñas. Si alguna es grande, algo anterior en el diseño estaba mal.
+
+### Pasos 7–8: Llegada
+
+La llegada es donde un tutorial de rumbo a Venus se gana su utilidad. Puedes capturar de forma propulsiva, aerofrenar, aerocapturar o simplemente pasar de largo. Cada opción intercambia propelente por riesgo, y cada una cambia cuánta masa debes lanzar en primer lugar.
+
+## Ventanas de lanzamiento y correcciones de rumbo
+
+Las ventanas hacia Venus vienen en dos variantes, y elegir la incorrecta te cuesta tiempo o combustible.
+
+| | Transferencia tipo I | Transferencia tipo II |
+|---|---|---|
+| Ángulo de transferencia | Menos de 180° | Más de 180° |
+| Tiempo de vuelo típico | ~4–5 meses | ~6–8 meses |
+| Energía de salida | Mayor | Menor |
+| Velocidad de llegada a Venus | Mayor | Menor |
+| Más adecuada para | Misiones más rápidas | Misiones con combustible limitado |
+
+La ventana se repite aproximadamente cada 584 días, así que un lanzamiento perdido no es fatal: solo cuesta paciencia. Los informes de la comunidad de jugadores de simuladores sugieren que la mayoría de los primeros intentos fallan por la misma razón: la quema de salida se sincroniza con la posición *actual* de Venus en lugar de con su posición al llegar. Adelántate al objetivo por todo el tiempo de vuelo.
+
+Las correcciones de rumbo son un seguro barato. Una quema de unas pocas decenas de metros por segundo, ejecutada a uno o dos meses de distancia, puede borrar una distancia de fallo de cientos de miles de kilómetros. Si esperas hasta la última semana, la misma corrección cuesta mucho más propelente, porque estás cambiando tu vector de velocidad en un punto donde la geometría casi no te da ventaja.
+
+La inclinación merece atención especial aquí. Si tu plano de transferencia no coincide con el plano orbital de Venus, la distancia de fallo crece de forma constante sin importar lo buena que sea tu sincronización. El lugar más barato para corregir un error de plano es temprano, mientras aún tienes la velocidad orbital de la Tierra a tu favor.
+
+## Llegada, captura y errores comunes
+
+| Método de captura | Coste de propelente | Riesgo | Mejor para |
+|---|---|---|---|
+| Inserción orbital propulsiva | Alto | Bajo | Misiones que deben alcanzar una órbita precisa |
+| Aerocaptura | Muy bajo | Alto | Misiones con restricciones de masa y escudos térmicos |
+| Aerofrenado | Muy bajo | Moderado | Orbitadores que pueden empezar en una elipse alta |
+| Solo sobrevuelo | Cero | Bajo | Reconocimiento y asistencias gravitatorias |
+
+El aerofrenado es el compromiso al que recurren la mayoría de los planificadores de misiones. Llega a una elipse alta y segura, y luego roza repetidamente la atmósfera superior para disipar energía durante semanas. Es lento, pero es casi gratis, y convierte un presupuesto de propelente imposible en uno viable.
+
+Por último, una breve tabla de solución de problemas basada en informes de la comunidad y prácticas comunes:
+
+| Error | Síntoma | Solución |
+|---|---|---|
+| Lanzar fuera de la ventana | El Δv de llegada se dispara | Espera al siguiente período sinódico |
+| Ignorar la inclinación orbital | La distancia de fallo crece de forma constante | Corrige el plano temprano, cerca de la Tierra |
+| Apuntar a la posición actual de Venus | Llegas adonde Venus *estaba* | Adelántate al objetivo por el tiempo de vuelo |
+| Sin presupuesto de propelente para la llegada | Sobrevuelo forzado | Reserva el Δv de captura antes del lanzamiento |
+| Aerofrenado no modelado | Fallo térmico o estructural | Modela el corredor de entrada de forma conservadora |
+
+Para obtener antecedentes autorizados sobre el planeta en sí —atmósfera, temperatura y los resultados de misiones pasadas—, consulta [la visión general de Venus de la NASA](https://science.nasa.gov/venus/). Para la teoría general detrás de las órbitas de transferencia, las esferas de influencia y las correcciones de rumbo, [Fundamentos de vuelo espacial de la NASA](https://science.nasa.gov/learn/basics-of-space-flight/) sigue siendo la referencia estándar.
+
+## Preguntas frecuentes
+
+**¿Cuánto dura un rumbo a Venus?**
+Una transferencia de tipo I suele durar unos cuatro a cinco meses desde la salida de la Tierra hasta la llegada a Venus, mientras que una transferencia de tipo II más lenta puede extenderse a seis u ocho meses. Añade tiempo extra para el aerofrenado si planeas circularizar sin propelente.
+
+**¿Cuándo es la próxima buena ventana de lanzamiento para una práctica de tutorial de rumbo a Venus?**
+Las ventanas se repiten aproximadamente cada 584 días a medida que la Tierra y Venus se vuelven a alinear. Si te pierdes una, ejecutar la misma geometría de transferencia en la siguiente ventana es un ejercicio perfectamente válido, y una buena forma de comparar tu sincronización con un resultado conocido.
+
+**¿Necesito igualar exactamente la órbita de Venus?**
+No. Igualar planos y altitudes cuesta propelente que rara vez necesitas. Para la mayoría de las prácticas, una órbita de captura elíptica alta basta para demostrar la secuencia completa desde la salida hasta la llegada.
+
+**¿Puedo practicar un tutorial de rumbo a Venus en un simulador?**
+Sí, y es la forma más barata de aprender. Los simuladores te permiten volar la misma transferencia repetidamente, variar la quema de salida y observar cómo un pequeño error de apuntamiento se convierte en un gran fallo, todo sin gastar el presupuesto de una misión real ni esperar 584 días a otra ventana.
