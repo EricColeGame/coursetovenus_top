@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const adsenseId = process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_ID;
   return {
     metadataBase: new URL(siteUrl),
-    title: { default: "Course to Venus Wiki", template: "%s" },
+    title: { default: "coursetovenus Wiki", template: "%s" },
     description: "Complete Course to Venus fan wiki with walkthroughs, characters, crew relationships, quests, choices and story progression guides.",
     manifest: "/manifest.json",
     icons: {
