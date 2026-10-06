@@ -1,1 +1,491 @@
-{}
+{
+  "site": {
+    "name": "Course to Venus Wiki",
+    "shortName": "Course to Venus",
+    "tagline": "攻略、キャラクター、選択、アップデート",
+    "description": "Course to Venus の決定版ガイド！近未来のユーモラスな宇宙アドベンチャーを探検しよう。船内探索、クルーとの関係、選択、クエスト、ストーリー進行を網羅。",
+    "legalNotice": "非公式のファンウィキです。Not Every Witch とは無関係です。プレイヤーがプレイヤーのために作成しました。"
+  },
+  "nav": {
+    "home": "ホーム",
+    "menu": "メニュー",
+    "toggleTheme": "テーマ切替",
+    "guide": "ガイド",
+    "mechanics": "メカニクス",
+    "items": "アイテム",
+    "progression": "進行",
+    "characters": "キャラクター",
+    "controls": "操作",
+    "codes": "コード"
+  },
+  "home": {
+    "meta": {
+      "title": "Course to Venus Wiki - 攻略、キャラクター、選択",
+      "description": "Course to Venus Wiki では、宇宙アドベンチャーの攻略、キャラクター同士の関係、クエスト、選択、アイテム、アップデート、対応プラットフォーム、進行のコツを紹介しています。",
+      "keywords": "Course to Venus, PC, Android, HTML5, 攻略, キャラクター, クエスト, 選択"
+    },
+    "hero": {
+      "eyebrow": "ユーモラスなSF宇宙アドベンチャー",
+      "title": "Course to Venus Wiki",
+      "description": "近未来のユーモラスな宇宙アドベンチャーを探検しよう。船内探索、クルーとの関係、選択、クエスト、ストーリー進行が中心です。",
+      "stats": [
+        "バージョン 0.5.3",
+        "3プラットフォーム",
+        "10言語",
+        "毎月アップデート"
+      ],
+      "primaryCta": "itch.io でプレイ",
+      "secondaryCta": "攻略",
+      "tertiaryCta": "キャラクター",
+      "videoLabel": "公式メディア"
+    },
+    "updates": {
+      "title": "最新アップデート",
+      "browse": "すべてのガイドを見る",
+      "viewAll": "すべて表示"
+    },
+    "start": {
+      "eyebrow": "ここから始める",
+      "title": "Course to Venus の旅",
+      "cards": [
+        {
+          "number": "1",
+          "title": "初心者ガイド",
+          "description": "Course to Venus の基本ループを学ぼう。ルートマップを読み、機動を計画し、燃料を投じ、最初の本格的なラン前に熱と危険に対処します。"
+        },
+        {
+          "number": "2",
+          "title": "攻略とエンディング",
+          "description": "Course to Venus の攻略を章ごとに追い、分岐点を記録し、パズルを解き、セーブを失わずにすべてのエンディングへ到達します。"
+        },
+        {
+          "number": "3",
+          "title": "ベント操作",
+          "description": "Course to Venus のベント操作とインタラクションの表示を習得し、封鎖されたベントや気流パズルでランが止まらないようにします。"
+        },
+        {
+          "number": "4",
+          "title": "クルーとキャラクター",
+          "description": "モリー、ジェナ、ゴーストを知り、信頼、会話の選択、タイミングが船上の関係をどう形作るかを学びます。"
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "人気ページ",
+      "title": "今話題の内容",
+      "quickLinks": [
+        "初心者ガイド",
+        "完全攻略",
+        "ベント操作",
+        "キャラクターガイド"
+      ],
+      "cards": [
+        {
+          "badge": "初心者",
+          "title": "初心者ガイド",
+          "description": "Course to Venus の初回ランに必要なすべて。セットアップとルートの読み方から燃料・熱管理まで。",
+          "href": "/guide/course-to-venus-how-to-play"
+        },
+        {
+          "badge": "更新済み",
+          "title": "完全攻略",
+          "description": "分岐点、パズル、コレクティブル、すべてのエンディングを解説する章ごとの Course to Venus 攻略。",
+          "href": "/guide/course-to-venus-walkthrough"
+        },
+        {
+          "badge": "人気",
+          "title": "ベントの開け方",
+          "description": "PC、コンソール、携帯機でベントを開くための操作、表示、簡単な対処法。",
+          "href": "/controls/course-to-venus-how-to-open-vent"
+        },
+        {
+          "badge": "人気",
+          "title": "バールの入手方法",
+          "description": "バールの場所と、他のすべてを解禁する道具への手順付きルート。",
+          "href": "/items/course-to-venus-how-to-get-crowbar"
+        },
+        {
+          "badge": "更新済み",
+          "title": "電話コードガイド",
+          "description": "Course to Venus の電話コードシステムの仕組み、コードの出現場所、引き換え方法。",
+          "href": "/codes/course-to-venus-phone-code"
+        },
+        {
+          "badge": "人気",
+          "title": "モリー キャラクターガイド",
+          "description": "彼女の物語上の役割、関係シーン、彼女のアークを最大限楽しむコツ。",
+          "href": "/characters/course-to-venus-molly"
+        },
+        {
+          "badge": "人気",
+          "title": "進行ガイド",
+          "description": "より良いリソース配分で Course to Venus の旅の各段階を進む方法。",
+          "href": "/progression/course-to-venus-how-to-progress"
+        },
+        {
+          "badge": "新着",
+          "title": "セーブファイルガイド",
+          "description": "Course to Venus のセーブファイルの場所、バックアップ方法、失った進行の復元方法。",
+          "href": "/progression/course-to-venus-save-file"
+        },
+        {
+          "badge": "新着",
+          "title": "ミッションのメカニクス",
+          "description": "打ち上げウィンドウ、遷移タイミング、デルタVの配分、到着モードを手順ごとに解説。",
+          "href": "/mechanics/course-to-venus-mission"
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "Course to Venus とは？",
+      "paragraphs": [
+        "Course to Venus は、開発者 Not Every Witch による近未来のユーモラスなSFアドベンチャーです。地球から金星へ船を計画・操縦し、推進力と燃料を熱、シールド、物資、クルーの状態と天秤にかけながら、毎ラウンド発生するイベントや危険に対処します。",
+        "本作はルート計画、パズル、キャラクター関係を融合しています。封鎖されたベントを開け、バールなどの鍵や道具を見つけ、船内をデッキごとに探索し、モリー、ジェナ、ゴーストとの分岐する選択を追いましょう。Course to Venus ウィキでは、必要な攻略、アイテムの場所、キャラクターガイド、進行のコツをまとめています。"
+      ],
+      "stats": [
+        {
+          "label": "開発元",
+          "value": "Not Every Witch"
+        },
+        {
+          "label": "プラットフォーム",
+          "value": "HTML5 · Windows · Android"
+        },
+        {
+          "label": "ジャンル",
+          "value": "SFアドベンチャー"
+        },
+        {
+          "label": "バージョン",
+          "value": "0.5.3"
+        },
+        {
+          "label": "言語",
+          "value": "10"
+        },
+        {
+          "label": "アップデート",
+          "value": "毎月"
+        }
+      ],
+      "cta": "すべてのガイドを見る"
+    },
+    "explore": {
+      "title": "Course to Venus Wiki を探索",
+      "description": "Course to Venus を極めるために必要なすべて。初心者向けの手順、完全攻略、キャラクターガイド、アイテムの場所、イベントのメカニクス、アップデート、バージョン履歴を一か所に。",
+      "modules": [
+        {
+          "order": 1,
+          "name": "Course to Venus 初心者ガイド",
+          "description": "Course to Venus の初心者向け手順ガイド。ランの流れ、燃料と熱の管理、ルート計画、打ち上げを台無しにする序盤のミスを解説。",
+          "href": "/guide/course-to-venus-how-to-play",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "動く前にルートマップを読み、そのランで達成する主目標を一つだけ選ぶ。"
+            },
+            {
+              "label": "2",
+              "detail": "最初の本格的な Course to Venus のランでは、スタンダードなどの寛容なモードを選ぶ。"
+            },
+            {
+              "label": "3",
+              "detail": "機動を計画し、常に予備を残しながら燃料・行動・カードを投じる。"
+            },
+            {
+              "label": "4",
+              "detail": "危険、熱、イベントは、反応する前に結果全体を読んで対処する。"
+            },
+            {
+              "label": "5",
+              "detail": "問題が発生した同じラウンドで、修理、冷却、補給、クルーの交代を管理する。"
+            },
+            {
+              "label": "6",
+              "detail": "目標への進行を追い、最後の到着噴射のために燃料を貯める。"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Course to Venus 攻略",
+          "description": "分岐点、パズルの戦略、コレクティブル、エンディング、そしてどのルートも復帰可能に保つセーブ習慣を扱う章ごとの Course to Venus 攻略。",
+          "href": "/guide/course-to-venus-walkthrough",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "最低3つのセーブスロットを回し、誤った分岐が永続化しないようにする。"
+            },
+            {
+              "label": "2",
+              "detail": "エリア内をすべて探索し、ストーリーを進める前に任意コンテンツを消化する。"
+            },
+            {
+              "label": "3",
+              "detail": "確認や章の切り替えの前に、新しいスロットへセーブする。"
+            },
+            {
+              "label": "4",
+              "detail": "模様や順序のパズルは、一度に一つの変数だけ変えて解く。"
+            },
+            {
+              "label": "5",
+              "detail": "主要な決定と未解決の糸口をすべて記録し、別エンディングを素早く回収する。"
+            },
+            {
+              "label": "6",
+              "detail": "ステージ終盤でコレクティブルのカテゴリが不完全に見えたら、すぐに引き返す。"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Course to Venus キャラクター",
+          "description": "ルート、会話、解禁シーンへの影響度で主要キャラクターを格付けする Course to Venus のクルーティアリスト。",
+          "href": "/characters",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "モリー - 関係シーン、信頼チェックの中心で、最も検索されるキャラクターアークの一つ。"
+            },
+            {
+              "label": "A",
+              "detail": "ジェナ - 星座の手がかりとストーリーフラグが、ルート選択やファン理論と密接に結びつく。"
+            },
+            {
+              "label": "B",
+              "detail": "ゴースト - 複数のランで追跡したと報告される、つかみどころのない遭遇。"
+            },
+            {
+              "label": "C",
+              "detail": "背景のクルー - 彩りを添える脇役の会話だが、ルートを変えることはまれ。"
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Course to Venus イベント",
+          "description": "Course to Venus の特別イベント、インタラクションシーン、発動条件を見逃したコンテンツに気づけるよう整理。",
+          "href": "/mechanics/course-to-venus-investigation",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "手がかり",
+              "detail": "推理を確定する前に、Course to Venus の調査で証拠の段階をすべて集める。"
+            },
+            {
+              "label": "探索",
+              "detail": "時間制限のあるイベントや任意のイベントシーンが消えないよう、船内をデッキごとに捜索する。"
+            },
+            {
+              "label": "発動条件",
+              "detail": "ほとんどのイベントは選択か入手アイテムで発動するので、シーンが言及してもまだ使えないものは記録しておく。"
+            },
+            {
+              "label": "タイミング",
+              "detail": "一部のインタラクションは特定のストーリー場面の前にしか現れないため、任意コンテンツは早めに終わらせる。"
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "name": "Course to Venus アップデート",
+          "description": "Course to Venus の最新アップデートノートと開発状況をバージョン別に整理し、復帰プレイヤーがすぐ追いつけるように。",
+          "href": "/progression/course-to-venus-update",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "0.5.3",
+              "detail": "現在の公開ビルド - 最新バージョンの進行マイルストーンと強化の優先順位。"
+            },
+            {
+              "label": "0.6",
+              "detail": "公式 Patreon で開発中のバージョン。復帰プレイヤー向けに新コンテンツとシステムを予告。"
+            },
+            {
+              "label": "毎月",
+              "detail": "Course to Venus のアップデートはおよそ月1回。長いランを始める前に確認を。"
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "name": "Course to Venus キャラクターガイド",
+          "description": "関係ルート、インタラクション条件、特定シーンを解禁する選択を扱う、より詳しい Course to Venus キャラクターガイド。",
+          "href": "/characters/course-to-venus-molly",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "モリー",
+              "detail": "彼女の間の取り方を読み、序盤のシーンを見返そう。彼女のアークは複数のランで実を結ぶ。"
+            },
+            {
+              "label": "ジェナ",
+              "detail": "星座の手がかりとストーリーフラグが、ゲームで最も検索される理論のいくつかへ彼女をつなぐ。"
+            },
+            {
+              "label": "ゴースト",
+              "detail": "プレイヤーがデッキやバージョンをまたいで追いかける、うわさの遭遇。"
+            },
+            {
+              "label": "信頼",
+              "detail": "一つのルートに徹底的に賭けよう。中途半端な選択は何も解禁しないことが多い。"
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Course to Venus ゲームの特徴",
+          "description": "ルート計画とリソース管理からパズル、探索、クルーとの関係まで、Course to Venus の特徴を概観。",
+          "href": "/guide/course-to-venus-game-guide",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "ルート",
+              "detail": "直線的な押し込み、ゆっくりしたドリフト、支援付き遷移は、それぞれ異なるタイプのランに適する。"
+            },
+            {
+              "label": "リソース",
+              "detail": "燃料、熱、時間、物資、クルーの状態には、注意すべき警告サインがある。"
+            },
+            {
+              "label": "パズル",
+              "detail": "ベント、鍵、バールなどの道具が船内のアクセスを左右する。"
+            },
+            {
+              "label": "クルー",
+              "detail": "選択と信頼がキャラクターのアークと解禁シーンを形作る。"
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Course to Venus バージョン",
+          "description": "Course to Venus のバージョン履歴、現在のビルドの詳細、古いセーブに戻る際に重要なコンテンツ変更。",
+          "href": "/progression/course-to-venus-new-version",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "0.5.3",
+              "detail": "公式 itch.io ページに掲載された公開バージョン。HTML5、Windows、Android で利用可能。"
+            },
+            {
+              "label": "0.6",
+              "detail": "公式 Patreon の開発者ログで予告された開発中ビルド。"
+            },
+            {
+              "label": "セーブ",
+              "detail": "現在のビルドでプレイし、セーブスロットを回そう。バージョン間で発動条件が異なることがある。"
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "よくある質問",
+      "description": "Course to Venus に関する最も一般的な質問への簡単な回答。",
+      "items": [
+        {
+          "question": "Course to Venus とは？",
+          "answer": "Course to Venus は、開発者 Not Every Witch による近未来のユーモラスなSFアドベンチャーです。地球から金星への旅を計画し、燃料、熱、物資のバランスを取りながら、道中でイベント、パズル、キャラクターの選択が展開します。"
+        },
+        {
+          "question": "Course to Venus はどのプラットフォームで遊べますか？",
+          "answer": "公式 itch.io ページには HTML5、Windows、Android が記載されているので、ブラウザでもデスクトップでもモバイルでも Course to Venus を遊べます。"
+        },
+        {
+          "question": "Course to Venus の攻略はありますか？",
+          "answer": "はい。Course to Venus の攻略では旅を章ごとに分け、分岐点と後戻りできない地点を示し、パズル、コレクティブル、エンディングを扱っています。"
+        },
+        {
+          "question": "Course to Venus でベントを開くには？",
+          "answer": "Course to Venus のベント操作ガイドでインタラクションの表示とタイミングを学び、自分のプラットフォームの正しいキーで、ラウンドを無駄にせずベントを開けましょう。"
+        },
+        {
+          "question": "Course to Venus の主要キャラクターは？",
+          "answer": "モリー、ジェナ、ゴーストが物語の柱です。Course to Venus キャラクターガイドでは、彼らの役割、関係ルート、追加シーンを解禁する選択を扱っています。"
+        },
+        {
+          "question": "Course to Venus にコードはありますか？",
+          "answer": "Course to Venus は一般的な引き換えコード一覧ではなく、電話コードシステムを採用しています。Course to Venus の電話コードガイドで、有効なコードの出現場所と手順付きの引き換え方法を説明しています。"
+        },
+        {
+          "question": "Course to Venus はどのくらいの頻度で更新されますか？",
+          "answer": "Course to Venus のアップデートはおよそ月1回で、公開バージョンは現在 0.5.3、バージョン 0.6 が開発中です。"
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Course to Venus を極める準備はできた？",
+      "description": "船に乗った最初の一歩から終盤のストーリー選択まで、コミュニティウィキが無料で最新のガイドでサポートします。",
+      "primary": "初心者ガイドを読む",
+      "secondary": "itch.io でプレイ"
+    }
+  },
+  "guide": {
+    "overviewTitle": "Course to Venus ガイド：攻略と初心者向けのコツ",
+    "overviewDescription": "打ち上げウィンドウ、船のシステム、クエスト、ランを形作る選択を扱う Course to Venus の手順付き攻略。"
+  },
+  "mechanics": {
+    "overviewTitle": "Course to Venus メカニクス：ミッションと調査システム",
+    "overviewDescription": "Course to Venus のミッション、調査、船内捜索のメカニクスの仕組みと、各システムの実践的なコツ。"
+  },
+  "items": {
+    "overviewTitle": "Course to Venus アイテム：鍵、バール、クライオポッド",
+    "overviewDescription": "ベントの鍵やバールからクライオポッド、イベントキーまで、Course to Venus の重要アイテムの場所。"
+  },
+  "progression": {
+    "overviewTitle": "Course to Venus 進行：アップデート、セーブ、開放",
+    "overviewDescription": "Course to Venus の進行、バージョン更新、セーブファイル、ストーリー進行に伴うロック解除の方法を追跡。"
+  },
+  "characters": {
+    "overviewTitle": "Course to Venus キャラクター：モリー、ジェナ、星座",
+    "overviewDescription": "モリー、ジェナの星座、ゴーストを含む Course to Venus のクルーと、関係が物語を変える仕組みを紹介。"
+  },
+  "controls": {
+    "overviewTitle": "Course to Venus 操作：ベントとインタラクションの基本",
+    "overviewDescription": "ベントの開け方や船内の換気ルートを含む、Course to Venus の操作とインタラクションの基本。"
+  },
+  "codes": {
+    "overviewTitle": "Course to Venus コード：電話コードと報酬",
+    "overviewDescription": "電話コードを含む Course to Venus の有効なコード、報酬の引き換え方法、新しいコードの出現場所。"
+  },
+  "shared": {
+    "wikiNavigation": "ウィキナビゲーション",
+    "activeCodes": "有効なコード",
+    "updated": "更新済み",
+    "viewAllCodes": "すべてのコードを見る",
+    "playOnRoblox": "Roblox でプレイ",
+    "inThisSection": "このセクション",
+    "tableOfContents": "目次",
+    "nextSteps": "次のステップ",
+    "needHelp": "助けが必要ですか？",
+    "relatedReading": "関連記事",
+    "relatedGuides": "関連ガイド",
+    "readMore": "続きを読む",
+    "officialMedia": "公式メディア",
+    "home": "ホーム",
+    "noGuidesAvailable": "まだガイドがありません。また後でチェックしてください！"
+  },
+  "footer": {
+    "aboutTitle": "Course to Venus Wiki",
+    "about": "Course to Venus Wiki は、攻略、クルーとの関係、クエスト、選択、プラットフォーム、必須のゲーム知識を扱う独立系ファン制作のガイドハブです。新規プレイヤーにもベテランにも役立ちます。",
+    "quickLinks": "クイックリンク",
+    "guides": "ガイド",
+    "legal": "法的事項",
+    "copyright": "2026 Course to Venus Wiki. Not Every Witch とは無関係です。",
+    "description": "近未来のユーモラスなSF宇宙アドベンチャー。船内探索、クルーとの関係、選択、ストーリー進行。",
+    "playGame": "Course to Venus をプレイ",
+    "officialDiscord": "公式 Discord",
+    "officialYoutube": "ゲームプレイを見る",
+    "officialPatreon": "Patreon で支援",
+    "beginnerGuide": "初心者ガイド",
+    "raceGuides": "キャラクターガイド",
+    "bossGuides": "クエストガイド",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfService": "利用規約"
+  }
+}

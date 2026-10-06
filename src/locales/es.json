@@ -1,1 +1,491 @@
-{}
+{
+  "site": {
+    "name": "Course to Venus Wiki",
+    "shortName": "Course to Venus",
+    "tagline": "Guías, personajes, decisiones y actualizaciones",
+    "description": "¡Tu guía definitiva de Course to Venus! Explora una divertida aventura espacial de ciencia ficción ambientada en un futuro cercano, con exploración de naves, relaciones con la tripulación, decisiones, misiones y progresión argumental.",
+    "legalNotice": "Wiki de fans no oficial. Sin afiliación con Not Every Witch. Hecha por jugadores, para jugadores."
+  },
+  "nav": {
+    "home": "Inicio",
+    "menu": "Menú",
+    "toggleTheme": "Cambiar tema",
+    "guide": "Guía",
+    "mechanics": "Mecánicas",
+    "items": "Objetos",
+    "progression": "Progresión",
+    "characters": "Personajes",
+    "controls": "Controles",
+    "codes": "Códigos"
+  },
+  "home": {
+    "meta": {
+      "title": "Course to Venus Wiki - Guía, personajes y decisiones",
+      "description": "Course to Venus Wiki cubre guías paso a paso, relaciones entre personajes, misiones, decisiones, objetos, actualizaciones, plataformas y consejos de progresión para la aventura espacial.",
+      "keywords": "Course to Venus, PC, Android, HTML5, guía, personajes, misiones, decisiones"
+    },
+    "hero": {
+      "eyebrow": "Divertida aventura espacial de ciencia ficción",
+      "title": "Course to Venus Wiki",
+      "description": "Explora una divertida aventura espacial de ciencia ficción ambientada en un futuro cercano, centrada en la exploración de naves, las relaciones con la tripulación, las decisiones, las misiones y la progresión argumental.",
+      "stats": [
+        "Versión 0.5.3",
+        "3 plataformas",
+        "10 idiomas",
+        "Actualizaciones mensuales"
+      ],
+      "primaryCta": "Jugar en itch.io",
+      "secondaryCta": "Guía",
+      "tertiaryCta": "Personajes",
+      "videoLabel": "Contenido oficial"
+    },
+    "updates": {
+      "title": "Últimas actualizaciones",
+      "browse": "Ver todas las guías",
+      "viewAll": "Ver todo"
+    },
+    "start": {
+      "eyebrow": "Empieza aquí",
+      "title": "Tu viaje en Course to Venus",
+      "cards": [
+        {
+          "number": "1",
+          "title": "Guía para principiantes",
+          "description": "Aprende el bucle principal de Course to Venus: lee el mapa de ruta, traza una maniobra, compromete tu combustible y resuelve el calor y los peligros antes de tu primera partida de verdad."
+        },
+        {
+          "number": "2",
+          "title": "Guía y finales",
+          "description": "Sigue la guía de Course to Venus acto por acto para marcar los puntos de ramificación, resolver puzles y alcanzar todos los finales sin perder una partida guardada."
+        },
+        {
+          "number": "3",
+          "title": "Controles de la ventilación",
+          "description": "Domina los controles de ventilación y las indicaciones de interacción de Course to Venus para que las ventilaciones selladas y los puzles de flujo de aire nunca detengan una partida."
+        },
+        {
+          "number": "4",
+          "title": "Tripulación y personajes",
+          "description": "Conoce a Molly, Jenna y al fantasma, y aprende cómo la confianza, las decisiones de diálogo y el momento oportuno dan forma a las relaciones a bordo."
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "Páginas populares",
+      "title": "Tendencias ahora",
+      "quickLinks": [
+        "Guía para principiantes",
+        "Guía completa",
+        "Controles de la ventilación",
+        "Guía de personajes"
+      ],
+      "cards": [
+        {
+          "badge": "Principiante",
+          "title": "Guía para principiantes",
+          "description": "Todo lo que necesitas para tu primera partida de Course to Venus, desde la configuración y la lectura de rutas hasta la gestión de combustible y calor.",
+          "href": "/guide/course-to-venus-how-to-play"
+        },
+        {
+          "badge": "Actualizado",
+          "title": "Guía completa",
+          "description": "Guía de Course to Venus acto por acto con puntos de ramificación, puzles, coleccionables y todos los finales explicados.",
+          "href": "/guide/course-to-venus-walkthrough"
+        },
+        {
+          "badge": "Popular",
+          "title": "Cómo abrir la ventilación",
+          "description": "Controles, indicaciones y soluciones rápidas para abrir la ventilación en PC, consola y portátil.",
+          "href": "/controls/course-to-venus-how-to-open-vent"
+        },
+        {
+          "badge": "Popular",
+          "title": "Cómo conseguir la palanca",
+          "description": "Ubicación completa de la palanca y una ruta paso a paso hasta la herramienta que desbloquea todo lo demás.",
+          "href": "/items/course-to-venus-how-to-get-crowbar"
+        },
+        {
+          "badge": "Actualizado",
+          "title": "Guía del código del teléfono",
+          "description": "Cómo funciona el sistema de códigos del teléfono de Course to Venus, dónde aparecen los códigos y cómo canjearlos.",
+          "href": "/codes/course-to-venus-phone-code"
+        },
+        {
+          "badge": "Popular",
+          "title": "Guía del personaje Molly",
+          "description": "Su papel en la historia, sus escenas de relación y los consejos para aprovechar al máximo su arco.",
+          "href": "/characters/course-to-venus-molly"
+        },
+        {
+          "badge": "Popular",
+          "title": "Guía de progresión",
+          "description": "Cómo avanzar por cada etapa del viaje en Course to Venus con un mejor ritmo de recursos.",
+          "href": "/progression/course-to-venus-how-to-progress"
+        },
+        {
+          "badge": "Nuevo",
+          "title": "Guía del archivo de guardado",
+          "description": "Dónde se guarda el archivo de Course to Venus, cómo hacer una copia de seguridad y cómo restaurar el progreso perdido.",
+          "href": "/progression/course-to-venus-save-file"
+        },
+        {
+          "badge": "Nuevo",
+          "title": "Mecánicas de misión",
+          "description": "Ventanas de lanzamiento, tiempos de transferencia, presupuestos de delta-v y modos de llegada explicados paso a paso.",
+          "href": "/mechanics/course-to-venus-mission"
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "¿Qué es Course to Venus?",
+      "paragraphs": [
+        "Course to Venus es una divertida aventura de ciencia ficción ambientada en un futuro cercano del desarrollador Not Every Witch. Planificas y pilotas una nave desde la Tierra hacia Venus, equilibrando la propulsión y el combustible con el calor, el blindaje, los suministros y el estado de la tripulación, mientras los eventos y peligros se resuelven en cada ronda.",
+        "El juego combina planificación de rutas, puzles y relaciones entre personajes: abre ventilaciones selladas, encuentra llaves y herramientas como la palanca, registra la nave cubierta por cubierta y sigue decisiones ramificadas con Molly, Jenna y el fantasma. Nuestra wiki de Course to Venus reúne las guías, las ubicaciones de objetos, las guías de personajes y los consejos de progresión que necesitas."
+      ],
+      "stats": [
+        {
+          "label": "Desarrollador",
+          "value": "Not Every Witch"
+        },
+        {
+          "label": "Plataformas",
+          "value": "HTML5 · Windows · Android"
+        },
+        {
+          "label": "Género",
+          "value": "Aventura de ciencia ficción"
+        },
+        {
+          "label": "Versión",
+          "value": "0.5.3"
+        },
+        {
+          "label": "Idiomas",
+          "value": "10"
+        },
+        {
+          "label": "Actualizaciones",
+          "value": "Mensuales"
+        }
+      ],
+      "cta": "Explorar todas las guías"
+    },
+    "explore": {
+      "title": "Explora Course to Venus Wiki",
+      "description": "Todo lo que necesitas para dominar Course to Venus: pasos para principiantes, una guía completa, guías de personajes, ubicaciones de objetos, mecánicas de eventos, actualizaciones e historial de versiones en un solo lugar.",
+      "modules": [
+        {
+          "order": 1,
+          "name": "Guía para principiantes de Course to Venus",
+          "description": "Una guía para principiantes de Course to Venus paso a paso que cubre cómo se desarrolla una partida, la gestión de combustible y calor, la planificación de rutas y los errores tempranos que arruinan un lanzamiento.",
+          "href": "/guide/course-to-venus-how-to-play",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Lee el mapa de ruta antes de moverte y elige un único objetivo principal para la partida."
+            },
+            {
+              "label": "2",
+              "detail": "Elige un modo indulgente como Estándar para tu primera partida real de Course to Venus."
+            },
+            {
+              "label": "3",
+              "detail": "Traza tu maniobra y luego compromete combustible, acciones o cartas sin dejar de guardar una reserva."
+            },
+            {
+              "label": "4",
+              "detail": "Resuelve peligros, calor y eventos leyendo el resultado completo antes de reaccionar."
+            },
+            {
+              "label": "5",
+              "detail": "Gestiona reparaciones, refrigeración, reabastecimiento y rotación de tripulación en la misma ronda en que aparece un problema."
+            },
+            {
+              "label": "6",
+              "detail": "Sigue el progreso hacia tu objetivo y acumula combustible para la maniobra de llegada final."
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Guía de Course to Venus",
+          "description": "Una guía de Course to Venus acto por acto que cubre puntos de ramificación, estrategias de puzles, coleccionables, finales y los hábitos de guardado que mantienen recuperable cada ruta.",
+          "href": "/guide/course-to-venus-walkthrough",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Rota al menos tres ranuras de guardado para que una rama equivocada nunca sea permanente."
+            },
+            {
+              "label": "2",
+              "detail": "Explora todo en una zona y completa el contenido opcional antes de avanzar en la historia."
+            },
+            {
+              "label": "3",
+              "detail": "Guarda en una ranura nueva antes de cualquier confirmación o transición de capítulo."
+            },
+            {
+              "label": "4",
+              "detail": "Resuelve puzles de patrones y secuencias cambiando una sola variable a la vez."
+            },
+            {
+              "label": "5",
+              "detail": "Registra cada decisión importante y cada hilo sin resolver para acelerar los finales alternativos."
+            },
+            {
+              "label": "6",
+              "detail": "Vuelve atrás de inmediato cuando una categoría de coleccionables parezca incompleta al final de una etapa."
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Personajes de Course to Venus",
+          "description": "Una lista por niveles de la tripulación de Course to Venus, que clasifica a los personajes principales según cuánto dan forma a las rutas, los diálogos y las escenas desbloqueables.",
+          "href": "/characters",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "Molly: central en las escenas de relación, las pruebas de confianza y uno de los arcos de personaje más buscados."
+            },
+            {
+              "label": "A",
+              "detail": "Jenna: las pistas del zodíaco y los indicadores de la historia la vinculan estrechamente a las decisiones de ruta y a las teorías de los fans."
+            },
+            {
+              "label": "B",
+              "detail": "El fantasma: un encuentro esquivo que los jugadores dicen haber seguido en varias partidas."
+            },
+            {
+              "label": "C",
+              "detail": "Tripulación secundaria: diálogos menores que añaden color pero rara vez cambian una ruta."
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Eventos de Course to Venus",
+          "description": "Eventos especiales de Course to Venus, escenas de interacción y condiciones de activación, organizados para que puedas detectar el contenido que quizá te hayas perdido.",
+          "href": "/mechanics/course-to-venus-investigation",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Pistas",
+              "detail": "Reúne todos los niveles de pruebas durante la investigación de Course to Venus antes de comprometerte con una deducción."
+            },
+            {
+              "label": "Registro",
+              "detail": "Peina la nave cubierta por cubierta para que las escenas de evento con tiempo límite u opcionales no expiren."
+            },
+            {
+              "label": "Activadores",
+              "detail": "La mayoría de los eventos se activan por una decisión o un objeto encontrado, así que anota todo lo que una escena mencione pero aún no te permita usar."
+            },
+            {
+              "label": "Momento",
+              "detail": "Algunas interacciones solo aparecen antes de un momento clave de la historia, así que termina el contenido opcional pronto."
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "name": "Actualizaciones de Course to Venus",
+          "description": "Las últimas notas de actualización de Course to Venus y el progreso de desarrollo, agrupados por versión para que los jugadores que regresan se pongan al día rápido.",
+          "href": "/progression/course-to-venus-update",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "0.5.3",
+              "detail": "Compilación pública actual: hitos de progresión y prioridades de mejora para la última versión."
+            },
+            {
+              "label": "0.6",
+              "detail": "Versión en desarrollo en el Patreon oficial, con nuevo contenido y sistemas mostrados para los jugadores que regresan."
+            },
+            {
+              "label": "Mensual",
+              "detail": "Las actualizaciones de Course to Venus llegan aproximadamente una vez al mes, así que vuelve a consultar antes de empezar una partida larga."
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "name": "Guía de personajes de Course to Venus",
+          "description": "Una guía de personajes de Course to Venus más profunda que cubre rutas de relación, condiciones de interacción y las decisiones que desbloquean escenas concretas.",
+          "href": "/characters/course-to-venus-molly",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Molly",
+              "detail": "Lee sus pausas y revisa las primeras escenas: su arco da sus frutos a lo largo de varias partidas."
+            },
+            {
+              "label": "Jenna",
+              "detail": "Las pistas del zodíaco y los indicadores de la historia la conectan con algunas de las teorías más buscadas del juego."
+            },
+            {
+              "label": "Fantasma",
+              "detail": "Un encuentro del que se habla y que los jugadores persiguen por cubiertas y versiones."
+            },
+            {
+              "label": "Confianza",
+              "detail": "Comprométete del todo con una ruta, ya que las medias tintas a menudo no desbloquean nada."
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Características del juego Course to Venus",
+          "description": "Una visión general de las características de Course to Venus, desde la planificación de rutas y la gestión de recursos hasta los puzles, la exploración y las relaciones con la tripulación.",
+          "href": "/guide/course-to-venus-game-guide",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Rutas",
+              "detail": "El empuje directo, la deriva lenta y la transferencia asistida se adaptan cada uno a un tipo distinto de partida."
+            },
+            {
+              "label": "Recursos",
+              "detail": "El combustible, el calor, el tiempo, los suministros y el estado de la tripulación tienen señales de advertencia que conviene vigilar."
+            },
+            {
+              "label": "Puzles",
+              "detail": "Las ventilaciones, las llaves y herramientas como la palanca controlan el acceso por toda la nave."
+            },
+            {
+              "label": "Tripulación",
+              "detail": "Las decisiones y la confianza dan forma a los arcos de los personajes y a las escenas desbloqueables."
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Versiones de Course to Venus",
+          "description": "Historial de versiones de Course to Venus, detalles de la compilación actual y los cambios de contenido que importan cuando vuelves a una partida guardada antigua.",
+          "href": "/progression/course-to-venus-new-version",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "0.5.3",
+              "detail": "Versión pública listada en la página oficial de itch.io, disponible para HTML5, Windows y Android."
+            },
+            {
+              "label": "0.6",
+              "detail": "Compilación en desarrollo mostrada a través de los registros del desarrollador en el Patreon oficial."
+            },
+            {
+              "label": "Guardados",
+              "detail": "Juega en la compilación actual y rota las ranuras de guardado, ya que los activadores pueden diferir entre versiones."
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "description": "Respuestas rápidas a las preguntas más comunes sobre Course to Venus.",
+      "items": [
+        {
+          "question": "¿Qué es Course to Venus?",
+          "answer": "Course to Venus es una divertida aventura de ciencia ficción ambientada en un futuro cercano del desarrollador Not Every Witch. Planificas un viaje desde la Tierra hacia Venus, equilibrando combustible, calor y suministros mientras se resuelven eventos, puzles y decisiones de los personajes a lo largo del camino."
+        },
+        {
+          "question": "¿En qué plataformas puedo jugar a Course to Venus?",
+          "answer": "La página oficial de itch.io indica HTML5, Windows y Android, así que puedes jugar a Course to Venus en un navegador o en escritorio y móvil."
+        },
+        {
+          "question": "¿Existe una guía de Course to Venus?",
+          "answer": "Sí. Nuestra guía de Course to Venus divide el viaje en actos, marca los puntos de ramificación y los puntos sin retorno, y cubre puzles, coleccionables y finales."
+        },
+        {
+          "question": "¿Cómo abro la ventilación en Course to Venus?",
+          "answer": "Aprende las indicaciones de interacción y el momento oportuno en nuestra guía de controles de ventilación de Course to Venus, y luego usa la tecla correcta en tu plataforma para abrir la ventilación sin perder una ronda."
+        },
+        {
+          "question": "¿Quiénes son los personajes principales de Course to Venus?",
+          "answer": "Molly, Jenna y el fantasma sostienen la historia. Nuestra guía de personajes de Course to Venus cubre sus roles, rutas de relación y las decisiones que desbloquean escenas adicionales."
+        },
+        {
+          "question": "¿Course to Venus tiene códigos?",
+          "answer": "Course to Venus usa un sistema de códigos de teléfono en lugar de una lista estándar de códigos canjeables. Nuestra guía del código del teléfono de Course to Venus explica dónde aparecen los códigos activos y cómo canjearlos paso a paso."
+        },
+        {
+          "question": "¿Con qué frecuencia se actualiza Course to Venus?",
+          "answer": "Las actualizaciones de Course to Venus llegan aproximadamente una vez al mes, con la versión pública actualmente en 0.5.3 y la versión 0.6 en desarrollo."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "¿Listo para dominar Course to Venus?",
+      "description": "Desde tus primeros pasos a bordo de la nave hasta las decisiones argumentales del final, nuestra wiki comunitaria te cubre con guías gratuitas y actualizadas.",
+      "primary": "Leer la guía para principiantes",
+      "secondary": "Jugar en itch.io"
+    }
+  },
+  "guide": {
+    "overviewTitle": "Guía de Course to Venus: guías paso a paso y consejos para principiantes",
+    "overviewDescription": "Guías paso a paso de Course to Venus que cubren ventanas de lanzamiento, sistemas de la nave, misiones y las decisiones que dan forma a tu partida."
+  },
+  "mechanics": {
+    "overviewTitle": "Mecánicas de Course to Venus: sistemas de misión e investigación",
+    "overviewDescription": "Cómo funcionan las mecánicas de misión, investigación y registro de la nave en Course to Venus, con consejos prácticos para cada sistema."
+  },
+  "items": {
+    "overviewTitle": "Objetos de Course to Venus: llaves, palanca y cápsula criogénica",
+    "overviewDescription": "Dónde encontrar cada objeto clave en Course to Venus, desde la llave de la ventilación y la palanca hasta la cápsula criogénica y la llave de evento."
+  },
+  "progression": {
+    "overviewTitle": "Progresión de Course to Venus: actualizaciones, guardados y aperturas",
+    "overviewDescription": "Sigue la progresión de Course to Venus, las actualizaciones de versión, los archivos de guardado y cómo abrir rutas bloqueadas a medida que avanza la historia."
+  },
+  "characters": {
+    "overviewTitle": "Personajes de Course to Venus: Molly, Jenna y el zodíaco",
+    "overviewDescription": "Conoce a la tripulación de Course to Venus, incluida Molly, el signo zodiacal de Jenna, el fantasma y cómo las relaciones cambian tu historia."
+  },
+  "controls": {
+    "overviewTitle": "Controles de Course to Venus: ventilaciones y nociones básicas de interacción",
+    "overviewDescription": "Controles e interacción básica de Course to Venus, incluido cómo abrir ventilaciones y rutas de ventilación en la nave."
+  },
+  "codes": {
+    "overviewTitle": "Códigos de Course to Venus: código del teléfono y recompensas",
+    "overviewDescription": "Todos los códigos activos de Course to Venus, incluido el código del teléfono, además de cómo canjear recompensas y dónde aparecen los nuevos códigos."
+  },
+  "shared": {
+    "wikiNavigation": "Navegación de la wiki",
+    "activeCodes": "Códigos activos",
+    "updated": "Actualizado",
+    "viewAllCodes": "Ver todos los códigos",
+    "playOnRoblox": "Jugar en Roblox",
+    "inThisSection": "En esta sección",
+    "tableOfContents": "Tabla de contenidos",
+    "nextSteps": "Próximos pasos",
+    "needHelp": "¿Necesitas ayuda?",
+    "relatedReading": "Lecturas relacionadas",
+    "relatedGuides": "Guías relacionadas",
+    "readMore": "Leer más",
+    "officialMedia": "Contenido oficial",
+    "home": "Inicio",
+    "noGuidesAvailable": "Aún no hay guías disponibles. ¡Vuelve pronto!"
+  },
+  "footer": {
+    "aboutTitle": "Course to Venus Wiki",
+    "about": "Course to Venus Wiki es un centro de guías independiente creado por fans que cubre guías paso a paso, relaciones con la tripulación, misiones, decisiones, plataformas y conocimientos esenciales del juego tanto para jugadores nuevos como veteranos.",
+    "quickLinks": "Enlaces rápidos",
+    "guides": "Guías",
+    "legal": "Legal",
+    "copyright": "2026 Course to Venus Wiki. Sin afiliación con Not Every Witch.",
+    "description": "Divertida aventura espacial de ciencia ficción ambientada en un futuro cercano. Exploración de naves, relaciones con la tripulación, decisiones y progresión argumental.",
+    "playGame": "Jugar a Course to Venus",
+    "officialDiscord": "Discord oficial",
+    "officialYoutube": "Ver gameplay",
+    "officialPatreon": "Apoyar en Patreon",
+    "beginnerGuide": "Guía para principiantes",
+    "raceGuides": "Guías de personajes",
+    "bossGuides": "Guías de misiones",
+    "privacyPolicy": "Política de privacidad",
+    "termsOfService": "Términos de servicio"
+  }
+}

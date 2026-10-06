@@ -257,13 +257,39 @@ const GROUP_TITLES_JA: Record<string, string> = {
   codes: "コード",
 };
 
+// 俄文分组标题映射
+const GROUP_TITLES_RU: Record<string, string> = {
+  guide: "Гайды",
+  mechanics: "Механики",
+  items: "Предметы",
+  progression: "Прогрессия",
+  characters: "Персонажи",
+  controls: "Управление",
+  codes: "Коды",
+};
+
+// 西班牙文分组标题映射
+const GROUP_TITLES_ES: Record<string, string> = {
+  guide: "Guías",
+  mechanics: "Mecánicas",
+  items: "Objetos",
+  progression: "Progresión",
+  characters: "Personajes",
+  controls: "Controles",
+  codes: "Códigos",
+};
+
 // locale → 分组标题映射
 const GROUP_TITLES_BY_LOCALE: Record<string, Record<string, string>> = {
+  ru: GROUP_TITLES_RU,
+  es: GROUP_TITLES_ES,
   ja: GROUP_TITLES_JA,
 };
 
 // locale → "Overview" 翻译
 const OVERVIEW_LABEL_BY_LOCALE: Record<string, string> = {
+  ru: "Обзор",
+  es: "Resumen",
   ja: "一覧",
 };
 
